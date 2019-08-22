@@ -1,0 +1,22 @@
+@charset "utf-8";
+@font-face{
+	font-family:'NunitoExtraLight';
+	font-style:normal;
+	font-weight:normal;
+	src:url('https://gimunique.github.io/webfont/NunitoSans-ExtraLight.eot');
+	src:local(※), url('https://gimunique.github.io/webfont/NunitoSans-ExtraLight.woff') format('woff');
+}
+@font-face{
+	font-family:'NunitoBlack';
+	font-style:normal;
+	font-weight:normal;
+	src:url('https://gimunique.github.io/webfont/NunitoSans-Black.eot');
+	src:local(※), url('https://gimunique.github.io/webfont/NunitoSans-Black.woff') format('woff');
+}
+@font-face{
+	font-family:'Nanum Barun Gothic';
+	  font-style:normal;
+	  font-weight:normal;
+	  src:url('https://gimunique.github.io/webfont/NanumBarunGothic.eot');
+	  src:local(※), url('https://gimunique.github.io/webfont/NanumBarunGothic.woff') format('woff');
+  }

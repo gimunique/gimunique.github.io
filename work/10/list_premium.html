@@ -1,0 +1,119 @@
+<? include "./include/header.html"; ?>
+<script>subNum = 3;</script>
+            <!-- Left Con -->
+            <div class="left_con">
+            	<div class="sub_menu">
+                    <h3><a href="">이용내역</a></h3>
+                    <ul>
+                        <li class="on"><a href="./list_premium.html" class="on">프리미엄 이용내역</a></li>
+                        <li><a href="./list_charge.html">충전내역</a></li>
+                        <li class="last"><a href="./list_purchase.html">구매내역</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //Left Con -->
+            <!-- Right Con -->
+            <div class="right_con">
+            	<div class="con_page con_page_min">
+                	<h4>프리미엄 이용내역</h4>
+                    <div class="date_set">
+                    	<form>
+                        <fieldset>
+                           <div class="c_select int">
+                                <a href="#n" class="ic select_default">2018</a>
+                                <ul>
+                                    <li><a href="">2018</a></li>
+                                    <li><a href="">2017</a></li>
+                                    <li><a href="">2016</a></li>
+                                    <li><a href="">2015</a></li>
+                                    <li><a href="">2014</a></li>
+                                    <li><a href="">2013</a></li>
+                                    <li><a href="">2012</a></li>
+                                    <li><a href="">2011</a></li>
+                                    <li><a href="">2010</a></li>
+                                    <li><a href="">2009</a></li>
+                                    <li><a href="">2008</a></li>
+                                    <li><a href="">2007</a></li>
+                                    <li><a href="">2006</a></li>
+                                    <li><a href="">2005</a></li>
+                                </ul>
+                            </div> 
+                            <div class="c_select int">
+                                <a href="#n" class="ic select_default">1</a>
+                                <ul>
+                                    <li><a href="">12</a></li>
+                                    <li><a href="">11</a></li>
+                                    <li><a href="">10</a></li>
+                                    <li><a href="">9</a></li>
+                                    <li><a href="">8</a></li>
+                                    <li><a href="">7</a></li>
+                                    <li><a href="">6</a></li>
+                                    <li><a href="">5</a></li>
+                                    <li><a href="">4</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">1</a></li>
+                                </ul>
+                            </div> 
+                            <input type="submit" value="조회" class="btn_search">
+                        </fieldset>
+                        </form>
+                    </div>
+                    <table class="tb_list">
+                    	<colgroup>
+                        	<col style="width:81px">
+                            <col style="width:*">
+                            <col style="width:150px">
+                            <col style="width:150px">
+                            <col style="width:81px">
+                        </colgroup>
+                        <thead>
+                        	<tr>
+                        		<th scope="col">타입</th>
+                                <th scope="col">상품명</th>
+                                <th scope="col">적용일</th>
+                                <th scope="col">만료일</th>
+                                <th scope="col">상태</th>
+                        	</tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                        		<td class="type">플래티넘</td>
+                        		<td class="name"><a href="">플래티넘 30일</a></td>
+                        		<td>2017-07-25  12:24:45</td>
+                        		<td>2017-08-24 12:24:45</td>
+                                <!--적용중일때 <td>에 class="apply" 추가-->
+                        		<td class="apply">적용중</td>
+                        	</tr>
+                            <tr>
+                        		<td class="type">실버</td>
+                        		<td class="name"><a href="">아카데미 키트 30일</a></td>
+                        		<td>2017-07-25  12:24:45</td>
+                        		<td>2017-08-24 12:24:45</td>
+                        		<td>만료</td>
+                        	</tr>
+                            <tr>
+                        		<td class="type">WExp 패키지</td>
+                        		<td class="name"><a href="">카발 리더들의 선택 30일(WExp)</a></td>
+                        		<td>2017-07-25  12:24:45</td>
+                        		<td>2017-08-24 12:24:45</td>
+                        		<td>만료</td>
+                        	</tr>
+                            <tr>
+                        		<td class="type">Axp 패키지</td>
+                        		<td class="name"><a href="">카발 리더들의 선택 30일(Axp)카발 리더들의 선택 30일(Axp)</a></td>
+                        		<td>2017-07-25  12:24:45</td>
+                        		<td>2017-08-24 12:24:45</td>
+                        		<td>만료</td>
+                        	</tr>
+                        </tbody>
+                    </table>
+                    <p class="pager"><a href="#n" class="prev"></a><span><strong>1</strong>/10</span><a href="#n" class="next"></a></p>
+                </div>
+            </div>
+            <!-- //Right Con -->
+        </div>
+    </div>
+</div>
+</body>
+</html>

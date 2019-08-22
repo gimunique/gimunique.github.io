@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CABAL SHOP</title>
+    <meta name="description" content="description">
+    <meta name="author" content="Estsoft">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>baseUrl = ""</script>
+<script src="http://eugene.estgames.com/game/common-publish/itemshop/js/jquery-1.9.1.min.js"></script>
+<script src="http://eugene.estgames.com/game/common-publish/itemshop/js/script.js"></script>
+<link rel="stylesheet" href="./css/itemshop.css">
+<link rel="icon" href="http://image.cabal.co.kr/favicon/favicon.ico" type="image/x-icon">
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.gc, .mask, .ic');</script>
+<![endif]-->
+</head>
+<body>
+<!--pop1-->
+    <dl class="hold">
+        <dt>현재 보유 캐시 :</dt>
+        <dd>0</dd>
+    </dl>
+    <div class="pcon">
+        <form>
+            <fieldset>
+                <p class="stxt">충전 수단과 충전 금액을 선택하세요. (1,000원 = 1,000 cash)</p>
+                <table class="tb_style1">
+                    <tbody>
+                    <tr>
+                        <th scope="row">충전 방법</th>
+                        <td class="method">
+                            <ul id="chargeMethod">
+                                <li><input type="radio" name="method" id="m1" value="phone" data-classname="phoneDesc" checked><label for="m1">휴대폰</label></li>
+                                <li><input type="radio" name="method" id="m2" value="culture" data-classname="cultureDesc"><label for="m2">문화상품권</label></li>
+                                <li><input type="radio" name="method" id="m3" value="card" data-classname="cardDesc"><label for="m3">신용카드</label></li>
+                                <li><input type="radio" name="method" id="m4" value="book" data-classname="bookDesc"><label for="m4">도서문화상품권</label></li>
+                                <li><input type="radio" name="method" id="m5" value="realtime" data-classname="realtimeDesc"><label for="m5">실시간 계좌이체</label></li>
+                                <li><input type="radio" name="method" id="m6" value="smartCulture" data-classname="cultureDesc"><label for="m6">스마트문상(게임문화상품권)</label></li>
+                                <li><input type="radio" name="method" id="m7" value="virtual" data-classname="virtualDesc"><label for="m7">무통장 입금(가상계좌)</label></li>
+                                
+                                <li><input type="radio" name="method" id="m9" value="ars" data-classname="arsDesc"><label for="m9">ARS(받는 전화결제)</label></li>
+                                <li><input type="radio" name="method" id="m10" value="conv" data-classname="convDesc"><label for="m10">편의점캐시</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="last">충전 금액</th>
+                        <td class="cash last">
+                            <ul>
+                                <li><input type="radio" name="cash" id="c1" value="1000" checked><label for="c1">1,000원</label></li>
+                                <li><input type="radio" name="cash" id="c2" value="3000"><label for="c2">3,000원</label></li>
+                                <li><input type="radio" name="cash" id="c3" value="5000"><label for="c3">5,000원</label></li>
+                                <li><input type="radio" name="cash" id="c4" value="10000"><label for="c4">10,000원</label></li>
+                                <li><input type="radio" name="cash" id="c5" value="20000"><label for="c5">20,000원</label></li>
+                                <li><input type="radio" name="cash" id="c6" value="30000"><label for="c6">30,000원</label></li>
+                                <li><input type="radio" name="cash" id="c7" value="50000"><label for="c7">50,000원</label></li>
+                                <li><input type="radio" name="cash" id="c8" value="100000"><label for="c7">100,000원</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="atxt phoneDesc allDesc">- 캐시충전 한도는 월 50만원이며, 매월 1일 초기화됩니다.</p>
+                <p class="ctxt cardDesc allDesc" style="display: none;">
+                    신용카드회사의 정책에 따라 <strong>1회 결제 한도</strong> 및<br>
+                    <strong>1일 결제 횟수, 결제 한도</strong>가 제한될 수 있습니다.<br>
+                    ( 현재 NH채움 카드 결제 불가 )
+                </p>
+                <div class="btn_wrap"><a href="" class="btn_confirm" id="chargeConfirm">확인</a><a href="" class="btn_cancle cancelConfirm">취소</a></div>
+            </fieldset>
+        </form>
+    </div><span class="bg_cpop" style="display:none"></span>
+    <div class="pop lm_pop">
+        <a href="" class="close"><span class="blind">닫기</span></a>
+        <h6>신용카드별 1일 결제한도</h6>
+        <div class="pcon">
+            <table>
+                <colgroup>
+                    <col style="width:63px">
+                    <col style="width:*">
+                    <col style="width:56px">
+                    <col style="width:56px">
+                    <col style="width:56px">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col" rowspan="2">카드사</th>
+                    <th scope="col" rowspan="2">인증방식</th>
+                    <th scope="col" colspan="3">1일 결제한도 제한</th>
+                </tr>
+                <tr>
+                    <th scope="col">1일 카드<br>사용 횟수</th>
+                    <th scope="col">1일 결제<br>가능 금액</th>
+                    <th scope="col">1일 총<br>결제 금액</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">국민</th>
+                    <td rowspan="8">ISP+공인인증+SMS인증</td>
+                    <td rowspan="9">4만원</td>
+                    <td rowspan="9">5만원</td>
+                    <td rowspan="9">-</td>
+                </tr>
+                <tr><th scope="row">광주</th></tr>
+                <tr><th scope="row">비씨</th></tr>
+                <tr><th scope="row">수협</th></tr>
+                <tr><th scope="row">우리</th></tr>
+                <tr><th scope="row">제주</th></tr>
+                <tr><th scope="row">KDB산업</th></tr>
+                <tr><th scope="row">전북</th></tr>
+                <tr>
+                    <th scope="row">하나SK</th>
+                    <td rowspan="2">모비페이</td>
+                </tr>
+                <tr>
+                    <th scope="row">외환</th>
+                    <td>4회</td>
+                    <td>5만원</td>
+                    <td>10만원</td>
+                </tr>
+                <tr>
+                    <th scope="row">씨티</th>
+                    <td>안심클릭</td>
+                    <td>4회</td>
+                    <td>-</td>
+                    <td>5만원</td>
+                </tr>
+                <tr>
+                    <th scope="row">롯데</th>
+                    <td>간편결제<br>(30만원이상 공인인증)</td>
+                    <td>3회</td>
+                    <td>10만원</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row">삼성</th>
+                    <td rowspan="3">간편결제+공인인증</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>10만원</td>
+                </tr>
+                <tr>
+                    <th scope="row">신한</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>5만원</td>
+                </tr>
+                <tr>
+                    <th scope="row">현대</th>
+                    <td>4회</td>
+                    <td>-</td>
+                    <td>5만원</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>
+                비씨카드는 회원은행(우리,SC,하나,농협,기업,국민,대구,부산,경남,씨티,신한)을<br>
+                포함하여 1일 결제한도 제한이 적용됩니다.<br>
+                위 결제 한도에 해당하지 않더라도 캐시를 월 50만원(미성년자 7만원)초과 충전을<br>
+                시도하시거나 해당 카드 상태가 유효하지 않을 겨우 결제가 불가합니다.
+            </p>
+            <a href="" class="btn_lclose">닫기</a>
+        </div>
+    </div>
+<!--//pop1-->
+</body>
+</html>

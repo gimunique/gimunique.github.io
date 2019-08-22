@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<title>TeamUP 팀업 - The best way for Collaboration</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="https://gimunique.github.io/images/favicon.ico" type="images/x-icon">
+<link rel="stylesheet" href="./css/font.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="https://gimunique.github.io/lib/js/jquery-1.9.1.min.js"></script>
+<script src="https://gimunique.github.io/lib/js/jquery.easing.1.3.min.js"></script>
+<script src="./js/main.js"></script>
+</head>
+<body>
+<a href="#content" class="skip">본문 바로가기</a>
+<div class="wrap main_pc">
+	<!--header : 로그인 상태일 때 header에 클래스 header_login 추가-->
+	<div class="header">
+		<span class="header_bg"></span>
+		<div class="content_wrap">
+			<div class="content_box">
+				<h1><a href="./main.html" title="TeamUP">
+				<svg id="logo_teamup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-80 317 550 160" xml:space="preserve">
+					<g class="symbol">
+						<path class="st0" d="M16.2,362.2c-11,0-19.9,8.8-20.1,19.8l0,0l0,0v30.7c0,5.5-4.4,9.9-9.9,9.9s-9.9-4.6-9.9-10v-25.5l0,0v0.1
+						c0-2.8-2.3-5-5.1-5s-5.1,2.2-5.1,5l0,0l0,0c0,0,0,25.4,0,25.5c0,11.1,9,20.1,20.1,20.1s20.1-9,20.1-20.1c0,0,0-27.5,0-30.5l0,0
+						c0-5,4.4-9.8,9.9-9.8s9.7,4.5,9.7,9.9c0,5.4-5,9.9-10,9.9l0,0c0,0,0.2,0,0.1,0c-2.8,0-5,2.2-5,5c0,2.8,2.2,5,5,5l0,0l0,0l0,0l0,0
+						v0.1c10.7-0.1,20-8.9,20-20C36.2,371.1,27.3,362.2,16.2,362.2z"/>
+						<path class="st0" d="M1.3,317.4c-44.2,0-80,35.8-80,80s35.8,80,80,80s80-35.8,80-80S45.4,317.4,1.3,317.4z M1.2,467.3
+						c-38.6,0-70-31.3-70-70c0-38.6,31.3-70,70-70s70,31.3,70,70S39.9,467.3,1.2,467.3z"/>
+					</g>
+					<g class="logotype">
+						<g class="teamup">
+							<path class="st0" d="M349.5,379.2c-11,0-19.9,8.9-19.9,19.9v0.1v29.3c0,2.4,2,4.4,4.4,4.4c2.1,0,3.9-1.4,4.4-3.4l0.1,0.1v-0.4V429
+							l0,0v-29.9c0-6.1,4.9-11,11-11s11,4.9,11,11s-4.9,11-11,11c-0.8,0-1.7-0.1-2.5-0.3c-0.4-0.1-0.8-0.2-1.3-0.2c-2.5,0-4.5,2-4.5,4.5
+							c0,2,1.4,3.8,3.2,4.3l0,0l0.2,0.1c1.6,0.4,3.2,0.6,4.8,0.6c11,0,19.9-8.9,19.9-19.9C369.4,388.1,360.5,379.2,349.5,379.2z"/>
+							<path class="st0" d="M323.1,386.3c0-2.4-2-4.4-4.4-4.4c-2.2,0-4,1.5-4.4,3.6V413c0,6.1-4.9,11-11,11s-11-4.9-11-11v-26.7v-0.4
+							v-0.1c0-0.1,0-0.1,0-0.2c-0.3-2.1-2.2-3.7-4.4-3.7c-2.5,0-4.4,2-4.4,4.5v26.5v0.1c0,11,8.9,19.9,19.9,19.9s19.9-8.9,19.9-19.9
+							v-0.1L323.1,386.3z"/>
+							<path class="st0" d="M271.7,398.3c-2.9-3.2-7.1-5.1-11.7-5.1s-8.8,2-11.7,5.1c-2.9-3.1-7.1-5.1-11.7-5.1
+							c-8.8,0-15.9,7.1-15.9,15.8l0,0v19.5l0,0c0,2.3,1.9,4.2,4.2,4.2c2.3,0,4.2-1.9,4.2-4.2l0,0v-6.7V409c0-4.1,3.3-7.5,7.5-7.5
+							s7.5,3.3,7.5,7.5v12.8v6.7l0,0c0,2.3,1.9,4.2,4.2,4.2l0,0c2.3,0,4.2-1.9,4.2-4.2l0,0V409l0,0l0,0c0-4.1,3.3-7.5,7.5-7.5
+							c4.1,0,7.5,3.3,7.5,7.5l0,0v19.5l0,0c0,2.3,1.9,4.2,4.2,4.2c2.3,0,4.2-1.9,4.2-4.2l0,0V409C275.9,404.9,274.3,401.2,271.7,398.3z"
+							/>
+							<path class="st0" d="M214,413.2v-0.1c0-10.8-8.8-19.6-19.6-19.6c-10.8,0-19.6,8.8-19.6,19.6c0,10.8,8.8,19.6,19.6,19.6
+							c1.6,0,3.2-0.2,4.7-0.6l0,0c1.9-0.4,3.3-2.1,3.3-4.1c0-2.3-1.9-4.2-4.2-4.2c-0.4,0-0.8,0.1-1.2,0.2c-0.8,0.2-1.7,0.3-2.6,0.3
+							c-6.2,0-11.2-5-11.2-11.2s5-11.2,11.2-11.2s11.2,5,11.2,11.2l0,0l0,0l0,0v15.5l0,0v0.6l0,0c0.3,2,2,3.6,4.1,3.6
+							c2.3,0,4.2-1.9,4.2-4.2c0,0,0,0,0-0.1v-15.3H214z"/>
+							<path class="st0" d="M169.9,422c-1-2.1-3.6-2.9-5.6-1.9l-3,1.5c-0.1,0-0.2,0.1-0.3,0.1l-1.6,0.8c-0.1,0-0.1,0.1-0.2,0.1l-2.2,1.1
+							c-0.1,0-0.2,0.1-0.3,0.1c-1.1,0.4-2.3,0.6-3.5,0.6c-6.2,0-11.3-5.1-11.3-11.3c0-6.2,5.1-11.3,11.3-11.3c1.8,0,3.4,0.4,4.9,1.1
+							c0.1,0.1,3.5,2.1,1,3.3l0,0l-10,4.9c-2.1,1-3,3.5-2,5.6s3.5,3,5.6,2l11.8-5.8l0.8-0.4c4-1.9,4.4-5.2,4.4-5.2
+							c1-4.9-3.3-8.9-3.9-9.4c-3.4-2.9-7.8-4.6-12.6-4.6c-10.8,0-19.6,8.8-19.6,19.6c0,7.4,4,13.8,10,17.1c2.8,1.6,6,2.5,9.4,2.5
+							c0.1,0,0.2,0,0.2,0c2.7,0,5.2-0.5,7.5-1.5c0.3-0.1,0.7-0.3,1-0.4l0.2-0.1l6.3-3.1C170,426.6,170.9,424,169.9,422z"/>
+							<path class="st0" d="M129.6,423.6c-0.5-1-1.3-1.7-2.2-2c-1.1-0.4-2.3-0.4-3.4,0.1l-4.1,1.8c-2.7,1.3-5,0.9-5.4,0.9
+							c-4.4-1-4.6-4.7-4.6-5.3v-17.2h12.9c2.3,0,4.2-1.9,4.2-4.2s-1.9-4.2-4.2-4.2H110v-7.2l0,0c0-2.3-1.9-4.2-4.2-4.2l0,0l0,0
+							c-2.3,0-4.2,1.9-4.2,4.2l0,0v32.3c0.1,1.7,0.5,3.4,0.5,3.7c2,6.9,7.2,9.3,10.7,10c1.9,0.4,3.3,0.4,3.3,0.4
+							c2.4,0.2,5.1-0.6,7.5-1.5l4-2c1.4-0.7,2.2-2,2.3-3.5C130.1,425,130,424.3,129.6,423.6z"/>
+						</g>
+						<g class="beta">
+							<path class="st2" d="M393.7,409.6h-9.2c-1.3,0-2.3-0.3-2.9-0.9c-0.6-0.6-0.9-1.5-0.9-2.9v-22.7c0-1.3,0.3-2.3,0.9-2.9
+							c0.6-0.6,1.5-0.9,2.8-0.9h9.8c1.4,0,2.7,0.1,3.7,0.3c1.1,0.2,2,0.5,2.8,1c0.7,0.4,1.3,1,1.9,1.6c0.5,0.7,1,1.4,1.3,2.2
+							c0.3,0.8,0.4,1.6,0.4,2.5c0,3-1.5,5.2-4.5,6.6c4,1.3,5.9,3.7,5.9,7.4c0,1.7-0.4,3.2-1.3,4.6c-0.9,1.4-2,2.3-3.5,3
+							c-0.9,0.4-2,0.7-3.2,0.8C396.7,409.6,395.3,409.6,393.7,409.6z M386.9,384v7.8h5.6c1.5,0,2.7-0.1,3.5-0.4c0.8-0.3,1.5-0.8,1.9-1.6
+							c0.3-0.6,0.5-1.2,0.5-1.9c0-1.5-0.5-2.5-1.6-3c-1.1-0.5-2.7-0.8-5-0.8H386.9z M393.2,396.2h-6.4v8.8h6.6c4.1,0,6.2-1.5,6.2-4.5
+							c0-1.5-0.5-2.6-1.6-3.3C396.9,396.6,395.3,396.2,393.2,396.2z"/>
+							<path class="st2" d="M425.3,400.1h-11c0,1.3,0.3,2.4,0.8,3.4c0.5,1,1.2,1.7,2,2.2c0.8,0.5,1.7,0.7,2.7,0.7c0.7,0,1.3-0.1,1.8-0.2
+							c0.6-0.2,1.1-0.4,1.6-0.7c0.5-0.3,1-0.7,1.4-1.1c0.4-0.4,1-0.9,1.7-1.6c0.3-0.2,0.7-0.4,1.2-0.4c0.6,0,1,0.2,1.4,0.5
+							c0.4,0.3,0.5,0.8,0.5,1.3c0,0.5-0.2,1.1-0.6,1.8c-0.4,0.7-1,1.3-1.8,2c-0.8,0.6-1.8,1.1-3,1.6c-1.2,0.4-2.6,0.6-4.2,0.6
+							c-3.6,0-6.4-1-8.4-3.1c-2-2.1-3-4.9-3-8.4c0-1.7,0.2-3.2,0.7-4.6s1.2-2.6,2.2-3.7c0.9-1,2.1-1.8,3.5-2.3c1.4-0.5,2.9-0.8,4.6-0.8
+							c2.2,0,4.1,0.5,5.7,1.4c1.6,0.9,2.7,2.1,3.5,3.6c0.8,1.5,1.2,3,1.2,4.5c0,1.4-0.4,2.3-1.2,2.7C427.9,399.9,426.8,400.1,425.3,400.1
+							z M414.3,396.9h10.2c-0.1-1.9-0.7-3.4-1.6-4.3c-0.9-1-2.1-1.4-3.6-1.4c-1.4,0-2.5,0.5-3.4,1.5S414.5,395,414.3,396.9z"/>
+							<path class="st2" d="M434,387.8h0.6v-3.4c0-0.9,0-1.6,0.1-2.1c0-0.5,0.2-1,0.4-1.3c0.2-0.4,0.5-0.7,0.9-0.9
+							c0.4-0.2,0.9-0.4,1.4-0.4c0.7,0,1.4,0.3,1.9,0.8c0.4,0.4,0.6,0.8,0.7,1.3c0.1,0.5,0.2,1.2,0.2,2.2v3.8h2.1c0.8,0,1.4,0.2,1.8,0.6
+							c0.4,0.4,0.6,0.9,0.6,1.5c0,0.8-0.3,1.3-0.9,1.6c-0.6,0.3-1.5,0.5-2.6,0.5h-1v10.3c0,0.9,0,1.6,0.1,2c0.1,0.5,0.2,0.9,0.5,1.2
+							c0.3,0.3,0.7,0.4,1.3,0.4c0.3,0,0.8-0.1,1.3-0.2c0.6-0.1,1-0.2,1.3-0.2c0.5,0,0.9,0.2,1.2,0.5c0.4,0.4,0.5,0.8,0.5,1.3
+							c0,0.9-0.5,1.6-1.5,2.1c-1,0.5-2.4,0.7-4.3,0.7c-1.8,0-3.1-0.3-4-0.9c-0.9-0.6-1.5-1.4-1.8-2.4s-0.4-2.4-0.4-4.2v-10.8h-0.7
+							c-0.8,0-1.4-0.2-1.9-0.6c-0.4-0.4-0.6-0.9-0.6-1.5c0-0.6,0.2-1.1,0.7-1.5C432.5,388,433.1,387.8,434,387.8z"/>
+							<path class="st2" d="M461.7,407c-1.4,1.1-2.7,1.8-3.9,2.4s-2.7,0.8-4.3,0.8c-1.4,0-2.7-0.3-3.8-0.9c-1.1-0.6-1.9-1.3-2.5-2.3
+							c-0.6-1-0.9-2-0.9-3.2c0-1.5,0.5-2.8,1.5-3.9c1-1.1,2.3-1.8,4-2.2c0.4-0.1,1.2-0.3,2.7-0.6c1.4-0.3,2.6-0.6,3.6-0.8
+							c1-0.2,2.1-0.5,3.3-0.9c-0.1-1.5-0.4-2.6-0.9-3.3c-0.5-0.7-1.6-1-3.3-1c-1.4,0-2.5,0.2-3.2,0.6c-0.7,0.4-1.3,1-1.9,1.8
+							c-0.5,0.8-0.9,1.3-1.1,1.6c-0.2,0.3-0.7,0.4-1.4,0.4c-0.6,0-1.2-0.2-1.6-0.6c-0.5-0.4-0.7-0.9-0.7-1.6c0-1,0.3-1.9,1-2.9
+							c0.7-0.9,1.8-1.7,3.3-2.3c1.5-0.6,3.3-0.9,5.5-0.9c2.5,0,4.4,0.3,5.8,0.9c1.4,0.6,2.4,1.5,3,2.8c0.6,1.3,0.9,2.9,0.9,5
+							c0,1.3,0,2.4,0,3.4c0,0.9,0,1.9,0,3.1c0,1.1,0.2,2.2,0.5,3.3c0.3,1.1,0.5,1.9,0.5,2.2c0,0.6-0.3,1.1-0.8,1.6
+							c-0.5,0.5-1.2,0.7-1.8,0.7c-0.6,0-1.1-0.3-1.7-0.8C463,408.8,462.4,408,461.7,407z M461.4,398.8c-0.8,0.3-2,0.6-3.6,1
+							c-1.6,0.3-2.7,0.6-3.3,0.7c-0.6,0.2-1.2,0.5-1.7,0.9c-0.5,0.5-0.8,1.1-0.8,1.9c0,0.9,0.3,1.6,1,2.2s1.5,0.9,2.5,0.9
+							c1.1,0,2.1-0.2,3.1-0.7c0.9-0.5,1.6-1.1,2.1-1.9c0.5-0.9,0.8-2.3,0.8-4.2V398.8z"/>
+						</g>
+					</g>
+				</svg> <span class="blind">TeamUP</span></a></h1>
+				<div class="util_menu">
+					<div class="util_box">
+						<ul class="gnb">
+							<li class="on">
+								<a href="">TeamUP</a>
+							</li>
+							<li>
+								<a href="#function">기능소개</a>
+							</li>
+							<li>
+								<a href="#premium">프리미엄</a>
+							</li>
+							<li>
+								<span class="bar"></span><a href="http://advert.estsoft.com/?event=201412162094082" target="_blank">고객지원</a>
+							</li>
+						</ul>
+						<!--로그인 상태일 때만 추가
+						<span class="thumb_s"><img src="./images/img_default_profile.png" alt="프로필사진"></span>
+						<ul>
+						<li><a href="">설정</a></li>
+						<li><a href="">관리자페이지</a></li>
+						</ul>-->
+						<!--로그인 상태일 때 아래 버튼 클래스 btn_header btn_logout,로그인페이지로 링크/로그아웃 상태일 때 클래스 btn_header btn_login-->
+						<a href="" class="btn_header btn_login">로그인</a>
+						<div class="login_box">
+							<span class="box_bg"></span>
+							<a href="" class="btn_close"><span class="blind">닫기</span></a>
+							<form id="LoginForm" action="javascript:sendLoginInfo();">
+								<div class="login_form">
+									<p class="ipt_txt">
+										<input type="text" placeholder="이메일" id="login_id" name="Id">
+									</p>
+									<p class="ipt_txt">
+										<input type="password" placeholder="비밀번호" id="login_pw" name="Password">
+									</p>
+									<div class="login_menu">
+										<a href="../ETC/find-pw.html">비밀번호 재발급</a>
+									</div>
+									<a href="javascript:;" class="form_login" onclick="$('#LoginForm').submit();">로그인</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submenu">
+			<span class="header_bg"></span>
+			<div class="content_wrap">
+				<h2 class="blind">기능소개</h2>
+				<ul>
+					<li>
+						<a href="./func_team-pc.html">팀</a>
+					</li>
+					<li>
+						<a href="./func_board-pc.html">그룹피드</a>
+					</li>
+					<li>
+						<a href="./func_messanger-pc.html">메신저</a>
+					</li>
+					<li>
+						<a href="./func_org-pc.html">조직도</a>
+					</li>
+					<li>
+						<a href="./func_file-pc.html">파일</a>
+					</li>
+					<li>
+						<a href="./func_search-pc.html">검색</a>
+					</li>
+					<li>
+						<a href="./func_alert-pc.html">알림</a>
+					</li>
+					<li>
+						<a href="./func_manage-pc.html">관리자기능</a>
+					</li>
+					<li>
+						<a href="./func_app-pc.html">오픈API</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+	<!--content-->
+	<div class="main_wrap" id="content">
+		<div class="section main_title">
+			<span class="main_bg"> <span class="bg1 show"></span> <span class="bg2"></span> <span class="bg3"></span> </span>
+			<div class="content_wrap">
+				<div class="content_box">
+					<p class="tit_txt">
+						<strong>Communication is
+						<br>
+						Everything</strong>
+						<span>TeamUP은 편리한 협업환경을 만들어주는
+							<br>
+							중소/중견기업에 최적화된 협업 툴 입니다.</span>
+					</p>
+					<div class="join_wrap">
+						<span class="op5 demi">지금 TeamUP을 무료로 사용해보세요!</span>
+						<div class="join_input">
+							<input type="text" class="input_txt" id="inputStart" autocomplete="off" placeholder="이메일">
+							<a href="" class="btn_email" id="btn_email_bottom">회원가입</a>
+						</div>
+						<span class="op5">이메일을 입력한 후 인증을 통해 회원가입을 진행 할 수 있습니다.</span>
+					</div>
+					<a href="" class="btn_scroll"><span class="blt"></span><span class="blind">기능소개</span></a>
+					<div class="contact">
+						<span>사내 도입 문의</span>
+						<ul>
+							<li>
+								<a href="mailto:biztec@estsoft.com">biztec@estsoft.com</a>
+							</li>
+							<li class="last">
+								02-3470-2969
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section func_thumb">
+			<div class="content_wrap">
+				<h2 class="blind">기능소개</h2>
+				<ul class="func_list">
+					<li>
+						<a href="./func_team-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-1.jpg" alt="팀">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">TEAM</span><span class="light">팀</span></span>
+								<p class="box_txt">
+									우리회사, 외부업체와의 커뮤니케이션
+									<br>
+									공간이 필요하시다면 팀을 만들어
+									<br>
+									사용해보세요.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_board-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-2.jpg" alt="그룹피드">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">GROUP FEED</span><span class="light">그룹피드</span></span>
+								<p class="box_txt">
+									프로젝트 자료공유, 자료보관을 위한 공간을
+									<br>
+									그룹피드로 대처하여 효율적인 협업을
+									<br>
+									시작해보세요.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_messanger-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-3.jpg" alt="메신저">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">MESSENGER</span><span class="light">메신저</span></span>
+								<p class="box_txt">
+									출장이나 외근이 잦은 업무 환경에도
+									<br>
+									공간의 제약없이 빠르게 협업이 가능한
+									<br>
+									업무용 메신저를 제공합니다.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_org-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-4.jpg" alt="조직도">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">ORGANIZATION</span><span class="light">조직도</span></span>
+								<p class="box_txt">
+									조직도 기반으로 부서간 커뮤니케이션이
+									<br>
+									많은 중견기업 환경에 최적화 된
+									<br>
+									커뮤니케이션 툴입니다.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_org-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-5.jpg" alt="파일">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">FILE</span><span class="light">파일</span></span>
+								<p class="box_txt">
+									모바일에서도 파일을 받아 볼 수 있어
+									<br>
+									언제 어디서든지 필요하다면
+									<br>
+									자유롭게 파일 공유를 할 수 있습니다.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_search-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-6.jpg" alt="검색">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">SEARCH</span><span class="light">검색</span></span>
+								<p class="box_txt">
+									게시글뿐만 아니라 대화 내용까지
+									<br>
+									검색이 가능하여 원하는 자료를 쉽고 빠르게
+									<br>
+									찾아볼 수 있습니다.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_alert-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-7.jpg" alt="알림">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">NOTIFICATION</span><span class="light">알림</span></span>
+								<p class="box_txt">
+									새 게시글이 올라오거나 댓글이 달렸을 경우
+									<br>
+									새로운 메시지가 왔을 때
+									<br>
+									즉시 알려드립니다.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_manage-pc.html">
+						<div class="box_w">
+							<img src="./images/ko/img_main_func-8.jpg" alt="관리자 기능">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">ADMIN</span><span class="light">관리자 기능</span></span>
+								<p class="box_txt">
+									회사마다 독립적인 서비스로 제공되며,
+									<br>
+									각 회사의 슈퍼관리자는 팀업을
+									<br>
+									관리하실 수 있습니다.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+					<li>
+						<a href="./func_app-pc.html">
+						<div class="box_w">
+							<img src="./images/img_main_func-9.jpg" alt="오픈 API">
+							<span class="box_bg"></span>
+							<div class="box_txt">
+								<span class="fname"><span class="en">OPEN API</span><span class="light">오픈 API</span></span>
+								<p class="box_txt">
+									팀업에서 제공하는 API로 기존 사내
+									<br>
+									인트라넷과 연동하여 자연스러운
+									<br>
+									협업환경을 만들어 드립니다.
+								</p>
+							</div>
+							<span class="link">자세히 보기</span>
+						</div> </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section start_teamup">
+			<div class="content_wrap">
+				<h3 class="payment_h3">PREMIUM</h3>
+				<p class="payment_p">프리미엄 요금안내</p>
+				<div class="box_wrap">
+
+					<div class="left_box">
+						<h4> Standard
+						<br>
+						<span>스탠다드</span><br>
+						<span class="inf">무료</span>
+						</h4>
+						<ul>
+							<li class="second">
+								<span class="left">사용인원</span>
+								<span class="right">Max 50명</span>
+							</li>
+							<li>
+								<span class="left">총 용량</span>
+								<span class="right">100GB 제한</span>
+							</li>
+							<li class="second">
+								<span class="left">개별 업로드 용량</span>
+								<span class="right">100MB 제한</span>
+							</li>
+							<li>
+								<span class="left">백업</span>
+								<span class="right">1차 백업</span>
+							</li>
+						</ul>
+					</div>
+					<span class="icon_next"><img src="./images/icon_next.png" alt="화살표"></span>
+					<div class="right_box">
+						<h4> Premium
+						<br>
+						<span>프리미엄</span><br>
+						<p class="inf">₩5,000<br>
+							<span>(1인/1개월)</span>
+						</p>
+						</h4>
+						<ul>
+							<li class="second">
+								<span class="left">사용인원</span>
+								<span class="right">과금 인원</span>
+							</li>
+							<li>
+								<span class="left">총 용량</span>
+								<span class="right">무제한</span>
+							</li>
+							<li class="second">
+								<span class="left">개별 업로드 용량</span>
+								<span class="right">2GB</span>
+							</li>
+							<li>
+								<span class="left">백업</span>
+								<span class="right">3차 백업</span>
+							</li>
+
+						</ul>
+					</div>
+					<p class="right_box_p">
+						(VAT제외 금액입니다)<br>
+						상품 종류에 따라 ₩4,500~₩5,000원 구성<br>
+						요금은 팀단위로 반영 됩니다.
+					</p>
+				</div>
+				<h3 class="paylist_h3">프리미엄 상품종류</h3>
+				<p class="paylist_p">팀업 프리미엄은 결제 방법에 따라 3가지 상품이 준비되어있습니다.</p>
+				<div class="pay_list">
+					<ul>
+						<li>
+							<h4>자동결제</h4>
+							<strong>₩4,500</strong>
+							<span>1인/1개월</span>
+							<p>
+								매달 지정한 자동결제일에 요금 청구<br>
+								자동결제를 종료하기 전까지 사용 가능
+							</p>
+						</li>
+						<li>
+							<h4>1년 단일결제</h4>
+							<strong>₩4,500</strong>
+							<span>1인/1개월</span>
+							<p>
+								1년요금을 한번에 결제합니다.<br>
+								1년간 사용 가능합니다.
+							</p>
+						</li>
+						<li class="last">
+							<h4>1개월 단일결제</h4>
+							<strong>₩5,000</strong>
+							<span>1인/1개월</span>
+							<p>
+								1개월 요금을 한번에 결제합니다.<br>
+								1개월간 사용 가능합니다.
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="contact">
+					<span>사내 도입 문의</span>
+					<ul>
+						<li>
+							<a href="mailto:biztec@estsoft.com">biztec@estsoft.com</a>
+						</li>
+						<li class="last">
+							02-3470-2969
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//content-->
+	<!--download-->
+	<div class="btn_download">
+		<h2 class="blind">다운로드</h2>
+		<ul class="btn_all">
+			<li class="windows">
+				<a href="http://advert.estsoft.com/?event=201412221671400"><span class="pers"><span class="ico front"></span><span class="ico back"></span></span><span class="blind">Windows용 다운로드</span></a>
+			</li>
+			<li class="google">
+				<a href="http://advert.estsoft.com/?event=201412296263862" target="_blank"><span class="pers"><span class="ico front"></span><span class="ico back"></span></span><span class="blind">Google play</span></a>
+			</li>
+			<li class="apple">
+				<a href="http://advert.estsoft.com/?event=201412291669292" target="_blank"><span class="pers"><span class="ico front"></span><span class="ico back"></span></span><span class="blind">App Store</span></a>
+			</li>
+		</ul>
+		<ul class="btn_info">
+			<li>
+				<a href="http://advert.estsoft.com/?event=201508271438787" class="manual" target="_blank">매뉴얼</a>
+			</li>
+			<li>
+				<a href="http://advert.estsoft.com/?event=201508272866114" class="leaflet" target="_blank">제품소개서</a>
+			</li>
+		</ul>
+	</div>
+	<!--//download-->
+	<!--footer-->
+	<div class="footer">
+		<div class="content_wrap">
+			<div class="content_box">
+				<div class="foot_menu">
+					<div>
+						<ul>
+							<li>
+								<a href="">고객지원</a>
+							</li>
+							<li>
+								<a href="">이용약관</a>
+							</li>
+							<li>
+								<a href="">개인정보취급방침</a>
+							</li>
+						</ul>
+						<ul class="social">
+							<li class="blog">
+								<a href="http://advert.estsoft.com/?event=201507141777182" target="_blank">블로그</a>
+							</li>
+							<li class="facebook">
+								<a href="http://advert.estsoft.com/?event=201507141457582" target="_blank">페이스북</a>
+							</li>
+						</ul>
+					</div>
+					<address>
+						<span>(주) 이스트소프트 서울시 서초구 반포대로 3 이스트빌딩 (우) 06711</span><span>copyright (c) <a href="http://www.estsoft.co.kr" target="_blank">ESTsoft corp.</a> All rights reserved.</span>
+					</address>
+				</div>
+				<a href="http://www.estsoft.co.kr/" target="_blank" class="logo">
+				<svg id="logo_estsoft" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 68 14" enable-background="new 0 0 68 14" xml:space="preserve">
+					<g>
+						<path d="M67.2,5.8l0.1-0.3c0.1-0.3,0-0.6-0.2-0.8c-0.2-0.2-0.5-0.3-0.7-0.3h-1.4l0.5-2.2H63l-2,9.2c-0.3,1.5,0.7,2.4,2.4,2.4
+						c0.8,0,1.5-0.5,1.5-0.5l0.2-0.7c0,0-0.4,0-0.8,0c-0.9,0-0.9-0.8-0.7-1.5l1.1-5.2H67.2z"></path>
+						<path d="M61.8,1.5c0,0-0.2,0-0.6,0c-0.9,0-1.5,0.6-1.8,1.6l-0.3,1.3h1.2c0.3,0,0.6,0.1,0.8,0.3c0.2,0.2,0.2,0.5,0.2,0.8l-0.1,0.3
+						h-2.4l-1.7,7.8h-2.5l1.7-7.8h-0.9c-0.8,0-1.1-0.3-0.9-1l0.1-0.4h2l0.3-1.2c0.5-2.1,2.2-3,4.1-3c0.8,0,1,0,1,0L61.8,1.5z"></path>
+						<path d="M50.1,4.3c3.1,0,4,2.2,3.5,4.6c-0.6,2.8-2.7,4.9-5.8,4.9c-2.7,0-4.1-1.9-3.5-4.6C44.9,6.1,47.2,4.3,50.1,4.3z M48.2,12.7
+						c1.7,0,2.5-1.9,2.9-3.8c0.4-1.6,0.5-3.6-1.2-3.6c-1.9,0-2.7,2.5-3,3.7C46.7,10.3,46.3,12.7,48.2,12.7z"></path>
+						<path d="M43.8,4.6c-0.1,0.3-0.2,0.6-0.5,0.8c-0.3,0.2-0.6,0.3-0.9,0.3h-1.3c-1.2,0-1.6,0.4-1.7,0.8c-0.1,0.4,0.2,0.6,1.1,1.2
+						l0.6,0.3c1.1,0.7,2.1,1.4,1.8,2.8c-0.3,1.7-2,2.7-4.4,2.7c-0.6,0-3.1,0-3.1,0l0.1-0.3c0.1-0.3,0.2-0.6,0.5-0.8
+						c0.3-0.2,0.6-0.3,0.9-0.3h1.8c0.9,0,1.5-0.2,1.7-0.8c0.2-0.6-0.4-1-1.3-1.6l-0.5-0.3c-1.3-0.9-1.9-1.6-1.6-2.7
+						c0.3-1.1,1.5-2.3,4-2.3c0.9,0,2.7,0,2.7,0L43.8,4.6z"></path>
+						<polygon points="37.8,0.2 25.9,0.2 25.5,2 29.5,2 26.8,13.6 31,13.6 33.7,2 37.4,2"></polygon>
+						<path d="M22.9,7c-0.6-0.7-2.1-1.6-3.1-2.1c-1.8-0.9-2.1-1.4-2-1.8c0.1-0.9,1.1-1.1,2-1.1H24l0.4-1.8h-5.1c-4,0-5.9,2-5.9,3.9
+						c0,1.4,1,2.3,1.6,2.7c0.8,0.5,2.4,1.5,3.5,2.1c0.5,0.3,1,0.8,0.8,1.5c-0.1,0.7-0.9,1.5-2.5,1.5h-5l-0.4,1.8h5.4
+						c2.2,0,3.9-0.5,5.1-1.5C24,10.5,24.1,8.5,22.9,7z"></path>
+						<path d="M1.5,4.4L0.3,9.5c-0.5,2.3,0.9,4.2,3.3,4.2H10l0.4-1.8H5.5c-0.8,0-1.3-0.7-1.1-1.6l0.7-3h5.6L11,5.5H5.4l0.4-1.9
+						C6.1,2.7,6.9,2,7.8,2h4.9l0.4-1.8H6.8C3.4,0.2,2.1,1.7,1.5,4.4z"></path>
+					</g>
+				</svg><span class="blind">ESTsoft</span></a>
+			</div>
+		</div>
+	</div>
+	<!--//footer-->
+</div>
+<!--v팝업-->
+<span id="bg_pop"></span>
+<!--이메일 미입력-->
+<div class="layer pop_alert" id="popEmail_1">
+	<div class="layer_content">
+		<div class="pd_inner">
+			<p class="ptxt">
+				이메일을 입력해주세요.
+			</p>
+			<span class="align"></span>
+		</div>
+		<div class="pd_btn">
+			<a href="" class="btn40 btn_blue">확인</a>
+		</div>
+		<a href="" class="layer_close"><span class="blind">닫기</span></a>
+	</div>
+</div>
+<!--이메일 오류-->
+<div class="layer pop_alert" id="popEmail_2">
+	<div class="layer_content">
+		<div class="pd_inner">
+			<p class="ptxt">
+				이메일 형식이 맞지 않습니다.
+			</p>
+			<span class="align"></span>
+		</div>
+		<div class="pd_btn">
+			<a href="" class="btn40 btn_blue">확인</a>
+		</div>
+		<a href="" class="layer_close"><span class="blind">닫기</span></a>
+	</div>
+</div>
+<!--이미 가입-->
+<div class="layer pop_alert" id="popEmail_4">
+	<div class="layer_content">
+		<div class="pd_inner">
+			<p class="ptxt">
+				이미 가입되어 있거나 신청 대기중인 이메일입니다.
+			</p>
+			<span class="align"></span>
+		</div>
+		<div class="pd_btn">
+			<a href="" class="btn40 btn_blue">확인</a>
+		</div>
+		<a href="" class="layer_close"><span class="blind">닫기</span></a>
+	</div>
+</div>
+<!--비밀번호를 입력해주세요-->
+<div class="layer pop_alert" id="popEmail_5">
+	<div class="layer_content">
+		<div class="pd_inner">
+			<p class="ptxt">
+				비밀번호를 입력해주세요.
+			</p>
+			<span class="align"></span>
+		</div>
+		<div class="pd_btn">
+			<a href="" class="btn40 btn_blue">확인</a>
+		</div>
+		<a href="" class="layer_close"><span class="blind">닫기</span></a>
+	</div>
+</div>
+</body>
+</html>

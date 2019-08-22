@@ -1,0 +1,100 @@
+<? include "./include/header.html"; ?>
+<script>subNum = 3;</script>
+            <!-- Left Con -->
+            <div class="left_con">
+            	<div class="sub_menu">
+                    <h3><a href="">쿠폰함</a></h3>
+                    <ul>
+                        <li class="on"><a href="">쿠폰함</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //Left Con -->
+            <!-- Right Con -->
+            <div class="right_con">
+            	<div class="con_page con_page_min">
+                	<h4>쿠폰함</h4>
+                    <div class="enter_wrap">
+                    	<form>
+                        	<fieldset>
+                                <p class="c_wrap"><input type="text" id="code" class="code int" /><label for="code">보유하신 쿠폰번호를 입력해 주세요.</label><input type="submit" value="쿠폰 등록" class="btn_regis" /></p>
+                                <strong><span class="ic"></span>등록 완료한 쿠폰은 취소할 수 없습니다.</strong>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <h5>사용 가능한 쿠폰 <span>3</span></h5>
+                    <table class="tb_list tb_coupon">
+                    	<colgroup>
+                        	<col style="width:*">
+                            <col style="width:230px">
+                        </colgroup>
+                        <thead>
+                        	<tr>
+                            	<th scope="col">쿠폰명</th>
+                                <th scope="col">만료일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                        	    <td class="cp">1,000캐시 할인 쿠폰</td>
+                                <td>2017-9-29 12:24:25</td>
+                        	</tr>
+                            <tr>
+                        	    <td class="cp">3,000캐시 할인 쿠폰</td>
+                                <td>2017-9-29 12:24:25</td>
+                        	</tr>
+                            <tr>
+                        	    <td class="cp">5,000캐시 할인 쿠폰</td>
+                                <td>2017-9-29 12:24:25</td>
+                        	</tr>
+                        </tbody>
+                    </table>
+                    <p class="pager"><a href="#n" class="prev"></a><span><strong>1</strong>/10</span><a href="#n" class="next"></a></p>
+                </div>
+                <!--알림 팝업-->
+                <span class="bg_pop"></span>
+                <div class="pop l_pop">
+                	<span class="al">
+                        <p>쿠폰번호를 다시 확인해주세요.</p>
+                        <div class="pop_btn"><a href="" class="btn_o">확인</a></div>
+                    </span>
+                    <span class="al ah"></span>
+                </div>
+                <div class="pop l_pop">
+                	<span class="al">
+                        <p>쿠폰을 등록하시겠습니까?</p>
+                        <div class="pop_btn"><a href="" class="btn_o">확인</a><a href="" class="btn_c">취소</a></div>
+                    </span>
+                    <span class="al ah"></span>
+                </div>
+                <!--//알림 팝업-->
+            </div>
+            <!-- //Right Con -->
+        </div>
+    </div>
+    <!--팝업 임시 확인, 지워 주세요.-->
+    <ul class="tp" style="position:absolute;left:37px;top:218px;line-height:2">
+        <li><a href="">쿠폰번호를 다시 확인해주세요.</a></li>
+        <li><a href="">쿠폰을 등록하시겠습니까?</a></li>
+    </ul>
+    <script type="text/javascript">
+    $(function(){
+		$(".tp li").each(function(i){
+			$(this).find(">a").click(function(e){
+				e.preventDefault();
+				$(".l_pop:eq("+i+"), .bg_pop").show();
+			});	
+		});
+		$(".pop_btn a").click(function(e){
+			e.preventDefault();
+			$(".l_pop, .bg_pop").hide();
+		});
+		if($(".content_wrap").hasClass("resize")){
+			$(".tp").css("left","16px")
+		}
+	})
+    </script>
+    <!--//팝업 확인-->
+</div>
+</body>
+</html>

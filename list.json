@@ -1,0 +1,692 @@
+[
+    {
+        "seq" : 1,
+        "title" : "CABAL",
+        "subject" : "카발 마블 이벤트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb1.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/1/event.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img1_1.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 2,
+        "title" : "ESTGAMES",
+        "subject" : "홈페이지 & 채용 사이트", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb2.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "http://www.estgames.co.kr"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img2_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img2_2.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 3,
+                "imageUrl" : "./images/img2_3.jpg",
+                "description" : ""
+            }
+            
+        ]
+    },
+    {
+        "seq" : 3,
+        "title" : "CABAL2",
+        "subject" : "달 그림자 고원 업데이트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb3.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/3/update.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img3_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img3_2.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 3,
+                "imageUrl" : "./images/img3_3.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 4,
+        "title" : "CABAL",
+        "subject" : "길드 업데이트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb4.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/4/update.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img4_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img4_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 5,
+        "title" : "NOVA WARS",
+        "subject" : "브랜드 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb5.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/5/brand.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img5_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img5_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 6,
+        "title" : "CABAL",
+        "subject" : "악마의 탑 업데이트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb6.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/6/update.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img6_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img6_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 7,
+        "title" : "CABAL GLOBAL",
+        "subject" : "Forgotten Temple B3F 업데이트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb7.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/7/update.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img7_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img7_2.jpg",
+                "description" : ""
+            }
+        ]
+    },   
+    {
+        "seq" : 8,
+        "title" : "CABAL MOBILE",
+        "subject" : "Close Beta 사전예약 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb8.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/8/pc/cbt.html"
+            },
+            {
+                "seq" : 2,
+                "class" : "btn_mobile",
+                "title" : "모바일 페이지 바로가기",
+                "imgUrl" : "./images/blank_mobile.png",
+                "linkUrl" : "./work/8/mobile/cbt.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img8_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img8_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 9,
+        "title" : "CABAL",
+        "subject" : "신대륙 세닐리니아 업데이트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb9.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/9/update.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img9_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img9_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 10,
+        "title" : "CABAL",
+        "subject" : "아이템샵", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb10.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/10/main.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img10_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img10_2.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 3,
+                "imageUrl" : "./images/img10_3.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 11,
+        "title" : "CABAL GLOBAL",
+        "subject" : "홈페이지 & 회원 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb11.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "http://cabal.estgames.com/main"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img11_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img11_2.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 3,
+                "imageUrl" : "./images/img11_3.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 12,
+        "title" : "CABAL",
+        "subject" : "악마의 비밀상점 이벤트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb12.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/12/event.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img12_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img12_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 13,
+        "title" : "CABAL2",
+        "subject" : "무술년 행운의 룰렛 이벤트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb13.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/13/event.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img13_1.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 14,
+        "title" : "CABAL",
+        "subject" : "슈핑의 플래티넘 이벤트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb14.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/14/event.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img14_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img14_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 15,
+        "title" : "CABAL",
+        "subject" : "데모나이트 업데이트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb15.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/15/update.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img15_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img15_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 16,
+        "title" : "ALARMIE",
+        "subject" : "브랜드 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb16.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/16/brand.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img16_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img16_2.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 3,
+                "imageUrl" : "./images/img16_3.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 17,
+        "title" : "TEAMUP",
+        "subject" : "브랜드 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb17.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/17/main.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img17_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img17_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 18,
+        "title" : "SKINDOC",
+        "subject" : "브랜드 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb18.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/18/brand.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img18_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img18_2.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 3,
+                "imageUrl" : "./images/img18_3.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 19,
+        "title" : "HOODDA",
+        "subject" : "브랜드 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb19.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/19/pc/brand.html"
+            },
+            {
+                "seq" : 2,
+                "class" : "btn_mobile",
+                "title" : "모바일 페이지 바로가기",
+                "imgUrl" : "./images/blank_mobile.png",
+                "linkUrl" : "./work/17/mobile/brand.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img19_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img19_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 20,
+        "title" : "CABAL",
+        "subject" : "전쟁 주간지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb20.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/20/warstatus.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img20_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img20_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 21,
+        "title" : "NOVA WARS",
+        "subject" : "유닛 웹뷰 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb21.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "모바일 페이지 바로가기",
+                "imgUrl" : "./images/blank_mobile.png",
+                "linkUrl" : "./work/21/webview.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img21_1.jpg",
+                "description" : ""
+            },
+            {
+                "seq" : 2,
+                "imageUrl" : "./images/img21_2.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 22,
+        "title" : "NOVA WARS",
+        "subject" : "설날 맞이 福주머니 이벤트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "specialNote" : "프로젝트별 설명 다름",
+        "imageUrl" : "./images/thumb22.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "class" : "btn_pc",
+                "title" : "모바일 페이지 바로가기",
+                "imgUrl" : "./images/blank_mobile.png",
+                "linkUrl" : "./work/22/event.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img22_1.jpg",
+                "description" : ""
+            }
+        ]
+    }
+]

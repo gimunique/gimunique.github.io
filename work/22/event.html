@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>설날맞이 福주머니 이벤트</title>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="https://gimunique.github.io/images/favicon.ico" type="images/x-icon">
+<link rel="stylesheet" href="./css/event.css">
+<script src="https://gimunique.github.io/lib/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<header class="title">
+		<h1><img src="./images/title.png" alt="설날맞이 福주머니 이벤트"></h1>
+		<div class="blind">
+			<p>골드, 다이아, 각종 큐브등 푸짐한 보상을 얻을 수 있는 기회!<br>출석만 해도 획득 가능한 포인트로 복주머니 받아가세요!</p>
+			<p>1월 31일(목) 12:00 ~ 2월 10일(일) 24:00</p>
+		</div>
+		<span class="star star1"><img src="./images/star1.png" alt=""></span>
+		<span class="star star3"><img src="./images/star2.png" alt=""></span>
+		<span class="shadow"><img src="./images/shadow.png" alt=""></span>
+		<span class="sht_star sht_star1"></span>
+		<span class="sht_star sht_star2"></span>
+		<span class="sht_star sht_star3"></span>
+		<span class="sht_star sht_star4"></span>
+		<span class="sht_star sht_star5"></span>
+		<span class="sht_star sht_star6"></span>
+		<span class="sht_star sht_star7"></span>
+		<span class="sht_star sht_star8"></span>
+		<span class="sht_star sht_star9"></span>
+		<span class="sht_star sht_star10"></span>
+	</header>
+	<section class="section section1">
+		<h2 class="blind">참여방법</h2>
+		<ul>
+			<li class="blind">출석 체크 및 대전 승리로 에너지 획득</li>
+			<li class="blind">획득한 에너지로 복주머니 획득</li>
+			<li><span class="blind">에너지 획득 방법</span><button class="btn_detail" onclick="popOpen('pop3');"><span class="blind">자세히 보기</span></button></li>
+			<li class="blind">복주머니 1회 획득에 에너지 3개가 차감됩니다</li>
+		</ul>
+		<div class="user_wrap">
+			<span class="item"><img src="./images/item1_light.png" alt=""></span>
+			<dl>
+				<dt class="blind">나의 에너지 현황</dt>
+				<dd><span class="user_count">100</span><span class="txt"><span class="blind">에너지</span></span></dd>
+			</dl>
+		</div>
+	</section>
+	<section class="section section2">
+		<div class="blind">
+			<h2>복주머니 보상품</h2>
+			<ul>
+				<li>골드 큐브 1개</li>
+				<li>실버 큐브 1개</li>
+				<li>브론즈 큐브 1개</li>
+				<li>다이아 300</li>
+				<li>다이아 150</li>
+				<li>다이아 80</li>
+				<li>골드 8만</li>
+				<li>골드 4만</li>
+				<li>골드 2만</li> 
+				<li>행동력 150</li>
+				<li>행동력 60</li>
+			</ul>
+		</div>
+		<!--버튼 활성화 시 <span class="btn btn_lucky">에 on 추가-->
+		<span class="btn btn_lucky on"><button><span class="blind">복주머니 수령하기</span></button></span>
+	</section>
+	<section class="section section3">
+		<h2 class="blind">추가 에너지 획득</h2>
+		<ul>
+			<li>
+				<p class="blind">15 에너지</p>
+				<p class="blind">설 특급 패키지Ⅰ 구매시 활성화</p>
+				<!--버튼 활성화 시 <span class="btn btn_get">에 on 추가-->
+				<span class="btn btn_get on"><button><span class="blind">수령하기</span></button></span>
+				<span class="item"><img src="./images/item2_light1.png" alt=""></span>
+			</li>
+			<li>
+				<p class="blind">30 에너지</p>
+				<p class="blind">설 특급 패키지Ⅱ 구매시 활성화</p>
+				<!--버튼 활성화 시 <span class="btn btn_get">에 on 추가-->
+				<span class="btn btn_get on"><button><span class="blind">수령하기</span></button></span>
+				<span class="item"><img src="./images/item2_light2.png" alt=""></span>
+			</li>
+		</ul>
+		<div class="blind">
+			<h3>주의사항</h3>
+			<ul class="caution">
+				<li>&apos;대전 로비&apos;에서 참여한 대전 게임에서 승리할 시에만 에너지 획득이 가능합니다.</li>
+				<li>모든 이벤트 보상은 이벤트 기간이 끝나면 수령이 불가능합니다.</li>
+				<li>이벤트를 통해 획득한 에너지는 이벤트가 종료되면 소멸됩니다.</li>
+				<li>복주머니에서 획득한 보상은 우편함으로 지급됩니다.(우편함 최대 보관 수량 100개)</li>
+				<li>인게임 상점에서 판매 중인 &apos;설 특급 패키지&apos; 구매시</li>
+			</ul>
+		</div>
+	</section>
+	<!--modal pop-->
+	<div class="pop_wrap">
+		<span class="bg_pop"></span>
+		<div id="pop1" class="pop pop1">
+			<p>출석 보상으로<br><span>3에너지</span> 획득하였습니다!</p>
+			<button class="btn_confirm"><img src="./images/btn_confirm.png" alt="확인"></button>
+		</div>
+		<div id="pop2" class="pop pop1">
+			<p>골드 큐브 1개<br>획득하였습니다!</p>
+			<button class="btn_confirm"><img src="./images/btn_confirm.png" alt="확인"></button>
+		</div>
+		<div id="pop3" class="pop pop3">
+			<div class="blind">
+				<h4>출석 체크</h4>
+				<ol>
+					<li>게임 메인 UI에서 &apos;이벤트&apos; > &apos;스페셜&apos; 터치</li>
+					<li>이벤트 페이지 접속으로 일간 3점 획득!</li>
+				</ol>
+				<h4>출석 체크</h4>
+				<ol>
+					<li>인게임 &apos;대전&apos; 로비로 입장</li>
+					<li>1:1 대전 승리 후, 에너지 2점 획득!</li>
+					<li>일간 총 3회 획득 가능</li>
+				</ol>
+			</div>
+			<button class="btn_confirm"><img src="./images/btn_confirm.png" alt="확인"></button>
+		</div>
+	</div>
+	<!--//modal pop-->
+	<!--임시 팝업 확인용-->
+	<div style="position:fixed;right:10px;top:10px;z-index:20">
+		<a href="#" onclick="popOpen('pop1');" style="display:block;height:30px;padding:0 12px;background:red;color:#fff;font-weight:bold;font-size:15px;line-height:31px">출석체크확인</a>
+		<a href="#" onclick="popOpen('pop2');" style="display:block;height:30px;padding:0 12px;margin-top:5px;background:red;color:#fff;font-weight:bold;font-size:15px;line-height:31px">복주머니보상</a>
+	</div>
+	<script>
+	$(".pop .btn_confirm, .bg_pop").click(function(){
+		$(".pop_wrap, .pop").hide();
+	});
+	function popOpen(name){
+		$(".pop_wrap").show();
+		$("#"+name).show();
+		return false;
+	}
+	</script>
+	<!--//임시 팝업 확인용-->
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>후따 소개페이지</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="https://gimunique.github.io/images/favicon.ico" type="images/x-icon">
+<link rel="stylesheet" href="./css/brand.css">
+<script type="text/javascript">
+//html5를 지원하지 않는 브라우저는 태그를 인식 시키기 위해 엘리먼트를 생성해야함
+document.createElement("header");
+document.createElement("nav");
+document.createElement("article");
+document.createElement("section");
+document.createElement("aside");
+document.createElement("footer");
+
+//주소창 자동 닫힘
+window.addEventListener("load", function(){
+	setTimeout(loaded, 100);
+}, false);
+
+function loaded(){
+	window.scrollTo(0, 1);
+}
+</script>
+</head>
+<body class="search">
+	<section id="wrap">
+		<header>
+			<h1 class="blind">후끈후끈따끈따끈</h1>
+			<div class="cont">
+				<div class="text">
+					<h2 class="blind">실시간 대한민국 NET心 비교!</h2>
+					<p class="blind">세상 모든 관심사에 대한 솔직하고 냉정한 대화가 지금 바로 펼쳐진다!</p>
+				</div>
+				<a href="#download" class="btn_download">구글 플레이 다운로드</a>
+				<span class="icon_arrow"></span>
+			</div>
+			<span class="bg"></span>
+		</header>
+		<section id="contents">
+			<div class="cont">
+				<div class="page_1" style="display:block">
+					<div class="text">
+						<h1 class="blind">실시간 NET心 분석!</h1>
+						<p class="blind">세상 모든 관심사에 대한 솔직하고 냉정한 대화가 지금 바로 펼쳐진다!</p>
+					</div>
+				</div>
+				<div class="page_2">
+					<div class="text">
+						<h1 class="blind">사건사고 뒷담화 논란거리를 솔직하게</h1>
+						<p class="blind">세상 모든 관심사에 대한 솔직하고 냉정한 대화가 지금 바로 펼쳐진다!</p>
+					</div>
+				</div>
+				<div class="page_3">
+					<div class="text">
+						<h1 class="blind">100여개의 커뮤니티 실시간 반응 분석!</h1>
+						<p class="blind">세상 모든 관심사에 대한 솔직하고 냉정한 대화가 지금 바로 펼쳐진다!</p>
+					</div>
+				</div>
+				<div class="page_4">
+					<div class="text">
+						<h1 class="blind">내 관심사 반응들의 손 쉬운 공유!</h1>
+						<p class="blind">세상 모든 관심사에 대한 솔직하고 냉정한 대화가 지금 바로 펼쳐진다!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>&copy; Hoodda.net</p>
+		</footer>
+	</section>
+<script src="https://gimunique.github.io/lib/js/jquery-1.9.1.min.js"></script>
+<script>
+$(window).on('scroll',function(){
+	var thisScrollTop = $(window).scrollTop(),
+	thisWrap = $('#wrap');
+	
+	if (thisScrollTop > 350) {
+		thisWrap.addClass('fixed');
+	} else {
+		thisWrap.removeClass('fixed');
+	}
+});
+</script>
+</body>
+</html>

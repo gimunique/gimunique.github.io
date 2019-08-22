@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>CABAL WAR STATUS</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="https://gimunique.github.io/images/favicon.ico" type="images/x-icon">
+<link rel="stylesheet" href="./css/font.css">
+<link rel="stylesheet" href="./css/common.css">
+<script src="https://gimunique.github.io/lib/js/jquery-1.9.1.min.js"></script>
+<script src="https://gimunique.github.io/lib/js/jquery.easing.1.3.min.js"></script>
+<script src="./js/script.js"></script>
+<!--[if IE]><script type="text/javascript" src="https://gimunique.github.io/lib/js/excanvas.compiled.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrap result">
+    <div class="result_menu"><!--프로키온 승리 시 클래스 prokion 추가 / 카펠라 승리 시 클래스 prokion 제거-->
+    	<h1><a href="http://www.cabal.co.kr/main" target="_blank"><img src="./images/img_logo.png" alt="CABAL TRANCENDENCE"></a></h1>
+        <div class="m_wrap">
+        	<ul class="tab_menu">
+        		<!--승리국에 클래스 on 추가-->
+                <li class="on"><a href=""><span class="blind">프로메테우스</span></a></li>
+                <li class="last"><a href=""><span class="blind">안드로메다</span></a></li>
+        	</ul>
+        	<!--승리국에 클래스 on 추가-->
+            <h2 class="tab capella on"><span class="blind">WAR STATUS 카펠라 승리!</span></h2>
+        	<h2 class="tab prokion"><span class="blind">WAR STATUS 프로키온 승리!</span></h2>
+        	<div class="week">
+        		<!--<a href="#n" class="move prev"><span class="blind">이전</span></a>-->
+        	    <p>2016년 12월 2주차 <span>12월 18일(월) - 12월 15일(월)</span></p>
+        	    <a href="#n" class="move next"><span class="blind">다음</span></a>
+        	</div>
+        </div>
+    </div><!--//result_menu-->
+    <div class="content">
+    	<div class="group group_1">
+        	<h3><span class="blind">전쟁 결과</span></h3>
+            <p class="total">총 전적 : <span class="blt capella">카펠라 20승 5패</span><span class="vs">VS</span><span class="blt prokion">프로키온 5승 20패</span><strong>※ 총 전적은 2019년 4월 24일부터 누적되며, 최대 최근 3개월 데이터를 기준으로 보여줍니다.</strong></p>
+            <p class="date"><span>2016-03-31</span> 업데이트</p>
+            <ul class="war_result">
+            	<li>
+                	<div class="g_wrap"><canvas id="graph_1" width="142" height="142"></canvas><span class="bg"></span></div>
+                    <strong><span>기지 점령</span><span class="align"></span></strong>
+                    <ul class="per">
+                    	<li class="exo_b">70</li>
+                        <li class="exo_b last">30</li>
+                    </ul>
+                </li>
+                <li>
+                	<div class="g_wrap"><canvas id="graph_2" width="142" height="142"></canvas><span class="bg"></span></div>
+                    <strong><span>거점 점령</span><span class="align"></span></strong>
+                    <ul class="per">
+                    	<li class="exo_b">50</li>
+                        <li class="exo_b last">50</li>
+                    </ul>
+                </li>
+                <li>
+                	<div class="g_wrap"><canvas id="graph_3" width="142" height="142"></canvas><span class="bg"></span></div>
+                    <strong><span>포스타워<br>파괴</span><span class="align"></span></strong>
+                    <ul class="per">
+                    	<li class="exo_b">20</li>
+                        <li class="exo_b last">80</li>
+                    </ul>
+                </li>
+                <li>
+                	<div class="g_wrap"><canvas id="graph_4" width="142" height="142"></canvas><span class="bg"></span></div>
+                    <strong><span>레거시가디언<br>파괴</span><span class="align"></span></strong>
+                    <ul class="per">
+                    	<li class="exo_b">70</li>
+                        <li class="exo_b last">30</li>
+                    </ul>
+                </li>
+                <li>
+                	<div class="g_wrap"><canvas id="graph_5" width="142" height="142"></canvas><span class="bg"></span></div>
+                    <strong><span>적군 파괴</span><span class="align"></span></strong>
+                    <ul class="per">
+                    	<li class="exo_b">70</li>
+                        <li class="exo_b last">30</li>
+                    </ul>
+                </li>
+                <li>
+                	<div class="g_wrap"><canvas id="graph_6" width="142" height="142"></canvas><span class="bg"></span></div>
+                    <strong><span>남은<br>포스 타워</span><span class="align"></span></strong>
+                    <ul class="per">
+                    	<li class="exo_b">0</li>
+                        <li class="exo_b last">0</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="banner">
+            	<p>세인츠포스칼리버 소유자</p>
+                <!--대상자 없을 때 dl태그 style="display:none" <p class="none"> style="display:none" 없애기-->
+                <p class="none" style="display:none">대상자가 없습니다.</p>
+                <dl>
+                	<!--베텔기우스 서버일 때 class="red" 추가-->
+                    <dt class="red"><a href="">먹자캐릭먹자캐릭</a></dt>
+                    <dd>95Lv / 포스아처 / 카펠라</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="group group_2">
+        	<h3><span class="blind">인도자 선정 결과</span></h3>
+            <ul class="s_list">
+            	<li class="first">
+                	<dl>
+                    	<dt class="exo_b">52_79</dt>
+                        <dd class="blue force_g"><!--각 클래스별 클래스 : warrior,blader,wizard,archer,shielder,gladiator,force_b,force_g / blue, red 클래스는 고정-->
+                        	<span><a href="">별이되어보자</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                        <dd class="red force_g">
+                        	<span>-</span>
+                            스코어 : -&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : -
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                	<dl>
+                    	<dt class="exo_b">80_109</dt>
+                        <dd class="blue sl blader">
+                        	<span><a href="">kimeugenekeugene</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                        <dd class="red sr blader">
+                        	<span><a href="">천족대장군</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                	<dl>
+                    	<dt class="exo_b">110_139</dt>
+                        <dd class="blue wizard">
+                        	<span><a href="">별이되어보자</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                        <dd class="red wizard">
+                        	<span><a href="">천족대장군</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                	<dl>
+                    	<dt class="exo_b">140_169</dt>
+                        <dd class="blue sl archer">
+                        	<span><a href="">별이되어보자</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                        <dd class="red sr archer">
+                        	<span><a href="">천족대장군</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                	<dl>
+                    	<dt class="exo_b">170_199</dt>
+                        <dd class="blue shielder">
+                        	<span><a href="">별이되어보자</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                        <dd class="red shielder">
+                        	<span><a href="">천족대장군</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                    </dl>
+				</li>
+				<li>
+                	<dl>
+                    	<dt class="exo_b">200</dt>
+                        <dd class="blue sl archer">
+                        	<span><a href="">별이되어보자</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                        <dd class="red sr archer">
+                        	<span><a href="">천족대장군</a></span>
+                            스코어 : 2,500&nbsp;&nbsp;&nbsp;&nbsp;킬 수 : 150
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <h4>최다 선정 인도자</h4>
+            <div class="g_list">
+            	<ul>
+            		<li>
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.52_79</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li>
+            	    	<span class="exo_b num">1</span>
+            	        <span class="exo_b level">Lv.80_109</span>
+            	        <p><a href="">루빈22</a></p>
+            	    </li>
+            	    <li>
+            	    	<span class="exo_b num">10</span>
+            	        <span class="exo_b level">Lv.110_139</span>
+            	        <p><a href="">dssjdkhvjsdg</a></p>
+            	    </li>
+            	    <li>
+            	    	<span class="exo_b num">10</span>
+            	        <span class="exo_b level">Lv.140_169</span>
+            	        <p><a href="">dssjdkhvjsdg</a></p>
+					</li>
+					<li>
+            	    	<span class="exo_b num">10</span>
+            	        <span class="exo_b level">Lv.170_199</span>
+            	        <p><a href="">dssjdkhvjsdg</a></p>
+            	    </li>
+            	    <li class="last">
+            	    	<span class="exo_b num">-</span>
+            	        <span class="exo_b level">Lv.200</span>
+            	        <p>-</p>
+            	    </li>
+            	</ul>
+            	<ul class="last">
+            		<li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.52_79</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.80_109</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.110_139</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.140_169</span>
+            	        <p><a href="">별이되어보자</a></p>
+					</li>
+					<li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.170_199</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red last">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.200</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	</ul>
+            </div>
+            <h4 class="tit_2">최장 연속 인도자</h4>
+            <div class="g_list">
+            	<ul>
+            		<li>
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.52_79</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li>
+            	    	<span class="exo_b num">1</span>
+            	        <span class="exo_b level">Lv.80_109</span>
+            	        <p><a href="">루빈22</a></p>
+            	    </li>
+            	    <li>
+            	    	<span class="exo_b num">10</span>
+            	        <span class="exo_b level">Lv.110_139</span>
+            	        <p><a href="">dssjdkhvjsdg</a></p>
+            	    </li>
+            	    <li>
+            	    	<span class="exo_b num">10</span>
+            	        <span class="exo_b level">Lv.140_169</span>
+            	        <p><a href="">dssjdkhvjsdg</a></p>
+					</li>
+					<li>
+            	    	<span class="exo_b num">10</span>
+            	        <span class="exo_b level">Lv.170_199</span>
+            	        <p><a href="">dssjdkhvjsdg</a></p>
+            	    </li>
+            	    <li class="last">
+            	    	<span class="exo_b num">-</span>
+            	        <span class="exo_b level">Lv.200</span>
+            	        <p>-</p>
+            	    </li>
+            	</ul>
+            	<ul class="last">
+            		<li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.52_79</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.80_109</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.110_139</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.140_169</span>
+            	        <p><a href="">별이되어보자</a></p>
+					</li>
+					<li class="red">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.170_199</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	    <li class="red last">
+            	    	<span class="exo_b num">5</span>
+            	        <span class="exo_b level">Lv.200</span>
+            	        <p><a href="">별이되어보자</a></p>
+            	    </li>
+            	</ul>
+            </div>
+        </div>
+        <div class="group group_3">
+        	<h3><span class="blind">수호자 선정 결과</span></h3>
+            <ul>
+            	<li class="warrior">
+                	<dl>
+                    	<dt><span class="blind">워리어</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span>-</span>
+                            -
+                        </dd>
+                    </dl>
+                </li>
+                <li class="blader">
+                	<dl>
+                    	<dt><span class="blind">블레이더</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span><a href="">아포칼립즈</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                    </dl>
+                </li>
+                <li class="wizard">
+                	<dl>
+                    	<dt><span class="blind">위저드</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span><a href="">아포칼립즈</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                    </dl>
+                </li>
+                <li class="force_a">
+                	<dl>
+                    	<dt><span class="blind">포스아처</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span><a href="">아포칼립즈</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                    </dl>
+                </li>
+                <li class="force_s">
+                	<dl>
+                    	<dt><span class="blind">포스아처</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span><a href="">아포칼립즈</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                    </dl>
+                </li>
+                <li class="force_b">
+                	<dl>
+                    	<dt><span class="blind">포스 블레이더</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span><a href="">아포칼립즈</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                    </dl>
+                </li>
+                <li class="gladiator">
+                	<dl>
+                    	<dt><span class="blind">글래디에이터</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span><a href="">아포칼립즈</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                    </dl>
+                </li>
+                <li class="force_g">
+                	<dl>
+                    	<dt><span class="blind">포스거너</span></dt>
+                        <dd class="blue">
+                        	<span><a href="">dssjdkhvjsdg</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                        <dd class="red">
+                        	<span><a href="">아포칼립즈</a></span>
+                            14 Lv / 프로메테우스 / --s 창공의비상 s--
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="group note">
+        	<div class="group_wrap">
+        		<div class="txt">
+        			<h4 class="blind">전쟁 주간지 참고사항</h4>
+        		    <ul class="blind">
+        		    	<li>01. 전쟁 주간지는 매주 월요일 09시에 업데이트 됩니다.</li>
+        		    	<li>02. 전쟁 결과는 국가 워프 보상이 걸려 있는 매주 일요일 22시 200 레벨 구간의 승리국을 보여줍니다.</li>
+        		    	<li>03. 세인츠 포스 칼리버 획득 결과는 매 주 일요일 20시 13채널의 양 국가의 전쟁을 통해 세인츠 포스칼리버(신검)를 차지한 캐릭터를 안내합니다.</li>
+        		    	<li>04. 인도자 및 수호자 선정 결과는 미션 전쟁을 인도할 만한 인도자 및 수호자 캐릭터 현황을 보여줍니다.</li>
+        		    	<li>05. 최다 / 최장 선정 인도자의 경우 캐릭터 이름 변경 시 선정 결과가 초기화 됩니다. </li>
+                        <li>06. 최다 선정 / 최장 연속 인도자의 경우 2019년 4월 24일 데이터부터 누적되며, 최대 최근 3개월 데이터를 기준으로 선정됩니다.</li>
+        		    </ul>
+        		</div>
+        		<p class="address">Copyright ⓒ ESTgames Corp. All Rights Reserved.</p>
+        	</div>
+        </div>
+    </div>
+    <span class="cover"></span>
+</div>
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script src="./js/jquery.easing.1.3.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html> 

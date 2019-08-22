@@ -1,0 +1,127 @@
+@charset "utf-8";
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,a,address,em,img,strong,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,textarea,table,caption,tbody,tfoot,thead,tr,th,td,video{margin:0;padding:0;border:0;font-size:100%}
+body{width:100%;font-family:'굴림',gulim,AppleGothic,sans-serif;font-size:13px;color:#000;line-height:1;background:#fff}
+html,body{width:100%;height:100%;overflow:auto}
+input,textarea,select{font-size:inherit;font-family:inherit}
+input,select,textarea,button,img,label,a{vertical-align:top}
+address,em{font-style:normal}
+hr,caption{display:none}
+.blind,legend{position:absolute;left:-9999px;font-size:0;line-height:0}
+ol,ul{list-style:none}
+a{color:#484848}
+a,a:link{text-decoration:none}
+a:hover{text-decoration:underline}
+a:active{background-color:transparent}
+.ls0{letter-spacing:0}
+
+/* 공통 */
+.wrapper{position:relative;width:100%;min-width:940px;height:100%;overflow:hidden} /* 임시 */
+.wrap{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden} /* 임시 */
+.content{position:relative;width:100%;min-width:940px;height:100%;overflow:hidden}
+.content_wrap{position:relative;width:940px;margin:0 auto;*z-index:20}
+.container{position:relative;width:100%;height:100%;overflow-y:hidden}
+.container_wrap{width:100%;position:absolute;top:0}
+.page_wrap{position:absolute;left:50%;top:50%;width:940px;height:723px;margin:-340px 0 0 -470px}
+
+/* gnb */
+.gnb{position:fixed;_position:absolute;left:0;bottom:0;width:100%;min-width:940px;height:90px;background-color:#fff;z-index:10}
+.gnb .content_wrap h1 a{position:absolute;left:0;top:24px}
+.gnb .content_wrap ul{position:absolute;left:201px;top:36px;overflow:hidden}
+.gnb .content_wrap li{float:left;}
+.gnb .content_wrap li a{display:block;height:20px;padding-left:25px;background:url("../images/spr_gnb_menu.png") no-repeat}
+.gnb .content_wrap .gnb_1 a{width:59px;background-position:25px 0;}
+.gnb .content_wrap .gnb_2 a{width:57px;background-position:-59px 0}
+.gnb .content_wrap .gnb_3 a{width:87px;background-position:-143px 0}
+.gnb .content_wrap .gnb_1 a.on, .gnb .content_wrap .gnb_1 a:hover{background-position:25px -30px}
+.gnb .content_wrap .gnb_2 a.on, .gnb .content_wrap .gnb_2 a:hover{background-position:-59px -30px}
+.gnb .content_wrap .gnb_3 a.on, .gnb .content_wrap .gnb_3 a:hover{background-position:-143px -30px}
+.gnb .content_wrap .down{position:absolute;top:16px;right:0}
+
+/* top */
+.top{position:fixed;_position:absolute;top:56px;left:0;width:100%;min-width:940px;z-index:5}
+.top .content_wrap .link_sns{position:absolute;top:0;right:0;overflow:hidden}
+.top .content_wrap .link_sns li{float:left;padding-left:7px}
+.top .content_wrap .link_sns li a{display:block;width:36px;height:36px;background:url("../images/spr_sns.png") 0 0 no-repeat;_background:url("../images/spr_btn_sns.gif") 0 0 no-repeat}
+.top .content_wrap .link_sns li a:hover{background-position:0 -51px}
+.top .content_wrap .link_sns li.twitter a{_width:37px;background-position:100% 0}
+.top .content_wrap .link_sns li.twitter a:hover{background-position:100% -51px}
+
+/* pager */
+.pager{position:relative;left:29px;top:68%;width:940px;margin:0 auto;z-index:20}
+.pager li{float:left}
+.pager li a{display:block;height:59px;}
+.func_page li{margin-right:19px}
+.func_page li a{width:44px;background:url("../images/spr_func_menu.png") no-repeat}
+.func_page .p1, .top .content_wrap .func_page .p2{margin-right:14px}
+.func_page .p3{margin-right:17px}
+.func_page .p2 a{background-position:-57px 0}
+.func_page .p3 a{background-position:-113px 0}
+.func_page .p4 a{background-position:-176px 0}
+.func_page .p5 a{background-position:-239px 0}
+.func_page .p6 a{background-position:-301px 0}
+.func_page .p1 .on, .func_page .p1 a:hover{background-position:0 -79px}
+.func_page .p2 .on, .func_page .p2 a:hover{background-position:-57px -79px}
+.func_page .p3 .on, .func_page .p3 a:hover{background-position:-113px -79px}
+.func_page .p4 .on, .func_page .p4 a:hover{background-position:-176px -79px}
+.func_page .p5 .on, .func_page .p5 a:hover{background-position:-239px -79px}
+.func_page .p6 .on, .func_page .p6 a:hover{background-position:-301px -79px}
+.ring_page{left:22px}
+.ring_page li{margin-right:10px}
+.ring_page li a{width:57px;background:url("../images/spr_ring_menu.png") no-repeat}
+.ring_page .p3{margin-right:16px}
+.ring_page .p2 a{background-position:-67px 0}
+.ring_page .p3 a{background-position:-134px 0}
+.ring_page .p4 a{background-position:-207px 0}
+.ring_page .p1 .on, .ring_page .p1 a:hover{background-position:0 -77px}
+.ring_page .p2 .on, .ring_page .p2 a:hover{background-position:-67px -77px}
+.ring_page .p3 .on, .ring_page .p3 a:hover{background-position:-134px -77px}
+.ring_page .p4 .on, .ring_page .p4 a:hover{background-position:-207px -77px}
+
+/* 메인*/
+.main .banner_area{position:absolute;top:0;left:0;width:100%;height:100%}
+.main .banner_area .banner_img{position:relative;width:100%;height:100%;overflow:hidden}
+.main .banner_area .banner_img li{position:absolute;width:100% !important;height:100% !important;top:0;left:0;display:none}
+.main .banner_area .banner_img li.b_1{background:url("../images/bg_main_1.jpg") 50% 0 no-repeat}
+.main .banner_area .banner_img li.b_2{background:url("../images/bg_main_2.jpg") 50% 0 no-repeat}
+.main .banner_area .banner_img li.b_3{background:url("http://cdn.estsoft.com/alarmie/bg_main_3_pc.jpg") 50% 0 no-repeat}
+.main .banner_area .banner_img li img{position:absolute;left:50%;top:50%;margin:-340px 0 0 -470px}
+.main .banner_nav{position:absolute;top:416px;left:32px;height:12px;z-index:15}
+.main .banner_nav li{float:left;margin-right:8px}
+.main .banner_nav li a{display:block;width:12px;height:12px;background:url("../images/spr_pager.png") no-repeat}
+.main .banner_nav .on a{background-position:0 -15px}
+.main .down{position:absolute;left:32px;top:451px;z-index:15}
+.main .fl_ban{position:absolute;left:92px;top:550px;z-index:15}
+
+/* 소개 */
+.info{background:url("../images/bg_info.jpg") no-repeat 50% 0}
+
+/* 기능 */
+.function .page_1{background:url("../images/bg_func_1.jpg") no-repeat 50% 0}
+.function .page_1 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_func_1.png") 30px 218px no-repeat}
+.function .page_1 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_func_1.png") 0 63px no-repeat}
+.function .page_2{background:url("../images/bg_func_2.jpg") no-repeat 50% 0}
+.function .page_2 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_func_2.png") 30px 218px no-repeat}
+.function .page_2 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_func_2.png") 92px 63px no-repeat}
+.function .page_3{background:url("../images/bg_func_3.jpg") no-repeat 50% 0}
+.function .page_3 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_func_3.png") 30px 218px no-repeat}
+.function .page_3 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_func_3.png") 74px 63px no-repeat}
+.function .page_4{background:url("../images/bg_func_4.jpg") no-repeat 50% 0}
+.function .page_4 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_func_4.png") 30px 218px no-repeat}
+.function .page_4 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_func_4.png") 92px 63px no-repeat}
+.function .page_5{background:url("../images/bg_func_5.jpg") no-repeat 50% 0}
+.function .page_5 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_func_5.png") 30px 218px no-repeat}
+.function .page_5 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_func_5.png") 45px 63px no-repeat}
+.function .page_6{background:url("../images/bg_func_6.jpg") no-repeat 50% 0}
+.function .page_6 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_func_6.png") 30px 218px no-repeat}
+.function .page_6 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_func_6.png") 91px 63px no-repeat}
+
+/* 링스토어 */
+.ringstore {background:url("../images/bg_ring.jpg") no-repeat 50% 0}
+.ringstore .page_1 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_ring_1.png") 30px 160px no-repeat}
+.ringstore .page_1 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_ring_1.png") 58px 63px no-repeat}
+.ringstore .page_2 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_ring_2.png") 30px 160px no-repeat}
+.ringstore .page_2 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_ring_2.png") 85px 63px no-repeat}
+.ringstore .page_3 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_ring_3.png") 30px 160px no-repeat}
+.ringstore .page_3 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_ring_3.png") 78px 63px no-repeat}
+.ringstore .page_4 .page_txt{position:absolute;left:0;top:0;width:470px;height:723px;background:url("../images/txt_ring_4.png") 30px 160px no-repeat}
+.ringstore .page_4 .page_img{position:absolute;right:0;top:0;width:470px;height:723px;background:url("../images/img_ring_4.png") 107px 63px no-repeat}
