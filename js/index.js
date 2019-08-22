@@ -58,6 +58,7 @@ $(window).on({
                 $(".main .lp:eq("+i+")").show().siblings(".lp").hide();
             });
         });
+        $(".lp .btn_close").bind("click", function(){$(this).parent("div").hide()});
 
         var ajax = getAjaxPortfolioInfos();
         ajax.success(function(data){
