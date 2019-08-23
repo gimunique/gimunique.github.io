@@ -114,7 +114,7 @@ $(function(){
 		}
 	});
 	
-	// 메인 배너 롤링
+	//메인 배너 롤링
 	if($(".main").length > 0){
 		$(".banner_img").cycle({
 			fx: 'fade',
@@ -187,13 +187,13 @@ function ContentSlide(pageClass){
 	}
 }
 
-// 화면 전체 가로 배너
+//화면 전체 가로 배너
 var bannerNum = 0;
 var speed = 900;
 var bannerlength = $(".wrap").length;
 var rols = 400;
 
-// 알람이 로고 롤링
+//알람이 로고 롤링
 function mainPager(){
 	var bannerWidth = $(".wrap").width();
 	var idx = 0;

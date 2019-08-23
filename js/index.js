@@ -17,7 +17,7 @@ $(document).ready(function(){
             clearInterval(this.imgInterval);
             imgInterval = 0;
             $("html, body").scrollTop(0);
-            $(".load_img").stop().animate({opacity:0}, 800, function(){
+            $(".load_img").stop().animate({opacity:0}, 600, function(){
                 $(this).remove();
             });
         }
@@ -25,7 +25,7 @@ $(document).ready(function(){
     introImg.init(".load_img img");
     setTimeout(function(){
         introImg.stopInterval();
-    }, 1600);
+    }, 2400);
 
     //하위버전(ie8이하) 화면 높이값 가져오기
     if(Browser.indexOf("MSIE 7") !== -1 || Browser.indexOf("MSIE 8") !== -1){

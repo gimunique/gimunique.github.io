@@ -77,7 +77,7 @@ input.ipt_txt2{line-height:48px!important}
 .table_input .error.e_red{color:#f13a6d}
 .table_input .error.e_blue{color:#00a8ff}
 
-/*select*/
+/* select */
 .select{position:relative}
 .select a{display:block}
 .select a:hover{text-decoration:none}
@@ -206,8 +206,6 @@ p.btn_area a{margin:0 5px}
     .light, .demi{font-family:"돋움","sans-serif","Apple SD Gothic Neo","Helvetica";font-weight:100}
 }
 
-
-/*성민 추가*/
 h2.tit{font-size:60px;font-family:"Raleway";font-weight:normal;line-height:66px}
 h2.tit span{font-family:"Raleway Light","Spoqa Han Sans Thin","맑은 고딕","malgun gothic","돋움","dotum",sans-serif}
 .btn49{min-width:220px;height:46px;line-height:46px;font-size:18px;border-radius:30px;padding:0 10px;color:#00a8ff}

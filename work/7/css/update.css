@@ -23,7 +23,7 @@ label{cursor:pointer}
 .section .container{position:relative;width:1201px;height:100%;margin:0 auto}
 .sub .section{position:absolute;left:0;top:0}
 
-/*common*/
+/* common */
 .header h1 a, .header .menu_right .btn_week span, .header .menu_right li a, .menu li a span, .sub .pager li a, .sub .thumb_wrap li .view, .sub .btn_detail a, .sub .btn_detail a span, .npop a, .pop a, .menu .progress, .menu .progress span{display:block;background:url("../images/spr.png") no-repeat}
 .menu ul{overflow:hidden}
 .menu li{position:relative;float:left}
@@ -41,7 +41,7 @@ label{cursor:pointer}
     .bg_section{background-size:cover !important;background-position:50% 0 !important}    
 }
 
-/*header*/
+/* header */
 .header{position:absolute;top:0;left:0;width:100%;z-index:150}
 .header h1{position:absolute;top:24px;left:27px}
 .header h1 a{width:158px;height:24px}
@@ -69,7 +69,7 @@ label{cursor:pointer}
 .on_s .header .menu_right .btn_ut3 a{background-position:-104px -128px}
 .header .menu{width:1054px;height:100px;transition:opacity,transform 300ms linear;visibility:hidden;opacity:0;transform:translateY(-100px);margin:0 auto}
 .on_s .header .menu{opacity:1;visibility:visible;transform:translateY(0px)}
-/*.header .menu ul{margin-left:-6px}*/
+/* .header .menu ul{margin-left:-6px} */
 .header .menu li{width:252px;padding-left:7px;height:100px}
 .header .menu .mn_m{width:270px}
 .header .menu .txm{height:18px;margin:0 auto}
@@ -100,7 +100,7 @@ label{cursor:pointer}
 .header.w1600 .menu .mn_m{width:235px}
 .header.w1600 .menu .mn_m .txm{margin-left:105px}
 
-/*main*/
+/* main */
 .main{position:relative}
 .main .bg_section{background:url("../images/bg_main.jpg") no-repeat}
 .main .main_title .sub_txt,.main .main_title .period{background:url("../images/main_title.png") no-repeat}

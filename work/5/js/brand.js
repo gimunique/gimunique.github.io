@@ -264,7 +264,7 @@ function wheel(){
 	$(".wrap").on("mousewheel DOMMouseScroll",function(event){
 		if(event.originalEvent.wheelDelta){
 			delta = parseInt(event.originalEvent.wheelDelta)/Math.abs(parseInt(event.originalEvent.wheelDelta));
-		} else if(e.originalEvent.detail){
+		} else if(event.originalEvent.detail){
 			delta = -parseInt(event.originalEvent.detail)/Math.abs(parseInt(event.originalEvent.detail));
 		} else if(event.originalEvent.deltaY){
 			delta = -parseInt(event.originalEvent.deltaY)/Math.abs(parseInt(event.originalEvent.deltaY));

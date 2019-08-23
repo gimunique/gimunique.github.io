@@ -25,10 +25,10 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .wrap img{width:100%}
 .wrap button{display:block;cursor:pointer;background-color:transparent;outline:none;border:0 none}
 
-/*카페바로가기-버튼*/
+/* 카페바로가기-버튼 */
 .btn_float{position:fixed;right:20px;top:75px;width:315px;z-index:50}
 
-/*section1*/
+/* section1 */
 .section1{height:2268px;min-height:567px;background:url("../images/bg1.jpg") 50% 0 no-repeat;background-size:100% auto}
 .section1 .content{display:table;width:100%;height:100%;z-index:10}
 .section1 .content .align{display:table-cell;width:100%;height:100%;padding-top:10%;vertical-align:middle;text-align:center}
@@ -50,12 +50,12 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
     100%{transform:translateY(-3px)}
 }
 
-/*section2*/
+/* section2 */
 .section2{height:1823px;max-height:1823px;min-height:455px;background:url("../images/bg2.jpg") 50% 0 no-repeat;background-size:100% auto}
 .section2 .content{padding-top:117.15%}
 .section2 .btn_event{width:55%;max-width:704px}
 
-/*section3*/
+/* section3 */
 .section3{height:1974px;max-height:1974px;min-height:493px;background:#040303 url("../images/bg3.jpg") 50% 0 no-repeat;background-size:100% auto}
 .section3 .content{padding-top:47.65%}
 .section3 .str{display:block;width:100%;margin:4.9% auto 5.35%;font-size:42px;font-weight:normal;line-height:1.35;text-align:center;color:#838d98}
@@ -72,7 +72,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .swiper-pagination-bullet-active{background-color:#5cccf3}
 .address{padding:22px 0 30px;font-size:28px;line-height:1.5;color:#909090;text-align:center;background-color:#0e0e0e;border-top:1px solid #272727;letter-spacing:0}
 
-/*pop cbt*/
+/* pop cbt */
 .pop_cbt{display:none;position:absolute;top:0;bottom:0;left:0;right:0;z-index:100}
 .pop_cbt .bg_pop, .pop_apply .agree_wrap bg_pop{display:block;width:100%;height:100%;background-color:#000;opacity:0.6;filter:alpha(opacity=60)}
 .pop_apply{position:absolute;left:50%;width:1073px;height:923px;margin-left:-536px;background:url("../images/pop_apply.gif") no-repeat}
@@ -150,7 +150,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 	.swiper-pagination-bullet{height:0.53125rem}
 	.address{padding:2.5% 0;font-size:0.65rem}
 	
-	/*pop cbt*/
+	/* pop cbt */
 	.pop_apply{width:83.825%;min-width:268px;height:72.109375vw;min-height:230px;margin-left:-41.9125%;background-size:100% auto}
 	.pop_apply .btn_close{top:-15.5vw;width:12.3%}
 	.pop_apply .phone{width:83.9%;height:10.2vw;min-width:225px;min-height:32px;margin-top:20%;line-height:10.2vw}

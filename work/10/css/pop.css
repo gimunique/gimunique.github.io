@@ -17,10 +17,10 @@ input[type=text]::-ms-clear, hr{display:none}
 caption,legend{font-size:0;line-height:0;width:0;height:0}
 .blind{overflow:hidden;position:absolute;top:-9999px;left:-9999px;width:1px;font-size:1px;height:1px}
 
-/*선물 보내기 - 팝업*/
+/* 선물 보내기 - 팝업 */
 .pop{display:none;position:absolute;left:50%;top:50%;z-index:250}
 
-/*알림 - 팝업*/
+/* 알림 - 팝업 */
 .l_pop{width:300px;height:160px;margin:-80px 0 0 -150px;text-align:center;border:1px solid #afb2b8;background-color:#fff}
 .l_pop .al{display:inline-block;vertical-align:middle}
 .l_pop .ah{height:100%}
@@ -30,7 +30,7 @@ caption,legend{font-size:0;line-height:0;width:0;height:0}
 .l_pop .pop_btn .btn_o{background-color:#414756}
 .l_pop .pop_btn .btn_c{margin-left:10px;background-color:#94979d}
 
-/*팝업*/
+/* 팝업 */
 .a_pop{margin-left:-275px;background-color:#fff;border:1px solid #434957;overflow:hidden}
 .a_pop .btn{display:inline-block;font-size:17px;color:#fff;background-color:#414756}
 .a_pop .close, .cp_pop .tmenu li a span, .cp_pop .pwrap .icp, .check label.chk .box, .hold dt, .hold dd{background:url("../images/spr_pop.png") no-repeat}
@@ -90,7 +90,7 @@ caption,legend{font-size:0;line-height:0;width:0;height:0}
 .cp_pop .plist td .btn_coupon{float:left;display:block;width:72px;height:25px;margin-right:7px;text-align:center;font-size:13px;line-height:24px;color:#fff;background-color:#767982}
 .cp_pop .plist td .c1{padding-left:16px;background:url("../images/img_cash1.png") 0 3px no-repeat}
 
-/*캐쉬충전하기 - 팝업*/
+/* 캐쉬충전하기 - 팝업 */
 .c_pop{display:block;width:548px;height:635px;margin-top:-318px;line-height:1.2}
 .lm_pop{height:546px;margin:-275px 0 0 -213px;background-color:#fff;border:2px solid #414756}
 .atxt, .ctxt, .btn_limit{letter-spacing:-1px}

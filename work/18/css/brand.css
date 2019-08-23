@@ -25,11 +25,11 @@ legend{*display:none}
 label{cursor:pointer}
 .ls0{letter-spacing:0}
 
-/*common*/
+/* common */
 .wrap, .container{width:100%;position:relative;min-width:1001px}
 .container .content{position:relative;width:1001px;letter-spacing:-1px;margin:0 auto}
 
-/*gnb*/
+/* gnb */
 .header{position:absolute;left:0;top:0;z-index:10;height:73px}
 .header a{color:#fff;font-size:17px;letter-spacing:-1px;line-height:23px}
 .header .content{padding-top:17px}
@@ -42,17 +42,16 @@ label{cursor:pointer}
 .header .content .gnb li .bar{width:1px;height:11px;background-color:#fff;opacity:0.45;filter:alpha(opacity=45);overflow:hidden;margin-top:3px}
 .header .content .go_fb{right:0}
 
+/*** 앱소개 ***/
 
-/****앱소개****/
-
-/*휴대폰 번호 입력*/
+/* 휴대폰 번호 입력 */
 .form_num{width:431px}
 .form_num dd{position:relative;text-align:left;width:100%;height:73px;background:url("/images/skindoc/desktop/bg_input.png") no-repeat;overflow:hidden}
 .form_num dd .ipt_num{*float:left;width:292px;color:#000;font-size:20px;line-height:70px;height:70px;border:0 none;background:0 none;margin:0 0 3px 28px}
 .form_num dd label{position:absolute;left:28px;top:23px;font-size:18px;color:#8c8b8b;cursor:text;line-height:23px}
 .form_num dd .btn_send{position:absolute;width:111px;height:73px;right:0;top:0;background:0;border:0;letter-spacing:-1px;color:#fff;cursor:pointer;padding-bottom:5px}
 
-/*title*/
+/* title */
 .appinfo .btitle{height:963px;background:url("/images/skindoc/desktop/bg_title.jpg") 0 50% no-repeat}
 .appinfo .btitle .content{padding-top:179px}
 .appinfo .btitle .title_txt{width:700px;height:130px;background:url("/images/skindoc/desktop/h2.png") no-repeat;margin:0 auto;padding-top:384px}
@@ -65,7 +64,7 @@ label{cursor:pointer}
 .appinfo .btitle .send_area dt{color:#fff;font-size:16px;font-weight:bold;line-height:21px;margin:18px 0 17px}
 .appinfo .btitle .send_area .ps{width:100%;line-height:19px;font-size:13px;color:#fff;opacity:0.6;filter:alpha(opacity=60);margin-top:11px}
 
-/*앱 소개*/
+/* 앱 소개 */
 .appinfo .info{overflow-x:hidden;padding-top:92px}
 .appinfo .info .content h3{margin-bottom:33px}
 .appinfo .info .content h3 span, .appinfo .info .content h3 img{display:block}
@@ -83,7 +82,7 @@ label{cursor:pointer}
 .appinfo .info_4 .rolling_area{position:absolute;top:0;left:81px;padding:57px 22px 0}
 .appinfo .info_4 .rolling_img{position:relative;width:282px;height:486px;overflow:hidden}
 .appinfo .info_4 .rolling_img li{display:none;position:absolute;top:0;left:0}
-.appinfo .info_4 .rolling_img li.on{display:block;}
+.appinfo .info_4 .rolling_img li.on{display:block}
 .appinfo .info_4 .rolling_bg{position:absolute;left:0;top:0;display:block;width:326px;height:610px;background:url("/images/skindoc/desktop/bg_info_4.png") no-repeat}
 .appinfo .info_4 .rolling_area .move{position:absolute;top:272px;width:50px;height:50px;background:url("/images/skindoc/desktop/spr_btn_move.gif") no-repeat;cursor:pointer}
 .appinfo .info_4 .rolling_area .move.prev{left:-79px}
@@ -96,7 +95,7 @@ label{cursor:pointer}
 .appinfo .info_4 .rolling_area .rolling_nav li a{display:block;width:14px;height:14px;background:url("/images/skindoc/desktop/spr_btn_pager.gif") no-repeat}
 .appinfo .info_4 .rolling_area .rolling_nav li.on a{background-position:100% 100%}
 
-/*리뷰*/
+/* 리뷰 */
 .appinfo .review{height:680px;border-top:1px solid #E5E8EA;background-color:#F3F4F5;overflow:hidden}
 .appinfo .review .content{padding-top:102px}
 .appinfo .review .review_roll{position:absolute;top:96px;left:298px;width:665px;height:504px;font-size:0;overflow:hidden}
@@ -125,14 +124,14 @@ label{cursor:pointer}
 .appinfo .review .review_roll .border dd .bubble.br{right:0;background-position:100% 100%}
 .appinfo .review .review_roll .border dd .bubble.bl{left:0;background-position:0 100%}
 
-/*하단 다운로드 영역*/
+/* 하단 다운로드 영역 */
 .btm_btn{height:652px;background-color:#fe8898}
 .btm_btn .content{padding-top:73px}
 .btm_btn .btm_txt{display:block;text-align:center;margin-bottom:59px}
 .btm_btn .btn_wrap{position:relative;width:660px;margin:0 auto}
 .btm_btn .btn_wrap .form_num{position:absolute;right:0;top:0}
 
-/*footer*/
+/* footer */
 .footer{height:137px;background:#404040;text-align:center}
 .footer .content{padding-top:34px}
 .footer .w_wynn{display:block;text-align:center;margin-bottom:41px}
@@ -146,7 +145,7 @@ label{cursor:pointer}
 .footer .footer_info li.sns .twitter{padding-left:25px}
 .footer .footer_info li.sns .facebook{background-position:0 -20px;padding-left:18px}
 
-/*플로딩 배너*/
+/* 플로딩 배너 */
 .floating{position:absolute;top:210px;right:50%;margin-right:-614px;z-index:1000}
 .floating ul{overflow:hidden;font-size:0}
 .floating li{margin-bottom:6px}
@@ -157,9 +156,9 @@ label{cursor:pointer}
 .floating li.float_2 a:hover{background-position:-107px -101px}
 .floating li.float_3 a:hover{background-position:-107px -203px}
 
-/****이벤트****/
+/*** 이벤트 ***/
 
-/*title*/
+/* title */
 .event{min-height:100%;_height:100%;background-color:#ebedee}
 .event .etitle{height:246px;background:url("/images/skindoc/desktop/bg_event_title.jpg") 50% 0 no-repeat}
 .event .etitle .content{padding-top:104px}
@@ -167,7 +166,7 @@ label{cursor:pointer}
 .event .etitle h2{font-size:32px;font-weight:normal;letter-spacing:-2px;margin-bottom:10px}
 .event .etitle p{font-size:18px}
 
-/*탭*/
+/* 탭 */
 .event .etab{z-index:1;background-color:#fff}
 .event .etab ul{height:92px;*zoom:1}
 .event .etab ul:after{content:"";display:block;clear:both}
@@ -185,11 +184,11 @@ label{cursor:pointer}
 .event .etab li.on .tab_3, .event .etab li .tab_3:hover{background-position:0 -544px}
 .event .etab li.on .blt{position:absolute;left:50%;overflow:hidden;bottom:-12px;width:23px;height:12px;background:url("/images/skindoc/desktop/blt_event_tab_on.png") no-repeat;margin-left:-12px}
 
-/*공통*/
+/* 공통 */
 .event .elist, .event .eview{background-color:#ebedee;padding-top:42px}
 .event .footer{position:absolute;bottom:0;left:0}
 
-/*이벤트리스트*/
+/* 이벤트리스트 */
 .event .elist{min-height:357px;_height:357px;padding-bottom:199px}
 .event .elist ul{width:1021px;*zoom:1;margin-right:-21px}
 .event .elist ul:after{content:"";display:block;clear:both}
@@ -221,20 +220,20 @@ label{cursor:pointer}
 .event .elist li.new .edate .dtxt{font-size:14px;margin-left:27px}
 .event .elist li.new .badge{position:absolute;top:0;left:0;width:46px;height:46px;background:url("/images/skindoc/desktop/badge_new.gif") no-repeat;z-index:1}
 .event .elist li.end .ename, .event .elist li.end a{color:#929497}
-.event .elist li.end a{cursor:default;pointer-events:none;}
+.event .elist li.end a{cursor:default;pointer-events:none}
 .event .elist li.end a:hover{text-decoration:none}
 .event .elist li.end .edate .dday .cl{background-position:0 100%}
 .event .elist li.end .edate .dday .cr{background-position:100% 100%}
 .event .elist li.end .edate .dday .daybox{background-color:#a9afb6}
 
-/*이벤트뷰*/
+/* 이벤트뷰 */
 .event .eview{padding-bottom:233px}
 .event .eview .econ img{width:100%}
 .event .eview .btn_apply{display:block;width:645px;margin:62px auto 0}
 
-/****피부과 정보****/
+/*** 피부과 정보 ***/
 
-/*배경*/
+/* 배경 */
 .wrap.information{background-color:#ebedee;background-repeat:no-repeat;background-position:50% 73px;padding-top:73px}
 .information.gangnam{background-image:url("/images/skindoc/desktop/gangnam/bg_hospital.jpg")}
 .information.apgujeong{background-image:url("/images/skindoc/desktop/apgujeong/bg_hospital.jpg")}
@@ -251,10 +250,10 @@ label{cursor:pointer}
 .information.suwon{background-image:url("/images/skindoc/desktop/suwon/bg_hospital.jpg")}
 .information.yeouido{background-image:url("/images/skindoc/desktop/yeouido/bg_hospital.jpg")}
 
-/*gnb 색*/
+/* gnb 색 */
 .information .header{background-color:#fa7d89}
 
-/*지점선택*/
+/* 지점선택 */
 .information .hlist{height:172px;background:url("/images/skindoc/desktop/bg_hinfo_top.png") repeat-x}
 .information .hlist .content{padding-top:34px}
 .information .hlist ul{overflow:hidden}
@@ -265,7 +264,7 @@ label{cursor:pointer}
 .information .hlist li a:hover{text-decoration:none;color:#f0abb2;background-position:0 -41px}
 .information .hlist li .on{background-position:0 100% !important;color:#2b2b2b !important;font-weight:bold}
 
-/*지점 정보*/
+/* 지점 정보 */
 .information .branch{padding:41px 0 87px}
 .information .branch .content{background-color:#fff;border-radius:4px;overflow:hidden}
 .information .branch .br_box{display:none;width:889px;padding:45px 56px 48px}
@@ -316,7 +315,7 @@ label{cursor:pointer}
 .information .branch .br_info .pts .subway .line10{color:#6f99d0}
 .information .branch .br_info .pts .subway .line11{color:#eaaa21}
 
-/*사진보기 팝업*/
+/* 사진보기 팝업 */
 .information .popup{display:none;position:fixed;_position:absolute;width:100%;height:100%;top:0;left:0;right:0;bottom:0;z-index:100;cursor:pointer}
 .information .popup .bg{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.80;filter:alpha(opacity=80)}
 .information .popup .pop_title{width:100%;height:48px;background:url("/images/skindoc/desktop/bg_viewpop_title.png") repeat-x;padding-top:21px}
@@ -335,33 +334,30 @@ label{cursor:pointer}
 .information .popup .img_area .move.next{background-position:-45px 50%;right:-82px}
 .information .popup .img_area .move.next:hover{background-position:-135px 50%}
 
-/*custom*/
-.backplate{height:100%;min-height:100%;}
+/* custom */
+.backplate{height:100%;min-height:100%}
 .nodata {text-align: center;line-height:357px}
-.terms{ height:100%;}
+.terms{ height:100%}
 .terms .etitle{height:246px;background:url("/images/skindoc/desktop/bg_event_title.jpg") 50% 0 no-repeat}
 .terms .etitle .content{padding-top:104px}
 .terms .etitle h2, .event .etitle p{color:#fff;text-align:center;line-height:1.3}
 .terms .etitle h2{font-size:32px;font-weight:normal;letter-spacing:-2px;margin-bottom:10px}
 .terms .etitle p{font-size:18px}
 
-.privacy{ height:100%;}
+.privacy{ height:100%}
 .privacy .etitle{height:246px;background:url("/images/skindoc/desktop/bg_event_title.jpg") 50% 0 no-repeat}
 .privacy .etitle .content{padding-top:104px}
 .privacy .etitle h2, .event .etitle p{color:#fff;text-align:center;line-height:1.3}
 .privacy .etitle h2{font-size:32px;font-weight:normal;letter-spacing:-2px;margin-bottom:10px}
 .privacy .etitle p{font-size:18px}
 
-.container .content.terms, .container .content.privacy { padding: 40px 0px 80px 0px; }
-.container .content.terms h1, .container .content.privacy h1 { font-size: 130%; }
-.container .content.terms h2, .container .content.privacy h2 { font-size: 110%; }
+.container .content.terms, .container .content.privacy{padding:40px 0px 80px 0px}
+.container .content.terms h1, .container .content.privacy h1{font-size:130%}
+.container .content.terms h2, .container .content.privacy h2{font-size:110%}
 .container .content.terms h1, .container .content.terms h2, .container .content.terms p,
-.container .content.privacy h1, .container .content.privacy h2, .container .content.privacy p {
- margin: 10px 0px;
- line-height: 2em;
-}
+.container .content.privacy h1, .container .content.privacy h2, .container .content.privacy p{margin: 10px 0px;line-height: 2em}
 
-/*팝업*/
+/* 팝업 */
 .pop_area{position:fixed;_position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;z-index:1200}
 .bg_pop{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.5;filter:alpha(opacity=50)}
 .pop_area .pop{position:absolute;top:50%;left:50%;padding-left:57px}

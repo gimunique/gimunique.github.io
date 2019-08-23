@@ -221,7 +221,7 @@ function wheel(){
 	$(".container_wrap").on("mousewheel DOMMouseScroll",function(event){
 		if(event.originalEvent.wheelDelta){
 			delta = parseInt(event.originalEvent.wheelDelta)/Math.abs(parseInt(event.originalEvent.wheelDelta));
-		} else if(e.originalEvent.detail){
+		} else if(event.originalEvent.detail){
 			delta = -parseInt(event.originalEvent.detail)/Math.abs(parseInt(event.originalEvent.detail));
 		} else if(event.originalEvent.deltaY){
 			delta = -parseInt(event.originalEvent.deltaY)/Math.abs(parseInt(event.originalEvent.deltaY));
@@ -231,7 +231,7 @@ function wheel(){
 				event.preventDefault ? event.preventDefault() : event.returnValue = false;
 				wheelDown();
 			}else if(delta == 1 && $(".sub").hasClass("on") && sct == 0){
-				event.preventDefault ? event.preventDefault() : event.returnValue = false;
+				//event.preventDefault ? event.preventDefault() : event.returnValue = false;
 				upCount++;
 				if(upCount === 10){
 					wheelUp();

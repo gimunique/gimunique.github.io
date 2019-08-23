@@ -13,7 +13,7 @@ body{overflow:hidden}
 #wrap{position:relative;min-width:1170px;background:url("../images/bg_wrap.png") repeat-x 50% 0 #e0e7ec}
 .btn{display:block;overflow:hidden;text-indent:-999px;background:url("../images/spr_intro.png") no-repeat}
 
-/*레이아웃*/
+/* 레이아웃 */
 #page_wrap{position:relative}
 #page_wrap div[class*="page_"]{display:none;position:absolute;left:0}
 #page_wrap .page_1{background:url("../images/bg_page_1.jpg") no-repeat 50% 0}
@@ -21,7 +21,7 @@ body{overflow:hidden}
 #page_wrap .page_3{background:url("../images/bg_page_3.jpg") no-repeat 50% 0}
 #page_wrap .page_4{background:url("../images/bg_page_4.jpg") no-repeat 50% 0}
 
-/*고정 영역*/
+/* 고정 영역 */
 .fixed_content{position:absolute;top:0;left:50%;width:1170px;margin-left:-585px}
 .btn_download{position:absolute;top:460px;left:600px;width:255px;height:78px;background-position:0 0;z-index:20}
 .img_phone{position:absolute;top:69px;left:119px;width:421px;height:807px;background:url("../images/bg_phone_wrap.png") no-repeat;z-index:5}
@@ -37,13 +37,13 @@ body{overflow:hidden}
 .img_main_character .character_3{bottom:30px;left:260px;width:468px;height:382px;background:url("../images/bg_main_character_3.png") no-repeat}
 .img_main_character .character_4{bottom:10px;left:381px;width:476px;height:418px;background:url("../images/bg_main_character_4.png") no-repeat}
 
-/*페이징*/
+/* 페이징 */
 .paging{position:absolute;top:393px;right:56px;z-index:25}
 .paging a{display:block;width:10px;height:10px;padding:2px;margin-bottom:6px}
 .paging a span{display:block;width:6px;height:6px;overflow:hidden;text-indent:-99px;border:2px solid #f64747;border-radius:5px;background:#fff;cursor:pointer;transition:all 1s;-webkit-transition:all 1s}
 .paging a.on span{background:#f64747}
 
-/*공유*/
+/* 공유 */
 .share{position:absolute;top:62px;right:58px;z-index:25}
 .share .btn{display:block;width:37px;height:37px;margin-bottom:10px}
 .share .sh_fb{background-position:-265px 0}

@@ -15,7 +15,7 @@ address,em,i{font-style:normal}
 hr{display:none}
 caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidden;font-size:0.1em;width:0;height:0}
 
-/*pop*/
+/* pop */
 .pop_wrap{display:none;position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%;z-index:100}
 .pop_wrap .bg_pop{position:absolute;left:0;top:0;right:0;bottom:0;display:block;width:100%;height:100%;background:rgba(0,0,0,0.80)}
 .pop_wrap .pop{display:none;position:absolute;left:50%;top:50%;background-size:100% auto}
@@ -27,7 +27,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .pop3{width:964px;height:944px;margin:-472px 0 0 -482px;background:url("../images/pop2.png") no-repeat}
 .pop3 .btn_confirm{width:25.9%;bottom:65px;margin-left:-12.95%}
 
-/*event*/
+/* event */
 .wrap{position:relative;width:100%;max-width:1100px;min-width:1100px;min-height:100%;margin:0 auto;background-color:#000;overflow:hidden}
 .wrap .section{position:relative;padding:0 50px;overflow:hidden}
 .wrap button{cursor:pointer;background-color:transparent;outline:none;border:0 none}
@@ -45,10 +45,10 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .title .star, .title .shadow{position:absolute;left:0}
 .title .star1{top:0}
 .title .star2, .title .star4, .title .star5{display:none}
-/*.title .star2{top:-12.5%;animation:star1 22s infinite linear}*/
+/* .title .star2{top:-12.5%;animation:star1 22s infinite linear} */
 .title .star3{top:-12.5%;animation:star2 38s infinite linear}
-/*.title .star4{top:-12.5%;animation:star1 40s infinite linear}
-.title .star5{top:-12.5%;animation:star2 52s infinite linear}*/
+/* .title .star4{top:-12.5%;animation:star1 40s infinite linear}
+.title .star5{top:-12.5%;animation:star2 52s infinite linear} */
 .title .shadow{bottom:0;z-index:11}
 
 .section.section1{height:569px;background:url("../images/bg2.jpg") 0 0 no-repeat}
@@ -97,14 +97,14 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
     @media (min-width:1000px) and (max-width:1099px){html{font-size:38px}}
     @media (min-width:1100px){html{font-size:40px}}
 
-    /*pop*/
+    /* pop */
     .pop1{width:82.272%;height:40.363vw;max-width:905px;max-height:444px;min-width:263px;min-height:129px;margin:-20.1815vw 0 0 -42.136%}
     .pop1 p{padding-top:7.5%;font-size:1.5rem}
     .pop1 .btn_confirm{bottom:16%}
     .pop3{width:87.636%;height:85.818vw;max-width:964px;max-height:944px;min-width:281px;min-height:275px;margin:-42.909vw 0 0 -43.818%}
     .pop3 .btn_confirm{bottom:7%}
 
-    /*event*/
+    /* event */
     .wrap{min-width:320px}
     .wrap .section{padding:0 4.54%}
     .wrap img{width:100%}
@@ -128,12 +128,12 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
     .section3 li:first-child .btn_get.on button{background-position:-48.727vw -23.7vw}
     
     @media (max-width:320px){
-        /*pop*/
+        /* pop */
         .pop1{margin:-64px 0 0 -131px}
         .pop1 p{font-size:12px}
         .pop3{margin:-137px 0 0 -140px}
 
-        /*event*/
+        /* event */
         .section2 .btn_lucky{bottom:40px;margin-left:-93px}
         .section2 .btn_lucky.on button{background-position:0 -38px}
         .section3 li .btn_get button{background-position:0 -76px}
@@ -141,14 +141,14 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
         .section3 li:first-child .btn_get.on button{background-position:-156px -76px}
     }
     @media (min-width:1100px){
-        /*pop*/
+        /* pop */
         .pop1{margin:-222px 0 0 -452px}
         .pop1 p{padding-top:65px}
         .pop1 .btn_confirm{bottom:62px}
         .pop3{margin:-472px 0 0 -482px}
         .pop3 .btn_confirm{bottom:65px}
 
-        /*event*/
+        /* event */
         .section1 .btn_detail{left:346px;top:355px;width:136px;height:32px}
         .section1 .user_wrap{right:50px;top:221px;width:320px}
         .section1 .user_wrap dd{width:190px;height:70px;margin-left:70px}
@@ -161,7 +161,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
     }
 }
 
-/*별똥별*/
+/* 별똥별 */
 .wrap .sht_star{display:block;position:absolute;transform-origin:100% 0;animation-direction:normal;opacity:0;z-index:10}
 .wrap .sht_star:after{content:'';position:absolute;top:0px;left:0;border:2px solid #fff;border-width:2px 30vw 2px 30vw;border-color:transparent transparent transparent #fff;transform:rotate(-45deg) translate3d(1px, -1px, 0)}
 @media (min-width:1100px){

@@ -22,13 +22,13 @@ legend{display:none}
 ins{text-decoration:none}
 del{text-decoration:line-through}
 
-/*후따 소개페이지*/
+/* 후따 소개페이지 */
 .blind{position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden}
 body{color:#283038;font-size:14px;line-height:1.15;font-family:'맑은 고딕','Malgun Gothic','굴림',Gulim,Helvetica,sans-serif;background:#e0e7ec;-webkit-text-size-adjust:none}
 #wrap{min-width:320px}
 #wrap.fixed{padding-top:350px}
 
-/*header*/
+/* header */
 header{position:relative;overflow:hidden;z-index:20}
 header .cont{position:relative;width:320px;padding:190px 0 115px;margin:0 auto;z-index:10}
 header .text{position:absolute;bottom:178px;left:52px;width:216px;height:122px;overflow:hidden;background:url("../images/bg_text_header.png") no-repeat;background-size:216px 122px;-webkit-background-size:216px 122px}
@@ -39,7 +39,7 @@ header .bg{display:block;position:absolute;top:0;left:0;width:100%;height:100%;b
 .fixed header .cont{padding:10px 0}
 .fixed header .bg{opacity:0.8}
 
-/*contents*/
+/* contents */
 #contents{background:#f64747}
 #contents div[class*="page_"]{position:relative;width:320px;height:625px;padding-top:25px;margin:0 auto}
 #contents div[class*="page_"] .text{width:320px;height:605px;overflow:hidden;background-size:320px 605px;-webkit-background-size:320px 605px}

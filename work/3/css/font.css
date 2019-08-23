@@ -4,12 +4,12 @@
 	font-style:normal;
 	font-weight:normal;
 	src:url('https://gimunique.github.io/webfont/NanumMyeongjo.eot');
-	src:local(※), url('https://gimunique.github.io/webfont/NanumMyeongjo.woff') format('woff')
+	src:local(※), url('https://gimunique.github.io/webfont/NanumMyeongjo.woff') format('woff');
 }
 @font-face{
   font-family:'NanumMyeongjoBold';
 	font-style:normal;
 	font-weight:normal;
 	src:url('https://gimunique.github.io/webfont/NanumMyeongjoBold.eot');
-	src:local(※), url('https://gimunique.github.io/webfont/NanumMyeongjoBold.woff') format('woff')
+	src:local(※), url('https://gimunique.github.io/webfont/NanumMyeongjoBold.woff') format('woff');
 }

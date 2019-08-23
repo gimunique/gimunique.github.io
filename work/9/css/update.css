@@ -15,7 +15,7 @@ legend,.blind{position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-h
 label{cursor:pointer}
 .ls0{letter-spacing:0}
 
-/*공통*/
+/* 공통 */
 .container{position:relative;width:100%;min-width:1250px}
 .container_wrap{position:absolute;left:0;top:0;width:100%;background:#000 url("../images/bg_wrap.jpg") 50% 0 no-repeat}
 .wrap{position:relative;top:0;width:100%;height:100%;overflow:hidden}
@@ -25,7 +25,7 @@ label{cursor:pointer}
 .bg_hide{display:block;width:100%;height:100%;position:fixed;top:0;bottom:0;left:0;right:0;background-color:#000;opacity:0.75;filter:alpha(opacity=75);z-index:20}
 .bg_hide{_display:none !important}
 
-/*메인*/
+/* 메인 */
 .main h1{position:absolute;left:66px;top:46px}
 .main .link{position:absolute;right:66px;top:63px}
 .main .link a, .main .link span{color:#a0a0a0}
@@ -46,7 +46,7 @@ label{cursor:pointer}
 .main .main_menu .m4 a:hover{background-position:-621px -456px}
 .main .main_menu .m5 a:hover{background-position:-931px -456px}
 
-/*서브-공통*/
+/* 서브-공통 */
 .sub{display:none}
 .sub .wave{position:absolute;left:0;top:0;display:block;width:100%;height:100%;background:url("../images/bg_wrap.jpg") 0 -800px no-repeat}
 .sub .event_wrap{position:relative}
@@ -128,7 +128,7 @@ label{cursor:pointer}
 .sub .page .story strong span{font-weight:bold}
 .sub .page_wrap .page_menu .bg{position:absolute;left:0;top:;display:block;width:100%;height:100%;}
 
-/*서브-이벤트1*/
+/* 서브-이벤트1 */
 .event_1 .page_wrap{background:rgba(255,255,255,0.9) url("../images/bg_event-1.png") 100% 0 no-repeat}
 .event_1 .page_wrap .page_menu .bg{background-color:#3ac02c}
 .event_1 .page_wrap dt{color:#3ac02c}
@@ -158,7 +158,7 @@ label{cursor:pointer}
 .event_1 .page_4 .i19{background-position:-452px -664px}
 .event_1 .page_4 .pop{height:491px;margin-top:-276px}
 
-/*서브-이벤트2*/
+/* 서브-이벤트2 */
 .event_2 .page_wrap{background:rgba(255,255,255,0.9) url("../images/bg_event-2.png") 100% 0 no-repeat}
 .event_2 .page_wrap .page_menu .bg{background-color:#ce8b2d}
 .event_2 .page_wrap dt{color:#ce8b2d}
@@ -175,7 +175,7 @@ label{cursor:pointer}
 .event_2 .page_1 .pop .p4{background:url("../images/pop_2-1-4.gif") no-repeat}
 .event_2 .page_1 .pop .p5{height:819px;background:url("../images/pop_2-1-5.gif") no-repeat}
 
-/*서브-이벤트3*/
+/* 서브-이벤트3 */
 .event_3 .page_wrap{background:rgba(255,255,255,0.9) url("../images/bg_event-3.png") 100% 0 no-repeat}
 .event_3 .page_wrap .page_menu .bg{background-color:#56a494}
 .event_3 .page_wrap dt{color:#56a494}
@@ -207,7 +207,7 @@ label{cursor:pointer}
 .event_3 .thumb_area .thumb_info dd{line-height:1.4;color:#484848}
 .event_3 .thumb_area .thumb_info dd span{display:block;margin-bottom:7px;font-size:17px;font-weight:bold;color:#000;letter-spacing:-2px}
 
-/*서브-이벤트4*/
+/* 서브-이벤트4 */
 .event_4 .page_wrap{background:rgba(255,255,255,0.9) url("../images/bg_event-4.png") 100% 0 no-repeat}
 .event_4 .page_wrap .page_menu .bg{background-color:#747aba}
 .event_4 .page_wrap dt{color:#686ebb}
@@ -227,7 +227,7 @@ label{cursor:pointer}
 .event_4 .page_wrap .page_2 dd{font-size:15px;line-height:1.5;letter-spacing:-2px}
 .event_4 .page_wrap .page_2 li img{margin-top:20px}
 
-/*서브-이벤트5*/
+/* 서브-이벤트5 */
 .event_5 .page_wrap{background:rgba(255,255,255,0.9) url("../images/bg_event-5.png") 100% 0 no-repeat}
 .event_5 .page_wrap .page_menu .bg{background-color:#9e8d6b}
 .event_5 .page_wrap dt{color:#88785a}

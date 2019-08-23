@@ -2,7 +2,6 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,a,address,em,img,strong,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,textarea,table,caption,tbody,tfoot,thead,tr,th,td,video,pre,input,button,textarea,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;font-size:100%}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 html,body{width:100%;height:100%}
-html{}
 body{-webkit-text-size-adjust:none}
 body,h1,h2,h3,h4,h5,h6{font-family:sans-serif;color:#fff;line-height:1}
 input,textarea,select,button,label{font-size:inherit;font-family:inherit;color:inherit;border:0}
@@ -26,7 +25,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 @media (min-width:960px) and (max-width:1199px){html{font-size:22px}}
 @media (min-width:1200px){html{font-size:23px}}
 
-/*common*/
+/* common */
 .wrap{width:100%;max-width:1080px;min-width:320px;min-height:100%;margin:0 auto;text-align:center;background-color:#1f2a48;overflow:hidden}
 .wrap .section{width:100%;min-height:177.5vw;background:url("../images/bg.jpg") no-repeat;background-size:cover}
 .wrap .section .content{position:relative;width:100%}
@@ -40,13 +39,13 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .section .list .name{position:relative;display:block;width:100%;height:2.61rem;font-style:italic;font-weight:bold;color:#fff;line-height:2.61rem;background-color:#394052}
 .section .list .rare .name{background-color:#3260ee}
 .section .list .hero .name{background-color:#8943dd}
-/*임시중앙정렬*/
+/* 임시중앙정렬 */
 .section5 .list li:first-child{margin-left:11.2%}
 @media (min-width:1080px){
 .wrap .section{min-height:1920px}
 }
 
-/*layer pop*/
+/* layer pop */
 .pop{display:none;position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:200}
 .pop .bg_pop{display:block;width:100%;height:100%;background-color:#000;filter:alpha(opacity=90);opacity:0.9}
 .pop .pop_wrap{position:absolute;left:50%;top:50%;width:100%;height:77.73vw;max-width:1080px;max-height:854px}

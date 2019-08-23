@@ -16,13 +16,7 @@ hr{display:none}
 legend,.blind{position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden}
 label{cursor:pointer} 
 
-/*gnb*/
-#gnb{min-width:1200px !important}
-#gnb .gnb_container{width:1200px !important}
-.layer.leftLayer li a, .layer.leftLayer li img{vertical-align:baseline}
-.gnb_container .right_menu li.last{padding-right:0}
-
-/*common*/
+/* common */
 .wrap, .section{position:relative;width:100%;min-width:1200px}
 .wrap{background-color:#000;overflow:hidden;letter-spacing:-1px}
 .wrap .content, .particle .content{position:relative;width:1200px;margin:0 auto}
@@ -30,10 +24,10 @@ label{cursor:pointer}
 .wrap h1, .wrap h2, .mtitle p, .qmenu li, .user_zone dt, .user_out dd, .coupon_list dt, .coupon_list a, .btn_pop, .pop h4{text-indent:-9999px}
 .main h1 a, .main .user_zone dl, .user_log .txt, .btn_pop li, .btn_pop span, .coupon_list a, .coupon_list .win, .qmenu li a, .pop h4, .pop .close, .pop .title, .wrap .enter{background:url("../images/spr_event.png") no-repeat}
 
-/*chrome background set*/
+/* chrome background set */
 @media screen and (-webkit-min-device-pixel-ratio:0){.wrap .bg{width:1920px}}
 
-/*pop*/
+/* pop */
 .bg_pop{position:fixed;top:0;_top:10px;bottom:0;left:0;right:0;display:block;width:100%;height:100%;background-color:#000;opacity:0.5;filter:alpha(opacity=50);z-index:200}
 .bg_pop{_display:none !important}
 .pop{display:none;position:fixed;left:50%;top:50%;margin-left:-409px;font-size:15px;color:#c9c9c9;background-color:#32302e;border-radius:96px;opacity:0;opacity:0;transform:scale(0.5);transition:all 300ms ease;z-index:300}
@@ -65,16 +59,16 @@ label{cursor:pointer}
 .pop2 .iScrollVerticalScrollbar.iScrollLoneScrollbar{width:10px !important;right:16px !important}
 .pop2 .iScrollIndicator{background-color:#6b6c6f !important;border:0 !important;border-radius:0 !important}
 
-/*quick*/
-.qmenu{/*display:none;*/position:fixed;right:44px;/*right:44px;*/top:50%;margin-top:-240px;opacity:0;/*transform:scale(0);*/transition:all 500ms ease;/*transform:translateX(212px)*/}
-.qmenu.show{opacity:1;/*transform:scale(1)*/}
+/* quick */
+.qmenu{position:fixed;right:44px;/* right:44px; */top:50%;margin-top:-240px;opacity:0;/* transform:scale(0); */transition:all 500ms ease;/* transform:translateX(212px) */}
+.qmenu.show{opacity:1;/* transform:scale(1) */}
 .qmenu li{width:154px;height:154px;margin-bottom:9px}
 .qmenu li a{display:block;width:100%;height:100%}
 .qmenu .q1 a{background-position:-846px -110px}
 .qmenu .q2 a{background-position:-846px -273px}
 .qmenu .top a{background-position:-846px -434px}
 
-/*event*/
+/* event */
 .section.main{height:1100px}
 .section.main .bg{background-image:url("../images/bg_main.jpg")}
 .main h1, .main .link{position:absolute;z-index:10}
@@ -136,7 +130,7 @@ label{cursor:pointer}
 .section.caution{height:776px}
 .section.caution .bg{background-image:url("../images/bg_caution.jpg")}
 
-/*particle*/
+/* particle */
 .main .particle{position:absolute;left:0;top:0;width:100%;height:829px;overflow:hidden}
 .main .particle .content{height:100%}
 .main .particle span{position:absolute;display:block;width:35px;height:35px;background:url("../images/particle.png") no-repeat;opacity:0}
