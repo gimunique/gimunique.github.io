@@ -63,7 +63,11 @@ $(window).on({
         var ajax = getAjaxPortfolioInfos();
         ajax.success(function(data){
             if(data != null && data.length > 0){
-                PortfolioInfos = data;
+                //PortfolioInfos = data;
+                PortfolioInfos = data.sort(function(currObj, nextObj){
+                    return currObj.seq < nextObj.seq ? -1 : currObj.seq > nextObj.seq ? 1 : 0;
+                });
+
                 if(PortfolioInfos.length % PageSize === 0){
                     TotalPageCount = Math.floor(PortfolioInfos.length / PageSize);
                 }else{
@@ -99,9 +103,9 @@ $(window).on({
 
         //포트폴리오 정보 가져오기
         function getPortfolioInfos(currentPageNumber, pageSize, portfolioInfos){
-            var currentPortfolioInfos = portfolioInfos.filter(function(index){
-                return index.seq > ((currentPageNumber - 1) * pageSize) &&  
-                index.seq <= (currentPageNumber * pageSize);
+            var currentPortfolioInfos = portfolioInfos.filter(function(element){
+                return element.seq > ((currentPageNumber - 1) * pageSize) &&  
+                element.seq <= (currentPageNumber * pageSize);
             });
             return currentPortfolioInfos;
         }
