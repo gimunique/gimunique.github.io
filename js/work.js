@@ -42,12 +42,16 @@ $(window).on({
             $('#subject').text(portfolioInfo.subject);
             $('#role').text(portfolioInfo.role);
             $('#participation').text(portfolioInfo.partcipation);
+            //$('#note').text(portfolioInfo.note);
 
             $.each(portfolioInfo.detail, function(index, detailPortfolioInfo){
                 $(".img_wrap").append("<img src='"+ detailPortfolioInfo.imageUrl +"' alt='"+ detailPortfolioInfo.description +"'>");
             });
             $.each(portfolioInfo.link, function(index, linkPortfolioInfo){
-                $(".url_wrap").append("<a href='"+ linkPortfolioInfo.linkUrl +"' class='"+ linkPortfolioInfo.class +"' title='"+ linkPortfolioInfo.title +"'><img src='"+ linkPortfolioInfo.imgUrl +"' alt=''></a>");
+                $(".url_wrap").append(
+                    "<a href='" + linkPortfolioInfo.linkUrl + "' class='" + linkPortfolioInfo.className + "' title='" + linkPortfolioInfo.title + "'>" +
+                    "<img src='" + linkPortfolioInfo.imgUrl + "' alt=''>" +
+                    "</a>");
             });
         }
     }

@@ -32,3 +32,34 @@ function getParameterByName(name){
     var results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+
+//ie9이하 .filter() 
+if(!Array.prototype.filter){
+    Array.prototype.filter = function(func, thisArg){
+        'use strict';
+        if(!((typeof func === 'Function' || typeof func === 'function') && this))
+        throw new TypeError();
+        var len = this.length >>> 0;
+        var res = new Array(len);
+        var t = this, c = 0, i = -1;
+        if(thisArg === undefined){
+            while (++i !== len){
+                if (i in this){
+                    if (func(t[i], i, t)){
+                        res[c++] = t[i];
+                    }
+                }
+            }
+        }else{
+            while (++i !== len){
+                if(i in this){
+                    if (func.call(thisArg, t[i], i, t)){
+                        res[c++] = t[i];
+                    }
+                }
+            }
+        }
+        res.length = c;
+        return res;
+    };
+}
