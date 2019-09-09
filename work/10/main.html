@@ -1,5 +1,183 @@
-<? include "./include/header.html"; ?>
-<script>mainNum = 1;</script>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>CABAL SHOP</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="https://gimunique.github.io/images/favicon.ico" type="images/x-icon">
+<link rel="stylesheet" href="./css/itemshop.css">
+<script src="https://gimunique.github.io/lib/js/jquery-1.9.1.min.js"></script>
+<script src="./js/itemshop.js"></script>
+</head>
+<body>
+<div class="container">
+	<a href="#content" class="skip">Go Contents</a>
+    <div class="header wrap">
+    	<div class="content_wrap">
+        	<h1><a href="./main.html"><img src="./images/h1.jpg" alt="CABAL SHOP"></a></h1>
+            <h2 class="blind">User Link</h2>
+            <div class="gnb_list">
+            	<p class="pf">
+                	<!--daum 일때 <span class="pic">에 class="daum" 추가, ongate 일때 <span class="pic">에 class="ongate" 추가-->
+                    <span class="pic"></span>
+                    <span class="id">eugene</span>
+                </p>
+                <p class="cash"><img src="./images/img_cash1.png" alt="cash">20,000,000</p>
+                <ul>
+                	<li class="gc notice"><a href="#n"><span class="blind">Notice</span><span class="gc new_n">1</span></a></li>
+                    <li class="gc list"><a href="#n"><span class="blind">List</span><span class="gc new_l"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 알림 레이어 창 -->
+        <div class="n_list">
+            <div class="n_wrap">
+                <div>
+                    <p>안녕하세요. eugene!</p>
+                    <ul>
+                        <li><div class="n_txt"><a href=""><strong>[쿠폰]</strong><span class="tit"><span>무료 VIP 쿠폰!</span>[3]</span></a><span class="new"></span></div><a href="#n" class="del"></a></li>
+                        <li><div class="n_txt"><a href=""><strong>[선물]</strong><span class="tit"><span>jchorsy로 부터 선물이 도착했습니다!</span>[1]</span></a><span class="new"></span></div><a href="#n" class="del"></a></li>
+                        <li><div class="n_txt"><a href=""><strong>[이벤트]</strong><span class="tit"><span>메리크리스마스!</span></span></a></div><a href="#n" class="del"></a></li>
+                        <li><div class="n_txt"><a href=""><strong>[이벤트]</strong><span class="tit"><span>T-Shop 오픈!</span></span></a></div><a href="#n" class="del"></a></li>
+                        <li><div class="n_txt"><a href=""><strong>[쿠폰]</strong><span class="tit"><span>무료 VIP 쿠폰!</span>[3]</span></a></div><a href="#n" class="del"></a></li>
+                        <li><div class="n_txt"><a href=""><strong>[선물]</strong><span class="tit"><span>jchorsy로 부터 선물이 도착했습니다!</span>[1]</span></a></div><a href="#n" class="del"></a></li>
+                        <li><div class="n_txt"><a href=""><strong>[이벤트]</strong><span class="tit"><span>메리크리스마스!</span></span></a></div><a href="#n" class="del"></a></li>
+                        <li><div class="n_txt"><a href=""><strong>[이벤트]</strong><span class="tit"><span>T-Shop 오픈!</span></span></a></div><a href="#n" class="del"></a></li>
+                    </ul>
+                    <a href="" class="del_all" style="display:none">전체삭제</a>
+                </div>
+            </div>
+            <span class="gc blt"></span>
+        </div>
+        <!-- //알림 레이어 창 -->
+        <!-- 바로가기 메뉴 레이어 창 -->
+        <div class="a_list">
+            <ul>
+                <li class="ch"><a href="./cart.html">장바구니</a><span class="gc new_n">1</span></li>
+                <li class="rf"><a href="./pop_cash.html">충전</a><span class="gc new_n">1</span></li>
+                <li class="cp"><a href="./coupon.html">쿠폰</a><span class="gc new_n">3</span></li>
+                <li class="ol"><a href="./list_premium.html">이용내역</a><span class="gc new_n">1</span></li>
+                <li class="gf"><a href="./bookmark.html">즐겨찾기</a><span class="gc new_n">1</span></li>
+                <li class="ut"><a href="./terms.html">이용약관</a><span class="gc new_n">1</span></li>
+            </ul>
+            <span class="gc blt"></span>
+        </div>
+        <!-- //바로가기 메뉴 레이어 창 -->
+    </div>
+    <div id="content" class="content wrap">
+    	<div class="content_wrap">
+            <!-- Item Category(공통) -->
+            <div class="common_top">
+            	<!-- Item Category -->
+           		<h2 class="blind">Main Menu</h2>
+            	<a href="#n" class="allmenu">아이템 카테고리</a>
+                <ul class="allmenu_show" style="display:none">
+                    <li>
+                        <h3>이동/변경</h3>
+                        <ul>
+                            <li><a href="./server_move1.html">이동(상세 페이지 확인)</a><span class="ic ic_m">NEW</span></li>
+                            <li><a href="./character_move1.html">변경(상세 페이지 확인)</a><span class="ic ic_m">NEW</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>프리미엄</h3>
+                        <ul>
+                            <li><a href="">카발 상품권</a><span class="ic ic_m">NEW</span></li>
+                            <li><a href="">플래티넘 아이템</a><span class="ic ic_m hot_1">HOT</span></li>
+                            <li><a href="">실버아이템</a><span class="ic ic_m event">EVENT</span></li>
+                            <li><a href="">Wexp 패키지</a><span class="ic ic_m sc">SPECIAL</span></li>
+                            <li><a href="">Axp 패키지</a><span class="ic ic_m sale">SALE</span></li>
+                            <li><a href="">특별판매</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>가능성</h3>
+                        <ul>
+                            <li><a href="">보드/바이크</a></li>
+                            <li><a href="">스페셜에펄릿</a></li>
+                            <li><a href="">에펄릿</a></li>
+                            <li><a href="">게임도우미</a></li>
+                            <li><a href="">용병</a></li>
+                            <li><a href="">참/탈리스만/아르나카</a></li>
+                            <li><a href="">이펙터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>팬시</h3>
+                        <ul>
+                            <li><a href="">무기 코스튬</a></li>
+                            <li><a href="">방어구 코스튬</a></li>
+                            <li><a href="">페이스 코스튬</a></li>
+                            <li><a href="">국가복장</a></li>
+                            <li><a href="">외모 변경</a></li>
+                            <li><a href="">바이크 외형 변경</a></li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>소모성</h3>
+                        <ul>
+                            <li><a href="">강화</a></li>
+                            <li><a href="">포션</a></li>
+                            <li><a href="">제조</a></li>
+                            <li><a href="">성수</a></li>
+                            <li><a href="">봉인석/해제석</a></li>
+                            <li><a href="">코스튬 옵션</a></li>
+                            <li><a href="">글로리플레이트</a></li>
+                            <li><a href="">포스젬</a></li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>펫</h3>
+                        <ul>
+                            <li><a href="">플레티넘 펫</a></li>
+                            <li><a href="">실버 펫</a></li>
+                            <li><a href="">몬스터 펫</a></li>
+                            <li><a href="">펫 체인지 키트</a></li>
+                            <li><a href="">펫 봉인 아이템</a></li>
+                            <li><a href="">펫 전용 아이템</a></li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>블레싱 비드</h3>
+                        <ul>
+                            <li><a href="">프리미엄</a></li>
+                            <li><a href="">플러스</a></li>
+                            <li><a href="">경험치</a></li>
+                            <li><a href="">스킬 경험치</a></li>
+                            <li><a href="">펫 경험치</a></li>
+                            <li><a href="">창고 증가</a></li>
+                            <li><a href="">Wexp</a></li>
+                            <li><a href="">Axp</a></li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3>랜덤</h3>
+                        <ul>
+                            <li><a href="">강화 아이템</a></li>
+                            <li><a href="">슬롯 익스텐더</a></li>
+                            <li><a href="">아바타</a></li>
+                            <li><a href="">에펄릿</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- //Item Category -->
+                <div class="r_menu">
+                	<div class="c_select int">
+                        <a href="#n" class="ic select_default">전체</a>
+                        <ul>
+                            <li><a href="">전체</a></li>
+                            <li><a href="">최신순</a></li>
+                            <li><a href="">가격</a></li>
+                            <li><a href="">이름</a></li>
+                        </ul>
+                    </div>
+                	<div class="search_area"><input type="text" /><a href="#n"><img src="./images/btn_search.gif" alt="Search" /></a></div>
+                </div>
+                <p class="location"><a href="" class="depth1"></a><span class="next"></span><a href="" class="depth2"></a></p>
+            </div>
+            <!-- //Item Category(공통) -->
+            <script>mainNum = 1;</script>
             <!-- Left Con -->
             <div class="left_con">
                 <!-- Main Banner -->
@@ -228,6 +406,7 @@
             <!--//북마크 추가 팝업-->
         </div>
     </div>
+    <a href="./pop_cash.html" target="_blank" style="position:fixed;right:20px;top:62px">결제 팝업 페이지 확인</a>
 </div>
 </body>
 </html>
