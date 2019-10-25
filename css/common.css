@@ -167,7 +167,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .pg_nav li button{width:20px;height:20px;background-color:#fff;border-radius:20px;transition:all 200ms linear;z-index:1}
 .pg_nav li button span{position:absolute;right:30px;top:0;display:inline-block;display:none \9;height:35px;font-family:'NunitoExtraLight';font-size:10px;line-height:35px;color:#fff;text-align:right;opacity:0;transform:translateX(30px);transition:all 200ms linear}
 .pg_nav li.active button, .pg_nav li.active button:hover{height:35px;background-color:#f04c4d}
-.pg_nav li.active button span, .pg_nav li button:hover span{display:block \9;opacity:1;transform:translateX(0)}
+.pg_nav li.active button span, .pg_nav li.active button:hover span{display:block \9;opacity:1;transform:translateX(0)}
 
 /* load img */
 .load_img{/* display:none; */position:fixed;left:0;top:0;width:100%;height:100%;background-color:#0a111f;z-index:500}
