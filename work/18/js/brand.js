@@ -1,314 +1,296 @@
 $(function(){
-	switch(pageName){
-		//앱 소개
-		case "appinfo":
-			var sct = $(window).scrollTop();
-			var winHeight = $(window).height();
-			var winWidth = $(window).width();
-			//앱 소개 클릭 시 페이지 이동
-			var hash = location.hash;
-			if(hash == "#about"){
-				$("html,body").stop().animate({
-					scrollTop: $(".container.info").offset().top
-				}, 600);
-			}
-			//플로팅 배너
-			var floatingTop = parseInt((winHeight - 340) / 2);
-			$(".floating").css("top",floatingTop);
-			if(winWidth<=1300){
-				$(".floating").css({"right":"27px","margin-right":0});
-			}else{
-				$(".floating").css({"right":"50%","margin-right":"-614px"});
-			}
-			$(window).resize(function(){
-					winHeight = $(window).height();
-					winWidth = $(window).width();
-					floatingTop = parseInt((winHeight - 340) / 2);
-					$(".floating").css("top",floatingTop+sct);
-					if(winWidth<=1280){
-						$(".floating").css({"right":"27px","margin-right":0});
-					}else{
-						$(".floating").css({"right":"50%","margin-right":"-614px"});
-					}
-				})
-				//휴대전화번호 입력 placeholder
-			$("dl.form_num input[type=text]").keyup(function() {
-				if(this.value.length > 0){
-					$(this).prev("label").hide();
-				}else{
-					$(this).prev("label").show();
-				}
-			}).blur(function(){
-				if(this.value.length == 0){
-					$(this).prev("label").show();
-				}
-			});
-			//핸드폰 이미지, 리뷰 롤링
-			var mmChk = false,mrChk = false;
-			var mobile_p = $(".content.info_4").offset().top;
-			var review_p = $(".container.review").offset().top;
-			$(window).scroll(function(){
-				sct = $(window).scrollTop();
-				if(sct >= Math.abs(mobile_p + 56 - winHeight) && sct < mobile_p + 544){
-					if(!mmChk){
-						mb.play();
-						mmChk = true;
-					}
-				}else{
-					mb.stop();
-					mmChk = false;
-				}
-				if(sct >= Math.abs(review_p - winHeight) && sct < review_p + 680){
-					if(!mrChk){
-						rl.rollAuto();
-						mrChk = true;
-					}
-				}else{
-					rl.rollStop();
-					mrChk = false;
-				}
-				$(".floating").stop().animate({top:sct+floatingTop}, 450);
-			});
-			$(".rolling_bg").hover(function(){
-				mb.stop();
-			}, function(){
-				mb.play();
-			});
-			$(".rolling_area .rolling_nav li a").click(function(e){
-				e.preventDefault();
-				var idx = $(this).parent().index();
-				if(!$(".rolling_img li").is(":animated") && idx != mb.onindex){
-					$(this).parent().siblings().removeClass("on").end().addClass("on");
-					mb.stop();
-					if(idx > mb.onindex){
-						mb.onindex = idx;
-						mb.move();
-					}else{
-						mb.onindex = idx;
-						mb.move(1);
-					}
-					mb.play();
-				}
-			});
-			$(".rolling_area .move").click(function(e){
-				e.preventDefault();
-				if (!$(".rolling_img li").is(":animated")){
-					mb.stop();
-					if($(this).hasClass("next")){
-						mb.onindex++;
-						mb.foward();
-						mb.move();
-					}else{
-						mb.onindex--;
-						mb.reverse();
-						mb.move(1);
-					}
-					mb.play();
-				}
-			});
-			//리뷰 롤링
-			$(".review_roll").hover(function(){
-				rl.rollStop();
-			}, function(){
-				rl.rollAuto();
-			});
-			break;
-		case "eventlist":
-			$(".elist ul li.end a").click(function(e){
-				e.preventDefault();
-				window.alert("종료된 이벤트입니다.\n더욱 좋은 이벤트로 다시 찾아뵙겠습니다.\n감사합니다.");
-			});
-			break;
-		case "information":
-			var mapFrame = [
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.49858680326591&longitude=127.02622272698105&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.56095233596868&longitude=126.98386481900687&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.5240596109631&longitude=127.02791495379459&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.527383698818056&longitude=126.86444653110769&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.44347530328527&longitude=126.70321438827831&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.65509521827334&longitude=127.05995768604737&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.555374792164386&longitude=126.9353644974656&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.540306441011374&longitude=127.12351050217846&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.483303315643745&longitude=126.90115002476567&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.49105887358146&longitude=126.72229433115535&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.58097861589464&longitude=127.04699203318967&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.656716026842666&longitude=126.77133821836311&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.26327717519259&longitude=127.03311694393672&contents=&zoom=3",
-				"http://dna.daum.net/include/tools/routemap/map_view.php?width=887&height=482&latitude=37.52406856644877&longitude=126.92601111433086&contents=&zoom=3"
-			];
-			//지점 바꾸기
-			$(".hlist li a").click(function(e) {
-				e.preventDefault();
-				var idx = $(this).parent("li").index();
-				infoPop.branches = $(this).parent("li").attr("class");
-				infoPop.bname = $(".branch .br_box:eq(" + idx + ") h3").text();
-				var wrapClass = $(".information").attr("class").split("information ")[1];
-				$(".information").removeClass(wrapClass).addClass(infoPop.branches);
-				$(this).addClass("on").parent().siblings().find("a").removeClass("on");
-				$(".branch .br_box:eq(" + idx + ")").addClass("on").siblings(".br_box").removeClass("on");
-				if ($(".branch .br_box:eq(" + idx + ") .map iframe").attr("src").length < 1) {
-					$(".branch .br_box:eq(" + idx + ") .map iframe").attr("src", mapFrame[idx]);
-				};
-				if ($(".branch .br_box:eq(" + idx + ") .hos_img").length > 0) {
-					$(".branch .br_box:eq(" + idx + ") .hos_img li").each(function(i) {
-						$(this).find("a").prepend("<img src='/images/skindoc/desktop/" + infoPop.branches + "/img_small_" + (i + 1) + ".jpg'>");
-					})
-				}
-			});
+	$(".main").css("height",winHeight+"px");
+		
+	$(window).resize(function(){
+		resize();
+	});
 
-			//이미지 보기
-			$(".hos_img li a").hover(function(){
-				$(this).addClass("hover");
-			}, function() {
-				$(this).removeClass("hover");
-			}).click(infoPop.popOpen);
-			$(".popup .img_area .move").click(function(e){
-				e.preventDefault();
-				if($(this).hasClass("prev")){
-					infoPop.preView();
-				}else{
-					infoPop.nextView();
-				}
+	wheel();
+
+	//scroll event
+	$(window).bind("scroll",function(){
+		sct = $(window).scrollTop();
+		if(sct >= sectionOffsetTop[1]){
+			$(".wrap .link").css({
+				position : "absolute",
+				top : $(".main").height()+26+"px"
 			});
-			$(".popup").click(function(e){
-				e.preventDefault();
-				if(!$(event.target).parents().hasClass("img_area")){
-					infoPop.popClose();
-				}
+			$(".btn_top").fadeIn("fast");
+		}else{
+			$(".wrap .link").css({
+				position : "fixed",
+				top : 26+"px"
 			});
-			//마우스휠로 팝업 이전, 다음 보기
-			$(".popup").bind("mousewheel", function(event){
-				event.preventDefault ? event.preventDefault() : event.returnValue = false;
-				if(event.originalEvent.wheelDelta != 0){
-					if(event.originalEvent.wheelDelta > 0){
-						//이전 이미지 보기
-						infoPop.preView();
-					}else if(event.originalEvent.wheelDelta < 0){
-						//다음 이미지 보기
-						infoPop.nextView();
-					}
-				}
-			});
-			break;
-	}
+			$(".btn_top").fadeOut("fast");
+		}
+	});	
 });
 
-//앱소개 핸드폰 이미지 롤링
-var mb = {
-	onindex: 0,
-	previndex: 0,
-	width: 282,
-	speed: 500,
-	delay: 2500,
-	term: "",
-	len: 4,
-	foward: function(){
-		this.onindex = this.previndex == this.len - 1 ? 0 : this.previndex + 1;
-	},
-	reverse: function(){
-		this.onindex = this.previndex == 0 ? this.len - 1 : this.previndex - 1;
-	},
-	move: function(dir){
-		var direction;
-		if(dir != 1){
-			direction = this.width;
+//window load 되기 전
+$(window).bind('beforeunload', function(){
+	$(window).scrollTop(0);
+});
+
+//window load 된 후
+$(window).bind("load", function(){
+	resize();
+	
+	//sound bar move
+	$(".sbar .bar").each(function(i){
+		soundBarMove($(this));
+	});
+
+	//sound bar action
+	$(".sound > a").click(function(e){
+		e.preventDefault();
+		if($(this).parents(".sound").hasClass("on")){
+			$(this).parents(".sound").removeClass("on").addClass("off");
+			$(".audio").trigger("pause");
 		}else{
-			direction = -this.width;
+			$(this).parents(".sound").removeClass("off").addClass("on");
+			$(".audio").trigger("play");
 		}
-		$(".rolling_img li:eq(" + this.onindex + ")").stop().show().css("left", direction).animate({
-			left: 0
-		}, this.speed);
-		$(".rolling_img li:eq(" + this.previndex + ")").stop().animate({
-			left: -direction
-		}, this.speed, function(){
-			$(this).hide();
+	});
+	
+	//audio play
+	var audio = document.getElementById("audio");
+	if(isMobile()){
+		audio.autoplay = false;
+		audio.load();
+		$(".sound").addClass("off");
+	}else{
+		audio.autoplay = true;
+		audio.load();
+		$(".sound").addClass("on");	
+	}
+
+	//pop action
+	$(".main button").click(function(e){
+		e.preventDefault();
+		$(".movie_wrap").html('<iframe id="player" width="100%" height="100%" src="https://www.youtube.com/embed/Xj9_xAErX9A?enablejsapi=1&amp;playerapiid=ytplayer&amp;rel=0&amp;showinfo=0&amp;vq=hd1080&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>')
+		$(".movie_pop").fadeIn("fast").addClass("show");
+		popSize();
+		$(".audio").trigger("pause");
+	});
+	$(".page .list li a").click(function(e){
+		e.preventDefault();
+		listIdx = $(this).parents("li").index()+1,
+		listLength = $(this).parents(".list").children("li").length;
+		// 화살표로 클릭 시 swiper.activeIndex와 싱크
+		if(swiper != null){
+			swiper.activeIndex = listIdx - 1;
+		}
+		popShow();
+		$(".list_pop .pimg div").each(function(i){
+			var imgSrc = "./images/", //절대 경로 url로 바꾸기
+				imgName = "pop"+(i+1)
+			$(".list_pop .pimg div").eq(i).append("<img src='"+imgSrc+imgName+".jpg' alt=''>");
 		});
-		$(".rolling_area .rolling_nav li:eq(" + this.onindex + ")").addClass("on").siblings().removeClass("on");
-		this.previndex = this.onindex;
-	},
-	play: function(){
-		this.term = setInterval(function(){
-			mb.foward();
-			mb.move();
-		}, this.delay);
-	},
-	stop: function(){
-		clearInterval(this.term);
-	}
-};
+	});
+	$(".list_pop .move").click(function(e){
+		e.preventDefault();
+		if(isMobile()){
+			if($(this).hasClass("prev")){
+				listIdx = listIdx == 1 ? 1 : listIdx-1;
+			}else{
+				listIdx = listIdx == listLength ? listLength : listIdx+1;
+			}
+			// 화살표로 클릭 시 swiper.activeIndex와 싱크
+			if(swiper != null){
+				swiper.activeIndex = listIdx - 1;
+			}
+		}else{
+			if($(this).hasClass("prev")){
+				listIdx = listIdx == 1 ? listLength : listIdx-1;
+			}else{
+				listIdx = listIdx == listLength ? 1 : listIdx+1;
+			}
+		}
+		popShow();
+	});
+	$(".pop .close, .pop .bg_pop").click(function(e){
+		e.preventDefault();
+		$(".pop").fadeOut("fast").removeClass("show");
+		if($(this).parents(".pop").hasClass("movie_pop")){
+			if($(".sound").hasClass("on")){
+				$(".audio").trigger("play");
+			}
+		}
+		$(".movie_wrap").html('');
+		$(".list_pop .img_wrap").removeClass("rare hero");
+		$(".list_pop .pimg div").empty();
+	});
 
-//앱소개 리뷰 롤링
-var rl = {
-	rollterm: "",
-	delay: 2500,
-	rollspeed: 800,
-	rolling: function(){
-		var moveheight = $(".review_roll li:first").height() + 20;
-		$(".review_roll li:eq(4)").show();
-		$(".review_roll li:first").stop().animate({
-			marginTop: -moveheight
-		}, rl.rollspeed, function(){
-			$(this).hide().css("margin-top", 0).appendTo($(".review_roll ul"));
+	//top button
+	$(".btn_top").click(function(e){
+		e.preventDefault();
+		$("html,body").stop().animate({scrollTop:0},speed,easing);
+	});
+});
+
+var winWidth = $(window).width();
+var winHeight = $(window).height();
+var sct = $(window).scrollTop();
+var sectionOffsetTop = [];
+var listIdx;
+var listLength;
+//계속 신규 생성되는 swiper 처리를 막기위해 전역변수로 설정
+var swiper;
+
+//resize시 변경되는 값
+function resize(){
+	winHeight = $(window).height(),
+	swiper;
+	popSize();
+	$(".main").css("height", winHeight+"px");
+	$(".main .content .align").css("margin-top", -($(".main .content .align").height()/2));
+	$(".list li").css("height", $(".list li img").height() + $(".list li .name").height());
+	$(".wrap .section").each(function(i){
+		sectionOffsetTop[i] = $(this).offset().top;
+	});
+	if(sct > sectionOffsetTop[1] && $(".page").hasClass("on")){
+		$(".wrap").css("top", -$(".main").height());
+	}
+	if(swiper != null){
+		swiper.activeIndex = listIdx - 1;
+	}
+}
+
+function popShow(){
+	/*var imgSrc = "https://static.estgames.co.kr/novawars/brand/images/", //절대 경로 url로 바꾸기
+		imgName = "pop"+listIdx
+	$(".list_pop .img_wrap").empty().append("<img src='"+imgSrc+imgName+".jpg' alt=''>");*/
+	$(".list_pop .pimg div:eq("+(listIdx-1)+")").addClass("on").siblings("div").removeClass("on");
+	$(".list_pop").fadeIn("fast").addClass("show");
+	if(listIdx > 20 && listIdx < 38){
+		$(".list_pop .img_wrap").removeClass("hero").addClass("rare");
+	}else if(listIdx > 37){
+		$(".list_pop .img_wrap").removeClass("rare").addClass("hero");
+	}else{
+		$(".list_pop .img_wrap").removeClass("rare hero");
+	}
+	popSize();
+
+	//모바일 터치
+	if(isMobile()){
+		//swiper 신규생성을 막기위해 null이 아닐 경우만 swiper 생성
+		if(swiper == null){
+			swiper = new Swiper('.swiper-container', {});
+		}
+		$(".swiper-wrapper").css({
+			"transform" : "translate3d("+-($(".swiper-slide").width()*(listIdx-1))+"px,"+0+","+0+")"	
 		});
-	},
-	rollAuto: function(){
-		this.rollterm = setInterval(rl.rolling, rl.delay);
-	},
-	rollStop: function(){
-		clearInterval(this.rollterm);
+		$(".list_pop .pimg > div").removeClass("swiper-slide-prev swiper-slide-active swiper-slide-next");
+		$(".list_pop .pimg > div").eq(listIdx-2).addClass("swiper-slide-prev");
+		$(".list_pop .pimg > div").eq(listIdx-1).addClass("swiper-slide-active");
+		$(".list_pop .pimg > div").eq(listIdx).addClass("swiper-slide-next");
+		swiper.updateClasses = function(){
+			listIdx = (swiper.activeIndex + 1);
+			swiper.slides.removeClass(swiper.params.slideActiveClass + ' ' + swiper.params.slideNextClass + ' ' + swiper.params.slidePrevClass);
+			var activeSlide = swiper.slides.eq(swiper.activeIndex);
+			//Active classes
+            activeSlide.addClass(swiper.params.slideActiveClass);
+            //Next Slide
+            var nextSlide = activeSlide.next('.' + swiper.params.slideClass).addClass(swiper.params.slideNextClass);
+            if(swiper.params.loop && nextSlide.length === 0){
+                swiper.slides.eq(0).addClass(swiper.params.slideNextClass);
+            }
+            //Prev Slide
+            var prevSlide = activeSlide.prev('.' + swiper.params.slideClass).addClass(swiper.params.slidePrevClass);
+            if(swiper.params.loop && prevSlide.length === 0){
+                swiper.slides.eq(-1).addClass(swiper.params.slidePrevClass);
+            }
+			if(swiper.activeIndex > 19 && swiper.activeIndex < 37){
+				$(".list_pop .img_wrap").removeClass("hero").addClass("rare");
+			}else if(swiper.activeIndex > 36){
+				$(".list_pop .img_wrap").removeClass("rare").addClass("hero");
+			}else{
+				$(".list_pop .img_wrap").removeClass("rare hero");
+			}
+		}
 	}
-};
+}
 
-//피부과정보 팝업
-var infoPop = {
-	branches: "gangnam",
-	bname: "강남점",
-	index: 1,
-	u_idx: 0,
-	imgsrc: "/images/skindoc/desktop/",
-	imglength: 0,
-	speed: 400,
-	setting: function(){
-		$(".popup .img_box img").attr("src", infoPop.imgsrc + infoPop.branches + "/img_big_" + infoPop.index + ".jpg");
-		$(".popup .pop_title .count span").text(infoPop.index);
-	},
-	//팝업 오픈
-	popOpen: function(){
-		$(".popup").show();
-		infoPop.index = $(this).parent("li").index() + 1;
-		infoPop.imglength = $(this).parents("ul").find("li").length;
-		$(".popup .pop_title .brname span").text(infoPop.bname);
-		infoPop.setting();
+//팝업 크기
+function popSize(){
+	var popWidth = $(".show .pop_wrap").width();
+	var popHeight = $(".show .pop_wrap").width()*0.75;
+	var imgHeight = $(".show .pop_wrap").width()*0.656;
+	$(".show > .pop_wrap").css({
+		"margin-top" : -(popHeight/2)+"px",
+		"margin-left" : -(popWidth/2)+"px"
+	});
+	$(".list_pop .img_wrap,.movie_pop .movie_wrap").css("height", imgHeight+"px");
+	$(".list_pop .move").css({
+		"height" : imgHeight+"px"
+	});
+}
+
+//사운드 바 애니메이션
+function soundBarMove(bar){
+	var height = Math.floor(Math.random() * 27) + 1;
+	bar.animate({
+		height: height
+	}, 150,function() {
+		soundBarMove($(this));
+	});
+}
+
+//모바일 분기
+function isMobile(){
+	var UserAgent = navigator.userAgent;
+	if (UserAgent.match(/iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null){
+		return true;
+	}else{
 		return false;
-	},
-	//팝업 닫기
-	popClose: function(){
-		$(".popup").hide();
-		$(".popup .img_box img").attr("src", " ");
-		return false;
-	},
-	//이전 이미지 보기
-	preView: function(){
-		infoPop.index != 1 ? infoPop.index = infoPop.index - 1 : infoPop.index = infoPop.imglength;
-		infoPop.setting();
-	},
-	//다음 이미지 보기
-	nextView: function(){
-		infoPop.index != infoPop.imglength ? infoPop.index = infoPop.index + 1 : infoPop.index = 1;
-		infoPop.setting();
 	}
-};
+}
 
-function fbs_click(width, height){
-	event.stopPropagation();
-	event.preventDefault();
+//youtube
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+function onYouTubeIframeAPIReady(){
+	player = new YT.Player('player');
+}
 
-	var leftPosition, topPosition;
-	leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
-	topPosition = (window.screen.height / 2) - ((height / 2) + 50);
-	var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
-	var u = location.href;
-	var t = document.title;
-	window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', windowFeatures);
-	return false;
+//휠 이벤트
+function wheel(){
+	var scrollChk = true;
+	var easing = "easeInOutExpo";
+	var delta = 0;
+	var speed = 800;
+	$(".wrap").on("mousewheel DOMMouseScroll",function(event){
+		if(event.originalEvent.wheelDelta){
+			delta = parseInt(event.originalEvent.wheelDelta)/Math.abs(parseInt(event.originalEvent.wheelDelta));
+		} else if(event.originalEvent.detail){
+			delta = -parseInt(event.originalEvent.detail)/Math.abs(parseInt(event.originalEvent.detail));
+		} else if(event.originalEvent.deltaY){
+			delta = -parseInt(event.originalEvent.deltaY)/Math.abs(parseInt(event.originalEvent.deltaY));
+		}
+		if(scrollChk){
+			if(delta == -1 && sct == 0  && $(".main").hasClass("on")){
+				event.preventDefault ? event.preventDefault() : event.returnValue = false;
+				scrollChk = false;
+				$(".wrap").stop().animate({top:-$(".main").height()}, speed, easing, function(){
+					scrollChk = true;
+					$(".main").removeClass("on");
+					$(".page").addClass("on");
+				});
+				return false;
+			}else if(delta == 1 && sct == 0 && $(".page").hasClass("on")){
+				event.preventDefault ? event.preventDefault() : event.returnValue = false;
+				scrollChk = false;
+				$(".wrap").stop().animate({top:0}, speed, easing, function(){
+					scrollChk = true;
+					$(".page").removeClass("on");
+					$(".main").addClass("on");
+				});
+				return false;
+			}
+		}else{
+			event.preventDefault ? event.preventDefault() : event.returnValue = false;
+		}
+	});
 }
