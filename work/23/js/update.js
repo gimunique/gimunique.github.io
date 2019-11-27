@@ -1,0 +1,296 @@
+var Browser = navigator.userAgent;
+var setValueInfo;
+var scrollLeftPosition = 0;
+
+$(window).on({
+    beforeunload : function(){
+        $(this).scrollLeft(0);
+    },
+    load : function(){
+        //공통 값 저장
+        setValueInfo = new function(){
+            this.sectionWidth = $(".section").width(),
+            this.sectionLength = $(".section").length;
+        }
+
+        //사이즈 셋팅
+        initSizeSetting(); 
+
+        //가로 스크롤 이벤트
+        horizontalScrollingEvent();
+        
+        //비주얼 모션
+        initMotion();
+        
+        //네이게이션 클릭 이동
+        $(".nav li").find(">button").on("click", function(){
+            var sectionOffsetLeft =  getSectionOffsetLeft();
+            if($(this).parents("li").index() === 0){
+                $("html, body").scrollLeft(sectionOffsetLeft[1]);
+            }else{
+                $("html, body").scrollLeft(sectionOffsetLeft[4]);
+            }
+        });
+
+        //첫화면으로 클릭 이동
+        $(".btn_left").on("click", function(){
+            $("html, body").scrollLeft(0);
+        });
+        
+        //던전 이미지 팝업
+        $(".dungeon_img li").each(function(i){
+            $(this).find(">button").click(function(){
+                $(".pop_wrap").fadeIn("fast");
+                $(".pop .dungeon").empty().append("<img src='./images/dungeon"+(i+1)+".jpg' alt=''>");
+            });
+        });
+        $(".btn_close, .dimmed").click(function(){
+            $(".pop_wrap").fadeOut("fast");
+        });
+    },
+    resize : function(){
+        initSizeSetting();
+    },
+    scroll : function(){
+        var windowScrollLeft = $(window).scrollLeft();
+        var sectionOffsetLeft =  getSectionOffsetLeft();  
+       
+        // 네비게이션 active
+        if(windowScrollLeft >= sectionOffsetLeft[1]-(setValueInfo.sectionWidth/3) && windowScrollLeft < sectionOffsetLeft[4]-(setValueInfo.sectionWidth/3)){
+            $(".nav .menu1").addClass("active").siblings("li").removeClass("active");
+        }else if(windowScrollLeft >= sectionOffsetLeft[4]-(setValueInfo.sectionWidth/3)){
+            $(".nav .menu2").addClass("active").siblings("li").removeClass("active");
+        }else{
+            $(".nav li").removeClass("active");
+        }
+       
+        //백그라운드 확대, 축소, 패럴럭스
+        parallaxObject(); 
+    }
+});
+
+//비주얼 모션
+function initMotion(){
+    $(".wrap").addClass("load");
+    TweenMax.to($(".shadow"), 1, {opacity:0, display:"none", ease:Linear.easeNone});
+    TweenMax.fromTo($(".dungeon_info .item"), 1.8, {y:-8}, {y:8, repeat:-1, yoyo:true, ease:Sine.easeInOut});
+
+    
+    if(Browser.indexOf("MSIE 7") !== -1 || Browser.indexOf("MSIE 8") !== -1){
+        $(".smoke").hide();
+    }else{
+        //메인 타이틀
+        var mainTitleTl = new TimelineMax();
+        mainTitleTl.fromTo($(".main_title h2 .m1, .main_title h2 .m2"), 1.2, {x:-0, y:-0, opacity:0, scaleX:1, scaleY:2}, {x:0, y:0, opacity:0.25, scaleX:1, scaleY:1, delay:0.15, ease:Power3.easeInOut})
+        .to($(".main_title h2 .m1, .main_title h2 .m2"), 1.5, {opacity:1, ease:Sine.easeInOut}, "-=0.45");
+        TweenMax.fromTo($(".main_title .sub_title"), 0.75, {y:20, opacity:0}, {y:0, opacity:1, delay:1.3, ease:Sine.easeInOut});
+        TweenMax.fromTo($(".main_title .season"), 0.75, {y:-20, opacity:0}, {y:0, opacity:1, delay:1.3, ease:Sine.easeInOut});
+        TweenMax.fromTo($(".main_title .date"), 1, {opacity:0}, {opacity:1, delay:1.8, ease:Sine.easeInOut});
+
+        //메인 스모크
+        var smokeTL = new TimelineMax({repeat:-1, repeatDelay:-1.5, yoyo:false});
+        var smokePosition1 = [
+            {x:0, y:0, autoAlpha:0},
+            {x:100, y:-250, autoAlpha:1},
+            {x:200, y:-300, autoAlpha:0}
+        ]
+        var smokePosition2 = [
+            {x:0, y:0, autoAlpha:0},
+            {x:300, y:-450, autoAlpha:1},
+            {x:400, y:-500, autoAlpha:0}
+        ]
+        var smokePosition3 = [
+            {x:0, y:0, autoAlpha:0},
+            {x:50, y:-50, autoAlpha:1},
+            {x:100, y:-100, autoAlpha:0}
+        ]
+        smokeTL.to($(".smoke .s1"), 8.5, {bezier:{type:"soft", values:smokePosition1}})
+        .to($(".smoke .s2"), 8.5, {bezier:{type:"soft", values:smokePosition2}}, "-=7.5")
+        .to($(".smoke .s3"), 6.5, {bezier:{type:"soft", values:smokePosition3}}, "-=7.5");
+    }
+}
+
+//사이즈 셋팅
+function initSizeSetting(){
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    $(".wrap, .section").css({
+        "height" : windowHeight
+    });
+
+    if(windowWidth > 1920){
+        $(".section .bg").css({"margin-left" : -(windowWidth/2)}).addClass("cover");
+        $(".wrap").css({
+            "width" : windowWidth * setValueInfo.sectionLength
+        });
+        $(".section").css({
+            "width" : windowWidth
+        });
+        $(".section1 .main_title").css({"top" : windowWidth*0.11510416});
+    }else{
+        $(".section .bg").css({"margin-left" : -(setValueInfo.sectionWidth/2)}).removeClass("cover");
+        $(".wrap").css({
+            "width" : setValueInfo.sectionWidth * setValueInfo.sectionLength
+        });
+        $(".section").css({
+            "width" : setValueInfo.sectionWidth
+        });
+        $(".section1 .main_title").css({"top" : "221px"});
+    }
+}
+
+//section scrollLeft 배열 저장
+function getSectionOffsetLeft(){
+    var secitonOffsetLeftArray = [];
+    for(var i=0; i<setValueInfo.sectionLength; i++){
+        secitonOffsetLeftArray[i] = $(".section:eq("+i+")").offset().left;     
+    }
+    return secitonOffsetLeftArray;
+}
+
+//가로 스크롤 이벤트
+function horizontalScrollingEvent(){
+    $("html, body").on("mousewheel DOMMouseScroll", function(event){
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var windowScrollLeft = $(window).scrollLeft();
+        var speed = 800;
+        var easing = "easeOutQuart";
+
+        if(event.originalEvent.wheelDelta){
+            delta = parseInt(event.originalEvent.wheelDelta)/Math.abs(parseInt(event.originalEvent.wheelDelta));
+        } else if(event.originalEvent.detail){
+            delta = -parseInt(event.originalEvent.detail)/Math.abs(parseInt(event.originalEvent.detail));
+        } else if(event.originalEvent.deltaY){
+            delta = -parseInt(event.originalEvent.deltaY)/Math.abs(parseInt(event.originalEvent.deltaY));
+        }
+        
+        //scrollLeftPosition -= (delta * 80);
+        scrollLeftPosition = windowScrollLeft - (delta * 400);
+        
+        // DOWN, go right
+        if(delta < 0){ 
+            if(windowWidth > 1920){
+                if(scrollLeftPosition > (windowWidth * setValueInfo.sectionLength) - windowWidth){
+                    scrollLeftPosition = (windowWidth * setValueInfo.sectionLength) - windowWidth;
+                } 
+            }else{
+                if(scrollLeftPosition > (setValueInfo.sectionWidth * setValueInfo.sectionLength) - windowWidth){
+                    scrollLeftPosition = (setValueInfo.sectionWidth * setValueInfo.sectionLength) - windowWidth;
+                } 
+            }
+        }
+        // UP, go left
+        else if(delta > 0){ 
+            if(scrollLeftPosition < 0){
+                scrollLeftPosition = 0;
+            }
+        }
+        
+        $(this).stop().animate({scrollLeft:scrollLeftPosition}, speed, easing);
+    });
+}
+
+//백그라운드 확대, 축소, 패럴럭스
+function parallaxObject(){
+    var windowScrollLeft = $(window).scrollLeft();
+    var sectionOffsetLeft =  getSectionOffsetLeft(); 
+    var standardScale = 130;
+    var limitScale = 100;
+    var standardDivision = 60;
+
+    //reset position
+    if(windowScrollLeft === 0){
+        $(".section .monster, .section .dungeon_img li").css({"transform" : "translateX("+ 0 +"px)"});
+    }
+    
+    //두번째 페이지 몬스터 투명도
+    if(windowScrollLeft >= sectionOffsetLeft[0] && windowScrollLeft < sectionOffsetLeft[2]){
+        var monsterOpacity = 0; 
+        monsterOpacity -= -((windowScrollLeft/800).toFixed(2));
+        monsterOpacity <= 1 ? $(".section2 .monster1").css({"opacity" : monsterOpacity}) : $(".section2 .monster1").css({"opacity" : 1});
+    }
+
+    //컨텐츠, 배경 스케일
+    if(windowScrollLeft > sectionOffsetLeft[0] && windowScrollLeft <= sectionOffsetLeft[2]+(setValueInfo.sectionWidth/3)){
+        var bgScale = standardScale;
+        bgScale -= ((windowScrollLeft-sectionOffsetLeft[1])/standardDivision).toFixed(1);
+        bgScale <= limitScale ? bgScale = limitScale : $(".section2 .bg").css({"background-size" :  bgScale + "% auto"});
+
+        var xPos1 = 0;
+        xPos1 += (sectionOffsetLeft[1] - windowScrollLeft)/10;
+        var xPos2 = 0;
+        xPos2 += (sectionOffsetLeft[1] - windowScrollLeft)/7.5;
+        var xPos3 = 0;
+        xPos3 += (sectionOffsetLeft[1] - windowScrollLeft)/5;
+        $(".section2 .monster1, .section2 .monster3").css({"transform" : "translateX("+ xPos2 +"px)"}); 
+        $(".section2 .monster2").css({"transform" : "translateX("+ xPos3 +"px)"}); 
+    }
+    if(windowScrollLeft > sectionOffsetLeft[1] && windowScrollLeft <= sectionOffsetLeft[3]+(setValueInfo.sectionWidth/3)){ 
+        var bgScale = standardScale;
+        bgScale -= ((windowScrollLeft-sectionOffsetLeft[2])/standardDivision).toFixed(1);
+        bgScale <= limitScale ? bgScale = limitScale : $(".section3 .bg").css({"background-size" :  bgScale + "% auto"});
+        
+        var xPos1 = 0;
+        xPos1 += (sectionOffsetLeft[2] - windowScrollLeft)/10;
+        var xPos2 = 0;
+        xPos2 += (sectionOffsetLeft[2] - windowScrollLeft)/7.5;
+        var xPos3 = 0;
+        xPos3 += (sectionOffsetLeft[2] - windowScrollLeft)/5;
+    }
+    if(windowScrollLeft > sectionOffsetLeft[2] && windowScrollLeft <= sectionOffsetLeft[4]+(setValueInfo.sectionWidth/3)){ 
+        var bgScale = standardScale;
+        bgScale -= ((windowScrollLeft-sectionOffsetLeft[3])/standardDivision).toFixed(1);
+        bgScale <= limitScale ? bgScale = limitScale : $(".section4 .bg").css({"background-size" :  bgScale + "% auto"});
+        
+        var xPos1 = 0;
+        xPos1 += (sectionOffsetLeft[3] - windowScrollLeft)/10;
+        var xPos2 = 0;
+        xPos2 += (sectionOffsetLeft[3] - windowScrollLeft)/7.5;
+        var xPos3 = 0;
+        xPos3 += (sectionOffsetLeft[3] - windowScrollLeft)/5;
+        $(".section4 .dungeon1").css({"transform" : "translateX("+ xPos1 +"px)"});
+        $(".section4 .monster4").css({"transform" : "translateX("+ xPos3 +"px)"});
+    }
+    if(windowScrollLeft > sectionOffsetLeft[3] && windowScrollLeft <= sectionOffsetLeft[5]+(setValueInfo.sectionWidth/3)){ 
+        var bgScale = standardScale;
+        bgScale -= ((windowScrollLeft-sectionOffsetLeft[4])/standardDivision).toFixed(1);
+        bgScale <= limitScale ? bgScale = limitScale : $(".section5 .bg").css({"background-size" :  bgScale + "% auto"});
+
+        var xPos1 = 0;
+        xPos1 += (sectionOffsetLeft[4] - windowScrollLeft)/10;
+        var xPos2 = 0;
+        xPos2 += (sectionOffsetLeft[4] - windowScrollLeft)/7.5;
+        var xPos3 = 0;
+        xPos3 += (sectionOffsetLeft[4] - windowScrollLeft)/5;
+        $(".section5 .monster5").css({"transform" : "translateX("+ xPos1 +"px)"});
+    }
+    if(windowScrollLeft > sectionOffsetLeft[4] && windowScrollLeft <= sectionOffsetLeft[6]+(setValueInfo.sectionWidth/3)){ 
+        var bgScale = standardScale;
+        bgScale -= ((windowScrollLeft-sectionOffsetLeft[5])/standardDivision).toFixed(1);
+        bgScale <= limitScale ? bgScale = limitScale : $(".section6 .bg").css({"background-size" :  bgScale + "% auto"});
+
+        var xPos1 = 0;
+        xPos1 += (sectionOffsetLeft[5] - windowScrollLeft)/10;
+        var xPos2 = 0;
+        xPos2 += (sectionOffsetLeft[5] - windowScrollLeft)/7.5;
+        var xPos3 = 0;
+        xPos3 += (sectionOffsetLeft[5] - windowScrollLeft)/5;
+        $(".section6 .monster6").css({"transform" : "translateX("+ xPos1 +"px)"});
+        $(".section6 .monster7").css({"transform" : "translateX("+ xPos3 +"px)"});
+    }
+    if(windowScrollLeft > sectionOffsetLeft[5]){ 
+        var bgScale = 100;
+        bgScale -= ((windowScrollLeft-sectionOffsetLeft[6])/standardDivision).toFixed(1);
+        bgScale <= limitScale ? bgScale = limitScale : $(".section7 .bg").css({"background-size" :  bgScale + "% auto"});
+
+        var xPos1 = 0;
+        xPos1 += (sectionOffsetLeft[6] - windowScrollLeft)/10;
+        var xPos2 = 0;
+        xPos2 += (sectionOffsetLeft[6] - windowScrollLeft)/7.5;
+        var xPos3 = 0;
+        xPos3 += (sectionOffsetLeft[6] - windowScrollLeft)/5;
+        $(".section7 .dungeon2").css({"transform" : "translateX("+ xPos1 +"px)"});
+        $(".section7 .monster8").css({"transform" : "translateX("+ xPos3 +"px)"});
+    }
+}

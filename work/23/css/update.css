@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;vertical-align:baseline}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+body{font-family:'NotoSansDemiLight','맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif';font-size:16px;line-height:1;color:#fff}
+h1, h2, h3 ,h4 ,h5 ,h6{font-family:'맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif'}
+ol, ul{list-style:none}
+a, img{vertical-align:top}
+a, a:link, a:visited{color:#000;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+a:hover{text-decoration:none}
+table{border-collapse:collapse;border-spacing:0}
+input, textarea, button, select{font-size:inherit;font-family:inherit}
+label, button{cursor:pointer}
+button{background-color:transparent;border:0;outline:none}
+legend, caption, .blind{position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden}
+hr{display:none}
+
+/* common */
+html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
+.wrap{position:relative;max-height:960px;overflow:hidden}
+.section{float:left;position:relative;width:1920px;min-width:1920px;max-height:960px}
+.section .bg{position:absolute;left:50%;top:0;width:100%;height:100%;margin-left:-960px}
+.section .bg.cover{background-size:cover}
+.section .content{position:relative;width:1200px;height:100%;margin:0 auto;*z-index:1}
+.section q{display:block;width:100%;margin-bottom:35px;background:url("../images/spr_text.png") 50% 0 no-repeat}
+.section q:before, .section q:after{content:""}
+.section2 p, .section5 p{position:absolute;left:0;width:100%;text-align:center;line-height:1.35}
+.section2 p span, .section5 p span{display:block;margin-bottom:18px}
+.dungeon_info{position:absolute;left:50%}
+.dungeon_info .item, .dungeon_info .info{background:url("../images/spr_item.png") no-repeat}
+.dungeon_info .item{display:block;width:415px;height:415px}
+.dungeon_info .info{position:absolute;left:378px;top:0;width:556px;height:415px}
+.dungeon_img{position:relative;width:100%;height:100%;z-index:3}
+.dungeon_img li{position:absolute;border:1px solid #806633;backface-visibility:hidden;overflow:hidden}
+.dungeon_img li button{position:relative;display:block;width:100%;height:100%;background-position:50% 50%;background-repeat:no-repeat;transition:transform 350ms ease}
+.dungeon_img li button:hover{transform:translateZ(0) scale(1.065)}
+.section .monster{position:absolute;display:block;z-index:1}
+.section .cover_slice{position:absolute;top:0;display:block;width:200px;height:100%;background-repeat:repeat-y}
+.section .cover_left{left:-200px;background-image:url("../images/cover_left.png")}
+.section .cover_right{left:0;background-image:url("../images/cover_right.png")}
+.wrap .shadow{position:fixed;top:0;bottom:0;left:0;right:0;display:block;width:100%;height:100%;background-color:#000;z-index:1000}
+
+/* fixed */
+.wrap h1, .wrap .aside, .wrap .nav, .wrap .address{position:fixed;z-index:100}
+.wrap h1 a, .wrap .link a{display:block;width:100%;height:100%}
+.wrap h1{left:40px;top:30px;width:200px;height:56px}
+.wrap .aside{right:40px;top:40px}
+.wrap .link, .wrap .user{float:left}
+.wrap .link li{float:left;margin-left:6px;width:40px;height:40px}
+.wrap .link li a, .wrap .aside button span{background:#293341 url("../images/spr_link.png") no-repeat}
+.wrap .link .history a{background-position:-40px 0}
+.wrap .link .event a{background-position:-80px 0}
+.wrap .user{width:137px;height:40px;margin-right:13px}
+.wrap .user button{position:absolute;left:0;font-family:'NotoSansMedium';font-size:14px;color:#b0b3b9;line-height:0;text-align:left}
+.wrap .user button span{display:inline-block;width:18px;height:18px;margin-right:9px;vertical-align:-4px;*vertical-align:0}
+.wrap .user .btn_none{top:0;*top:-6px}
+.wrap .user .btn_left{bottom:0;*bottom:-3px}
+.wrap .user .btn_none span{background-position:-120px 0}
+.wrap .user .btn_left span{background-position:-120px -18px}
+.wrap .address{width:100%;left:0;bottom:26px;font-family:'맑은 고딕','malgun gothic';font-size:15px;color:#fff;line-height:1.2;text-align:center;opacity:0.2;filter:alpha(opacity=20)}
+.wrap .nav{left:50%;top:0;width:560px;height:129px;margin-left:-280px}
+.wrap .nav li{float:left;position:relative;width:280px;height:129px}
+.wrap .nav button{display:block;width:100%;height:100%}
+.wrap .nav button .default, .wrap .nav button .hover{display:block;width:100%;height:100%;background:url("../images/spr_nav.png") no-repeat;transition:all 150ms ease-in}
+.wrap .nav button .hover{position:absolute;left:0;top:0;opacity:0;filter:alpha(opacity=0)}
+.wrap .nav .active button .default, .wrap .nav button:hover .default{opacity:0;filter:alpha(opacity=0)}
+.wrap .nav .active button .hover, .wrap .nav button:hover .hover{opacity:1;filter:alpha(opacity=100)}
+.wrap .nav .menu2 .default{background-position:-280px 0}
+.wrap .nav .menu1 .hover{background-position:0 -129px}
+.wrap .nav .menu2 .hover{background-position:-280px -129px}
+
+/* section contents */
+.section1 img{width:100%}
+.section1 .smoke{position:absolute;left:51.5%;top:0;width:36.458%}
+.section1 .smoke img{opacity:0}
+.section1 .smoke .s2, .section1 .smoke .s3{position:absolute;left:0;top:0}
+.section1 .main_title{position:absolute;left:51.5%;width:26.823%}
+.section1 .main_title .m2{position:absolute;left:0;top:0}
+.section1 .sand{position:absolute;left:4.1666%;top:0;width:55.2%}
+.section1 .sand span{float:left;display:block;width:25%;opacity:0;transition:opacity 800ms linear}
+.load .section1 .sand span{opacity:1}
+.load .section1 .sand .s1{transition-delay:1500ms}
+.load .section1 .sand .s2{transition-delay:1300ms}
+.load .section1 .sand .s3{transition-delay:1300ms}
+.load .section1 .sand .s4{transition-delay:1500ms}
+.load .section1 .sand .s5{transition-delay:1400ms}
+.load .section1 .sand .s6{transition-delay:1200ms}
+.load .section1 .sand .s7{transition-delay:1200ms}
+.load .section1 .sand .s8{transition-delay:1400ms}
+.load .section1 .sand .s9{transition-delay:1200ms}
+.load .section1 .sand .s10{transition-delay:1000ms}
+.load .section1 .sand .s11{transition-delay:1000ms}
+.load .section1 .sand .s12{transition-delay:1200ms}
+.section2 p{top:46%;color:#5a546a}
+.section2 p q{height:91px}
+.section2 .monster1{left:-498px;top:135px;width:915px;height:1000px;background:url("../images/monster1.png") no-repeat;opacity:0;filter:alpha(opacity=0)}
+.section2 .monster2{right:-388px;top:-32px;width:944px;height:770px;background:url("../images/monster2.png") no-repeat}
+.section2 .monster3{right:-822px;top:401px;width:1550px;height:890px;background:url("../images/monster3.png") no-repeat}
+.section3 .dungeon_info{top:31.7%;width:934px;margin-left:-468px}
+.section3 .dungeon_info .info{background-position:-415px 0}
+.section4 .dungeon_img .dungeon1{width:782px;height:418px;left:-360px;top:18%}
+.section4 .dungeon_img .dungeon2{width:658px;height:346px;left:-60px;top:51%}
+.section4 .dungeon_img .dungeon3{width:468px;height:245px;left:911px;top:59%}
+.section4 .dungeon_img .dungeon1 button{background-image:url("../images/thumbnail1.jpg")}
+.section4 .dungeon_img .dungeon2 button{background-image:url("../images/thumbnail2.jpg")}
+.section4 .dungeon_img .dungeon3 button{background-image:url("../images/thumbnail3.jpg")}
+.section4 .monster4{right:-334px;top:105px;width:1075px;height:590px;background:url("../images/monster4.png") no-repeat}
+.section5 p{top:53.4%;color: #5a5348}
+.section5 p q{height:116px;background-position:50% -91px}
+.section5 .cover_left{z-index:2}
+.section5 .monster5{right:-584px;top:0;width:876px;height:1040px;background:url("../images/monster5.png") no-repeat}
+.section6 .dungeon_info{top:32.8%;width:905px;margin-left:-452px}
+.section6 .dungeon_info .item{background-position:0 -415px}
+.section6 .dungeon_info .info{background-position:-415px -415px}
+.section6 .monster6{right:95px;top:100px;width:470px;height:550px;background:url("../images/monster6.png") no-repeat}
+.section6 .monster7{right:-393px;top:115px;width:705px;height:860px;background:url("../images/monster7.png") no-repeat}
+.section7 .dungeon_img .dungeon1{left:390px;top:20.2%;width:611px;height:328px}
+.section7 .dungeon_img .dungeon2{left:-17px;top:37.8%;width:518px;height:273px}
+.section7 .dungeon_img .dungeon3{left:27px;top:72.6%;width:298px;height:156px}
+.section7 .dungeon_img .dungeon1 button{background-image:url("../images/thumbnail4.jpg")}
+.section7 .dungeon_img .dungeon2 button{background-image:url("../images/thumbnail5.jpg")}
+.section7 .dungeon_img .dungeon3 button{background-image:url("../images/thumbnail6.jpg")}
+.section7 .monster8{right:-516px;top:-471px;width:1100px;height:1800px;background:url("../images/monster8.png") no-repeat}
+
+/* section bg */
+.section1 .bg{background:url("../images/bg1.jpg") 50% 0 no-repeat}
+.section2 .bg{background:url("../images/bg2.jpg") 50% 0 no-repeat fixed}
+.section3 .bg{background:url("../images/bg3.jpg") 50% 0 no-repeat}
+.section4 .bg{background:url("../images/bg4.jpg") 50% 0 no-repeat}
+.section5 .bg{background:url("../images/bg5.jpg") 50% 0 no-repeat fixed}
+.section6 .bg{background:url("../images/bg6.jpg") 50% 0 no-repeat}
+.section7 .bg{background:url("../images/bg7.jpg") 50% 0 no-repeat}
+
+/* ie7, ie8 hack */
+.section2, .section6{*z-index:1}
+.section5{*z-index:2}
+.section4{*z-index:3}
+.section1 .bg{*min-height:960px;*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg1.jpg", sizingMethod="scale")}
+.section2 .bg{*min-height:1920px;*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg2.jpg", sizingMethod="scale")}
+.section3 .bg{*min-height:1920px;*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg3.jpg", sizingMethod="scale")}
+.section4 .bg{*min-height:1920px;*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg4.jpg", sizingMethod="scale")}
+.section5 .bg{*min-height:1920px;*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg5.jpg", sizingMethod="scale")}
+.section6 .bg{*min-height:1920px;*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg6.jpg", sizingMethod="scale")}
+.section7 .bg{*min-height:1920px;*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg7.jpg", sizingMethod="scale")}
+@media \0screen{  
+.section1 .bg{min-height:960px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg1.jpg", sizingMethod="scale")}
+.section2 .bg{min-height:1920px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg2.jpg", sizingMethod="scale")}
+.section3 .bg{min-height:1920px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg3.jpg", sizingMethod="scale")}
+.section4 .bg{min-height:1920px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg4.jpg", sizingMethod="scale")}
+.section5 .bg{min-height:1920px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg5.jpg", sizingMethod="scale")}
+.section6 .bg{min-height:1920px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg6.jpg", sizingMethod="scale")}
+.section7 .bg{min-height:1920px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg7.jpg", sizingMethod="scale")}
+}
+
+/* pop */
+.pop_wrap{display:none;position:fixed;width:100%;height:100%;top:0;right:0;left:0;bottom:0;z-index:1000}
+.pop_wrap .dimmed{position:absolute;left:0;top:0;display:block;width:100%;height:100%;background-color:#000;opacity:0.8;filter:alpha(opacity=80)}
+.pop_wrap .pop{position:absolute;left:50%;top:50%;width:1270px;height:750px;margin:-375px 0 0 -635px}
+.pop_wrap .pop .btn_close{position:absolute;right:0;top:0}
+.pop_wrap .dungeon{width:1100px;height:605px;padding:72px 50px 73px;background:url("../images/bg_pop.png")}
+
+/* mobile */
+@media only screen and (-webkit-min-device-pixel-ratio:1.3){
+    .section2 p, .section5 p{font-size:15px;line-height:1.25}
+}
