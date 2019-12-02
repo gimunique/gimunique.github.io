@@ -3,7 +3,7 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;vertical-align:baseline}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
-body{font-family:'NotoSansDemiLight','맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif';font-size:16px;line-height:1;color:#fff}
+body{font-family:'NotoSansDemiLight','맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif';font-size:16px;line-height:1;color:#fff;/* -webkit-font-smoothing:subpixel-antialiased;text-rendering:optimizeLegibility */}
 h1, h2, h3 ,h4 ,h5 ,h6{font-family:'맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif'}
 ol, ul{list-style:none}
 a, img{vertical-align:top}
@@ -18,9 +18,9 @@ hr{display:none}
 
 /* common */
 html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
-.wrap{position:relative;max-height:960px;overflow:hidden}
-.section{float:left;position:relative;width:1920px;min-width:1920px;max-height:960px}
-.section .bg{position:absolute;left:50%;top:0;width:100%;height:100%;margin-left:-960px}
+.wrap{position:relative;/* max-height:960px; */overflow:hidden;/* transform-style:preserve-3d; */}
+.section{float:left;position:relative;width:1920px;min-width:1920px;/* max-height:960px; *//* perspective:2000px;overflow:hidden */}
+.section .bg{position:absolute;left:50%;top:0;width:100%;height:100%;margin-left:-960px;transition:/* background-size 50ms linear; */}
 .section .bg.cover{background-size:cover}
 .section .content{position:relative;width:1200px;height:100%;margin:0 auto;*z-index:1}
 .section q{display:block;width:100%;margin-bottom:35px;background:url("../images/spr_text.png") 50% 0 no-repeat}
@@ -33,13 +33,21 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 .dungeon_info .info{position:absolute;left:378px;top:0;width:556px;height:415px}
 .dungeon_img{position:relative;width:100%;height:100%;z-index:3}
 .dungeon_img li{position:absolute;border:1px solid #806633;backface-visibility:hidden;overflow:hidden}
-.dungeon_img li button{position:relative;display:block;width:100%;height:100%;background-position:50% 50%;background-repeat:no-repeat;transition:transform 350ms ease}
+.dungeon_img li button{position:relative;display:block;width:100%;height:100%;background-position:50% 50%;background-repeat:no-repeat;transition:transform 350ms ease;/* box-shadow:0px 0px 30px #000; */}
 .dungeon_img li button:hover{transform:translateZ(0) scale(1.065)}
 .section .monster{position:absolute;display:block;z-index:1}
 .section .cover_slice{position:absolute;top:0;display:block;width:200px;height:100%;background-repeat:repeat-y}
 .section .cover_left{left:-200px;background-image:url("../images/cover_left.png")}
 .section .cover_right{left:0;background-image:url("../images/cover_right.png")}
 .wrap .shadow{position:fixed;top:0;bottom:0;left:0;right:0;display:block;width:100%;height:100%;background-color:#000;z-index:1000}
+/* .section .monster span{position:absolute;left:0;top:0;display:block;width:100%;height:100%;opacity:0.5;background-repeat:no-repeat;animation:monster 1000ms 1000ms ease infinite}
+.section .monster1 span{background-image:url("../images/monster1.png")}
+.section2 .monster1:before{content:"";display:block;width:100%;height:100%;position:absolute;left:0;top:0;opacity:0.5;filter:alpha(opacity=0);background:url("../images/monster1.png") no-repeat;filter:alpha(opacity=0);transition-property:transform,opacity,filter;transition-duration:1s;transition-timing-function:ease}
+.section2 .monster1:hover:before{transform:scale(1.1);opacity:0}
+@keyframes monster{
+    0%{opacity:0.8} 
+    20%{transform:scale(1.1);opacity:0}
+} */
 
 /* fixed */
 .wrap h1, .wrap .aside, .wrap .nav, .wrap .address{position:fixed;z-index:100}
@@ -94,7 +102,7 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 .load .section1 .sand .s12{transition-delay:1200ms}
 .section2 p{top:46%;color:#5a546a}
 .section2 p q{height:91px}
-.section2 .monster1{left:-498px;top:135px;width:915px;height:1000px;background:url("../images/monster1.png") no-repeat;opacity:0;filter:alpha(opacity=0)}
+.section2 .monster1{left:-498px;top:135px;width:915px;height:1000px;background:url("../images/monster1.png") no-repeat;opacity:0;filter:alpha(opacity=0);/* transition:opacity 150ms linear */}
 .section2 .monster2{right:-388px;top:-32px;width:944px;height:770px;background:url("../images/monster2.png") no-repeat}
 .section2 .monster3{right:-822px;top:401px;width:1550px;height:890px;background:url("../images/monster3.png") no-repeat}
 .section3 .dungeon_info{top:31.7%;width:934px;margin-left:-468px}
@@ -162,5 +170,9 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 
 /* mobile */
 @media only screen and (-webkit-min-device-pixel-ratio:1.3){
+    .wrap, .section{max-height:960px}
+    .wrap .user{display:none}
     .section2 p, .section5 p{font-size:15px;line-height:1.25}
+    .section2 .bg, .section5 .bg{background-attachment:scroll} 
+	/* .section .bg{background-size:cover !important} */
 }
