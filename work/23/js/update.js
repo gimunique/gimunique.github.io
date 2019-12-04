@@ -202,7 +202,7 @@ function horizontalScrollingEvent(){
         }
         
         //scrollLeftPosition -= (delta * 80);
-        scrollLeftPosition = windowScrollLeft - (delta * 560);
+        scrollLeftPosition = windowScrollLeft - (delta * 400);
         
         // DOWN, go right
         if(delta < 0){ 
