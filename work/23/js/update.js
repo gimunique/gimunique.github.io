@@ -30,14 +30,15 @@ $(window).on({
             }else{
                 //메인 타이틀
                 var mainTitleTl = new TimelineMax();
-                mainTitleTl.fromTo($(".main_title h2 .m1, .main_title h2 .m2"), 1.2, {x:-0, y:-0, opacity:0, scaleX:1, scaleY:2}, {x:0, y:0, opacity:0.25, scaleX:1, scaleY:1, delay:0.15, ease:Power3.easeInOut})
+                mainTitleTl.fromTo($(".main_title h2 .m1, .main_title h2 .m2"), 1.2, {opacity:0, scaleX:1, scaleY:2}, {opacity:0.25, scaleX:1, scaleY:1, delay:0.15, ease:Power3.easeInOut})
                 .to($(".main_title h2 .m1, .main_title h2 .m2"), 1.5, {opacity:1, ease:Sine.easeInOut}, "-=0.45");
+                TweenMax.fromTo($(".main_title h2 .m3"), 1, {opacity:0}, {opacity:1, delay:0.5, ease:Sine.easeInOut});
                 TweenMax.fromTo($(".main_title .sub_title"), 0.75, {y:20, opacity:0}, {y:0, opacity:1, delay:1.3, ease:Sine.easeInOut});
                 TweenMax.fromTo($(".main_title .season"), 0.75, {y:-20, opacity:0}, {y:0, opacity:1, delay:1.3, ease:Sine.easeInOut});
                 TweenMax.fromTo($(".main_title .date"), 1, {opacity:0}, {opacity:1, delay:1.8, ease:Sine.easeInOut});
 
                 //메인 스모크
-                var smokeTL = new TimelineMax({repeat:-1, repeatDelay:-1.5, yoyo:false});
+                var smokeTL = new TimelineMax({repeat:-1, repeatDelay:-2.5, yoyo:false});
                 var smokePosition1 = [
                     {x:0, y:0, autoAlpha:0},
                     {x:100, y:-250, autoAlpha:1},
@@ -55,24 +56,47 @@ $(window).on({
                 ]
                 smokeTL.to($(".smoke .s1"), 8.5, {bezier:{type:"soft", values:smokePosition1}})
                 .to($(".smoke .s2"), 8.5, {bezier:{type:"soft", values:smokePosition2}}, "-=7.5")
-                .to($(".smoke .s3"), 6.5, {bezier:{type:"soft", values:smokePosition3}}, "-=7.5");
+                .to($(".smoke .s3"), 5.5, {bezier:{type:"soft", values:smokePosition3}}, "-=7.5");
             }
         }());
         
+        //메인 메뉴 클릭 이동
+        buttonClickScrollingPosition(".main_menu li");
+
         //네이게이션 클릭 이동
-        $(".nav li").find(">button").on("click", function(){
-            var arrSectionOffsetLeft =  getArrarrSectionOffsetLeft();
-            if($(this).parents("li").index() === 0){
-                $("html, body").scrollLeft(arrSectionOffsetLeft[1]);
-            }else{
-                $("html, body").scrollLeft(arrSectionOffsetLeft[4]);
-            }
-        });
+        buttonClickScrollingPosition(".nav li");
 
         //첫화면으로 클릭 이동
-        $(".btn_left").on("click", function(){
-            $("html, body").scrollLeft(0);
-        });
+        buttonClickScrollingPosition(".btn_left");
+
+        function buttonClickScrollingPosition(element){
+            var arrSectionOffsetLeft =  getArrSectionOffsetLeft();
+            var speed = 1200;
+            var easing = "easeOutQuart";
+            var $element = $(element);
+
+            if($element.length === 1){
+                $element.on("click", function(){
+                    $("html, body").stop().animate({scrollLeft:arrSectionOffsetLeft[0]}, speed, easing);
+                });              
+            }
+            if($element.length === 2){
+                $element.find(">button").on("click", function(){
+                    if($(this).parents("li").index() === 0){
+                        $("html, body").stop().animate({scrollLeft:arrSectionOffsetLeft[1]}, speed, easing);
+                    }else{
+                        $("html, body").stop().animate({scrollLeft:arrSectionOffsetLeft[4]}, speed, easing);
+                    }
+                });             
+            }
+            if($element.length === 6){
+                $element.each(function(i){
+                    $(this).find(">button").click(function(){
+                        $("html, body").stop().animate({scrollLeft:arrSectionOffsetLeft[i+1]}, speed, easing);
+                    });
+                });
+            }
+        }
         
         //던전 이미지 팝업
         $(".dungeon_img li").each(function(i){
@@ -90,19 +114,33 @@ $(window).on({
     },
     scroll : function(){
         var windowScrollLeft = $(window).scrollLeft();
-        var arrSectionOffsetLeft =  getArrarrSectionOffsetLeft();  
-       
-        // 네비게이션 active
-        if(windowScrollLeft >= arrSectionOffsetLeft[1]-(SetValueInfo.sectionWidth/3) && windowScrollLeft < arrSectionOffsetLeft[4]-(SetValueInfo.sectionWidth/3)){
-            $(".nav .menu1").addClass("active").siblings("li").removeClass("active");
-        }else if(windowScrollLeft >= arrSectionOffsetLeft[4]-(SetValueInfo.sectionWidth/3)){
-            $(".nav .menu2").addClass("active").siblings("li").removeClass("active");
-        }else{
-            $(".nav li").removeClass("active");
-        }
+        var arrSectionOffsetLeft =  getArrSectionOffsetLeft();  
        
         //백그라운드 확대, 축소, 패럴럭스
         parallaxObject(); 
+        
+        //메인메뉴 active
+        if(windowScrollLeft >= arrSectionOffsetLeft[1]-(SetValueInfo.sectionWidth/3) && windowScrollLeft < arrSectionOffsetLeft[4]-(SetValueInfo.sectionWidth/3)){
+            $(".main_menu .menu1").addClass("active").siblings("li").removeClass("active");
+        }else if(windowScrollLeft >= arrSectionOffsetLeft[4]-(SetValueInfo.sectionWidth/3)){
+            $(".main_menu .menu2").addClass("active").siblings("li").removeClass("active");
+        }else{
+            $(".main_menu li").removeClass("active");
+        }
+        
+        //nav show/hide
+        if(windowScrollLeft >= arrSectionOffsetLeft[1]-(SetValueInfo.sectionWidth/3)){
+            $(".wrap .nav").fadeIn("fast");
+        }else{
+            $(".wrap .nav").fadeOut("fast");
+        }
+
+        //nav active
+        for(var i=1; i<SetValueInfo.sectionLength; i++){          
+            if(windowScrollLeft >= arrSectionOffsetLeft[i]-(SetValueInfo.sectionWidth/3)){
+                $(".nav li:eq("+(i-1)+")").addClass("active").siblings("li").removeClass("active");
+            }
+        }
     }
 });
 
@@ -137,7 +175,7 @@ function initSizeSetting(){
 }
 
 //section scrollLeft 배열 저장
-function getArrarrSectionOffsetLeft(){
+function getArrSectionOffsetLeft(){
     var secitonOffsetLeftArray = [];
     for(var i=0; i<SetValueInfo.sectionLength; i++){
         //secitonOffsetLeftArray[i] = $(".section:eq("+i+")").offset().left;
@@ -164,7 +202,7 @@ function horizontalScrollingEvent(){
         }
         
         //scrollLeftPosition -= (delta * 80);
-        scrollLeftPosition = windowScrollLeft - (delta * 400);
+        scrollLeftPosition = windowScrollLeft - (delta * 560);
         
         // DOWN, go right
         if(delta < 0){ 
@@ -201,16 +239,14 @@ function getPositionValue(sectionOffsetLeft, windowScrollLeft){
 //백그라운드 확대, 축소, 패럴럭스
 function parallaxObject(){
     var windowScrollLeft = $(window).scrollLeft();
-    var arrSectionOffsetLeft =  getArrarrSectionOffsetLeft(); 
-    
+    var arrSectionOffsetLeft =  getArrSectionOffsetLeft();    
     var bgScale = 0;
     var standardScale = 130;
     var limitScale = 100;
     var standardDivision = 60;
-
     var monsterOpacity = 0; 
     var XPositions = {};
-
+    
     //reset position
     if(windowScrollLeft === 0){
         $(".section .monster, .section .dungeon_img li").css({"transform" : "translateX("+ 0 +"px)"});

@@ -3,9 +3,9 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;vertical-align:baseline}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
-body{font-family:'NotoSansDemiLight','맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif';font-size:16px;line-height:1;color:#fff}
+body{font-family:'NotoSansDemiLight','맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif';font-size:16px;line-height:1;color:#fff;/* -webkit-font-smoothing:subpixel-antialiased;text-rendering:optimizeLegibility */}
 h1, h2, h3 ,h4 ,h5 ,h6{font-family:'맑은 고딕','malgun gothic','돋움','dotum','arial','sans-serif'}
-ol, ul{list-style:none}
+ol, ul, li{list-style:none;list-style-type:none !important}
 a, img{vertical-align:top}
 a, a:link, a:visited{color:#000;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
 a:hover{text-decoration:none}
@@ -42,7 +42,7 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 .wrap .shadow{position:fixed;top:0;bottom:0;left:0;right:0;display:block;width:100%;height:100%;background-color:#000;z-index:1000}
 
 /* fixed */
-.wrap h1, .wrap .aside, .wrap .nav, .wrap .address{position:fixed;z-index:100}
+.wrap h1, .wrap .aside, .wrap .main_menu, .wrap .nav, .wrap .address{position:fixed;z-index:100}
 .wrap h1 a, .wrap .link a{display:block;width:100%;height:100%}
 .wrap h1{left:40px;top:30px;width:200px;height:56px}
 .wrap .aside{right:40px;top:40px}
@@ -58,17 +58,24 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 .wrap .user .btn_left{bottom:0;*bottom:-3px}
 .wrap .user .btn_none span{background-position:-120px 0}
 .wrap .user .btn_left span{background-position:-120px -18px}
-.wrap .address{width:100%;left:0;bottom:26px;font-family:'맑은 고딕','malgun gothic';font-size:15px;color:#fff;line-height:1.2;text-align:center;opacity:0.2;filter:alpha(opacity=20)}
-.wrap .nav{left:50%;top:0;width:560px;height:129px;margin-left:-280px}
-.wrap .nav li{float:left;position:relative;width:280px;height:129px}
-.wrap .nav button{display:block;width:100%;height:100%}
-.wrap .nav button .default, .wrap .nav button .hover{display:block;width:100%;height:100%;background:url("../images/spr_nav.png") no-repeat;transition:all 150ms ease-in}
-.wrap .nav button .hover{position:absolute;left:0;top:0;opacity:0;filter:alpha(opacity=0)}
-.wrap .nav .active button .default, .wrap .nav button:hover .default{opacity:0;filter:alpha(opacity=0)}
-.wrap .nav .active button .hover, .wrap .nav button:hover .hover{opacity:1;filter:alpha(opacity=100)}
-.wrap .nav .menu2 .default{background-position:-280px 0}
-.wrap .nav .menu1 .hover{background-position:0 -129px}
-.wrap .nav .menu2 .hover{background-position:-280px -129px}
+.wrap .address{right:40px;bottom:26px;font-family:'맑은 고딕','malgun gothic';font-size:12px;color:#fff;line-height:1.2;text-align:center;opacity:0.2;filter:alpha(opacity=20)}
+.wrap .main_menu{left:50%;top:0;width:560px;height:129px;margin-left:-280px}
+.wrap .main_menu li{float:left;position:relative;width:280px;height:129px}
+.wrap .main_menu button, .wrap .nav li button{display:block;width:100%;height:100%}
+.wrap .main_menu button .default, .wrap .main_menu button .hover{display:block;width:100%;height:100%;background:url("../images/spr_nav.png") no-repeat;transition:all 150ms ease-in}
+.wrap .main_menu button .hover{position:absolute;left:0;top:0;opacity:0;filter:alpha(opacity=0)}
+.wrap .main_menu .active button .default, .wrap .main_menu button:hover .default{opacity:0;filter:alpha(opacity=0)}
+.wrap .main_menu .active button .hover, .wrap .main_menu button:hover .hover{opacity:1;filter:alpha(opacity=100)}
+.wrap .main_menu .menu2 .default{background-position:-280px 0}
+.wrap .main_menu .menu1 .hover{background-position:0 -129px}
+.wrap .main_menu .menu2 .hover{background-position:-280px -129px}
+.wrap .nav{display:none;width:220px;height:28px;left:50%;bottom:30px;margin-left:-110px}
+.wrap .nav .line{position:absolute;left:-17px;top:9px;display:block;width:254px;height:2px;background:url("../images/nav_line.png") no-repeat}
+.wrap .nav ul{position:relative}
+.wrap .nav li{float:left;position:relative;width:18px;height:18px;margin-right:20px;background-color:#1e1e1e;border:1px solid #95805b;border-radius:10px}
+.wrap .nav .nav6{margin-right:0}
+.wrap .nav li button span{display:block;position:absolute;left:50%;top:50%;width:0px;height:0px;background-color:#c4ab79;border-radius:5px;transition:all 300ms ease}
+.wrap .nav li.active button span{display:block;width:10px;height:10px;margin:-5px 0 0 -5px}
 
 /* section contents */
 .section1 img{width:100%}
@@ -76,7 +83,7 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 .section1 .smoke img{opacity:0}
 .section1 .smoke .s2, .section1 .smoke .s3{position:absolute;left:0;top:0}
 .section1 .main_title{position:absolute;left:51.5%;width:26.823%}
-.section1 .main_title .m2{position:absolute;left:0;top:0}
+.section1 .main_title .m2, .section1 .main_title .m3{position:absolute;left:0;top:0}
 .section1 .sand{position:absolute;left:4.1666%;top:0;width:55.2%}
 .section1 .sand span{float:left;display:block;width:25%;opacity:0;transition:opacity 800ms linear}
 .load .section1 .sand span{opacity:1}
@@ -94,7 +101,7 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 .load .section1 .sand .s12{transition-delay:1200ms}
 .section2 p{top:46%;color:#5a546a}
 .section2 p q{height:91px}
-.section2 .monster1{left:-498px;top:135px;width:915px;height:1000px;background:url("../images/monster1.png") no-repeat;opacity:0;filter:alpha(opacity=0);/* transition:opacity 150ms linear */}
+.section2 .monster1{left:-498px;top:135px;width:915px;height:1000px;background:url("../images/monster1.png") no-repeat;opacity:0;filter:alpha(opacity=0)}
 .section2 .monster2{right:-388px;top:-32px;width:944px;height:770px;background:url("../images/monster2.png") no-repeat}
 .section2 .monster3{right:-822px;top:401px;width:1550px;height:890px;background:url("../images/monster3.png") no-repeat}
 .section3 .dungeon_info{top:31.7%;width:934px;margin-left:-468px}
@@ -164,6 +171,8 @@ html{background-color:#000;overflow-x:scroll;overflow-y:hidden}
 @media only screen and (-webkit-min-device-pixel-ratio:1.3){
     .wrap, .section{max-height:960px}
     .wrap .user{display:none}
+    .wrap .address{top:920px}
+    .wrap .nav{top:902px}
     .section2 p, .section5 p{font-size:15px;line-height:1.25}
     .section2 .bg, .section5 .bg{background-attachment:scroll} 
 }
