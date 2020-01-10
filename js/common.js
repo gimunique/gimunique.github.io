@@ -1,4 +1,3 @@
-//전역변수는 대문자로
 var Browser = navigator.userAgent;
 var PortfolioInfos = [];
 var CurrentPageNumber = 0;
