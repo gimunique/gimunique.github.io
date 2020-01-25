@@ -23,11 +23,11 @@ hr{display:none}
 .section .content{position:relative;width:1200px;padding-bottom:200px;margin:0 auto}
 .section .wave{display:block;width:100%;height:90px;background-position:50% 0;background-repeat:repeat-x}
 .section h4{position:relative;width:100%;margin-top:189px;font-size:100px}
-.section h4 span{position:absolute;left:50%;top:-23px;display:block;width:123px;height:15px;margin-left:-62px;background:url("../images/h3_deco.png") 50% 0 no-repeat;background-size:100% auto}
+.section h4 span{position:absolute;left:50%;top:-23px;display:block;width:123px;height:15px;margin-left:-62px;background:url("https://gimunique.github.io/images/h3_deco.png") 50% 0 no-repeat;background-size:100% auto}
 .main .gnb h2, .main .link li/* , .pg_nav li button */{text-indent:-9999px}
 .about .ab_list, .portfolio .pf_list{*zoom:1}
 .about .ab_list:after, .portfolio .pf_list:after{display:block;content:'';clear:both}
-.main .link li, .main .scroll .img, .main .btn_clock, .lp .btn_close{background-image:url("../images/spr_btn.png");background-repeat:no-repeat}
+.main .link li, .main .scroll .img, .main .btn_clock, .lp .btn_close{background-image:url("https://gimunique.github.io/images/spr_btn.png");background-repeat:no-repeat}
 
 /* skip */
 .skip{position:relative;height:0;z-index:500}
@@ -100,7 +100,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 
 /* about */
 .about{background-color:#3e4f55}
-.about .wave{background-image:url("../images/bg_wave1.gif")}
+.about .wave{background-image:url("https://gimunique.github.io/images/bg_wave1.gif")}
 .about p{margin:109px 0 98px;font-size:18px;line-height:2.2;word-break:keep-all}
 .about .ab_list > li{float:left;position:relative;width:384px;min-height:389px;margin-top:24px;border-top:2px solid #2e1c44;border-bottom:2px solid #2e1c44;word-break:keep-all;overflow:hidden}
 .about .ab_list .bg_box{position:absolute;left:0;top:0;display:block;width:100%;height:100%;background-color:#2e1c44;opacity:0.2;filter:alpha(opacity=20)}
@@ -110,11 +110,11 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .about .ab_list .skill{position:relative;/* min-height:340px; */padding:32px 35px 17px;text-align:left}
 .about .ab_list .skill .num{font-family:'NunitoExtraLight';font-size:24px}
 .about .ab_list .skill h5{margin:4px 0 30px;font-size:36px}
-.about .ab_list .skill li{margin:0 0 10px 14px;list-style-image:url("../images/blt_skill.png");line-height:1.8}
+.about .ab_list .skill li{margin:0 0 10px 14px;list-style-image:url("https://gimunique.github.io/images/blt_skill.png");line-height:1.8}
 
 /* portfolio */
 .portfolio{background-color:#b12828}
-.portfolio .wave{background-image:url("../images/bg_wave2.gif")}
+.portfolio .wave{background-image:url("https://gimunique.github.io/images/bg_wave2.gif")}
 .portfolio .warn{display:block;margin-top:63px;font-weight:normal;line-height:1.4;word-break:keep-all;opacity:0.2;filter:alpha(opacity=20)}
 .portfolio .pf_list{margin:24px 0 68px}
 .portfolio .pf_list li{float:left;position:relative;width:384px;height:auto;margin-bottom:24px;font-size:0;line-height:0;overflow:hidden}
@@ -143,7 +143,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 /* contact */
 .contact{background-color:#25303b}
 .contact .content{padding-bottom:79px}
-.contact .wave{background-image:url("../images/bg_wave3.gif")}
+.contact .wave{background-image:url("https://gimunique.github.io/images/bg_wave3.gif")}
 .contact .banner_wrap{position:relative;height:250px;margin:130px 0 0}
 .contact .banner_wrap .nav_wrap{position:absolute;left:50%;bottom: 0;width:502px;height:100px;margin-left:-251px}
 .contact .banner_wrap .btn{position:absolute;width:23px;height:100%}
@@ -188,7 +188,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .work .title .url_wrap a{float:left;display:block;width:150px;height:150px;margin-left:15px;border-radius:100%;background-color:#f04c4d;/* transition:all 200ms linear */}
 .work .title .url_wrap a:hover{/* background-color:#1f4a3b */}
 .work .view{background-color:#202020}
-.work .view .wave{height:91px;background-image:url("../images/bg_wave4.gif")}
+.work .view .wave{height:91px;background-image:url("https://gimunique.github.io/images/bg_wave4.gif")}
 .work .view .content{padding:146px 0 79px}
 .work .view h3{margin-bottom:39px;font-family:'NunitoExtraLight';font-size:30px;font-weight:normal}
 .work .view .img_wrap img{margin-bottom:30px}
@@ -433,12 +433,12 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio:1.3){
-    .main .scroll .img{background-image:url("../images/@2x/img_mouse.png");background-position:0 0;background-size:100% auto}
-    .main .btn_clock{background-image:url("../images/@2x/img_face.png");background-position:0 0;background-size:100% auto}
-    .main .lp .btn_close{background-image:url("../images/@2x/img_close.png");background-position:10px 10px;background-size:35.5% auto}
-    .main .link li{background-image:url("../images/@2x/img_blog.png");background-position:0 0;background-size:100% auto}
-    .main .link .mail{background-image:url("../images/@2x/img_mail.png");background-position:0 0}
-    .main .link .mobile{background-image:url("../images/@2x/img_mobile.png");background-position:0 0}
+    .main .scroll .img{background-image:url("https://gimunique.github.io/images/@2x/img_mouse.png");background-position:0 0;background-size:100% auto}
+    .main .btn_clock{background-image:url("https://gimunique.github.io/images/@2x/img_face.png");background-position:0 0;background-size:100% auto}
+    .main .lp .btn_close{background-image:url("https://gimunique.github.io/images/@2x/img_close.png");background-position:10px 10px;background-size:35.5% auto}
+    .main .link li{background-image:url("https://gimunique.github.io/images/@2x/img_blog.png");background-position:0 0;background-size:100% auto}
+    .main .link .mail{background-image:url("https://gimunique.github.io/images/@2x/img_mail.png");background-position:0 0}
+    .main .link .mobile{background-image:url("https://gimunique.github.io/images/@2x/img_mobile.png");background-position:0 0}
     .contact .banner_wrap .nav button:hover{animation:none}
 }
 
