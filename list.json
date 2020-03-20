@@ -1,6 +1,31 @@
 [
     {
         "seq" : 1,
+        "title" : "CABAL2",
+        "subject" : "미션 빙고 이벤트 페이지", 
+        "role" : "Web Publish, UI Development",
+        "partcipation" : "100%",
+        "note" : "",
+        "imageUrl" : "./images/thumb24.jpg",
+        "link" : [
+            {
+                "seq" : 1,
+                "className" : "btn_pc",
+                "title" : "PC 페이지 바로가기",
+                "imgUrl" : "./images/blank_pc.png",
+                "linkUrl" : "./work/24/event.html"
+            }
+        ],
+        "detail" : [
+            {
+                "seq" : 1,
+                "imageUrl" : "./images/img24_1.jpg",
+                "description" : ""
+            }
+        ]
+    },
+    {
+        "seq" : 2,
         "title" : "CABAL",
         "subject" : "미궁 업데이트 페이지(가로 패럴럭스)", 
         "role" : "Web Publish, UI Development",
@@ -35,7 +60,7 @@
         ]
     },
     {
-        "seq" : 2,
+        "seq" : 3,
         "title" : "CABAL",
         "subject" : "카발 마블 이벤트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -60,7 +85,7 @@
         ]
     },
     {
-        "seq" : 3,
+        "seq" : 4,
         "title" : "ESTGAMES",
         "subject" : "홈페이지 & 채용 사이트(PC/MOBILE)", 
         "role" : "Web Publish, UI Development",
@@ -96,7 +121,7 @@
         ]
     },
     {
-        "seq" : 4,
+        "seq" : 5,
         "title" : "CABAL2",
         "subject" : "달 그림자 고원 업데이트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -131,7 +156,7 @@
         ]
     },
     {
-        "seq" : 5,
+        "seq" : 6,
         "title" : "CABAL",
         "subject" : "길드 업데이트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -161,7 +186,7 @@
         ]
     },
     {
-        "seq" : 6,
+        "seq" : 7,
         "title" : "NOVA WARS",
         "subject" : "브랜드 페이지(반응형)", 
         "role" : "Web Publish, UI Development",
@@ -191,7 +216,7 @@
         ]
     },
     {
-        "seq" : 7,
+        "seq" : 8,
         "title" : "CABAL",
         "subject" : "악마의 탑 업데이트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -221,7 +246,7 @@
         ]
     },
     {
-        "seq" : 8,
+        "seq" : 9,
         "title" : "CABAL GLOBAL",
         "subject" : "Forgotten Temple B3F 업데이트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -251,7 +276,7 @@
         ]
     },   
     {
-        "seq" : 9,
+        "seq" : 10,
         "title" : "CABAL MOBILE",
         "subject" : "Close Beta 사전예약 페이지(PC/MOBILE)", 
         "role" : "Web Publish, UI Development",
@@ -288,7 +313,7 @@
         ]
     },
     {
-        "seq" : 10,
+        "seq" : 11,
         "title" : "CABAL",
         "subject" : "신대륙 세닐리니아 업데이트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -318,7 +343,7 @@
         ]
     },
     {
-        "seq" : 11,
+        "seq" : 12,
         "title" : "CABAL",
         "subject" : "인게임 아이템샵", 
         "role" : "Web Publish, UI Development",
@@ -353,7 +378,7 @@
         ]
     },
     {
-        "seq" : 12,
+        "seq" : 13,
         "title" : "CABAL GLOBAL",
         "subject" : "홈페이지 & 회원 페이지", 
         "role" : "Web Publish, UI Development",
@@ -388,7 +413,7 @@
         ]
     },
     {
-        "seq" : 13,
+        "seq" : 14,
         "title" : "CABAL",
         "subject" : "악마의 비밀상점 이벤트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -418,7 +443,7 @@
         ]
     },
     {
-        "seq" : 14,
+        "seq" : 15,
         "title" : "CABAL2",
         "subject" : "무술년 행운의 룰렛 이벤트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -443,7 +468,7 @@
         ]
     },
     {
-        "seq" : 15,
+        "seq" : 16,
         "title" : "CABAL",
         "subject" : "슈핑의 플래티넘 이벤트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -473,7 +498,7 @@
         ]
     },
     {
-        "seq" : 16,
+        "seq" : 17,
         "title" : "CABAL",
         "subject" : "데모나이트 업데이트 페이지", 
         "role" : "Web Publish, UI Development",
@@ -503,7 +528,7 @@
         ]
     },
     {
-        "seq" : 17,
+        "seq" : 18,
         "title" : "ALARMIE",
         "subject" : "브랜드 페이지", 
         "role" : "Web Publish, UI Development",
@@ -538,7 +563,7 @@
         ]
     },
     {
-        "seq" : 18,
+        "seq" : 19,
         "title" : "TEAMUP",
         "subject" : "브랜드 페이지", 
         "role" : "Web Publish, UI Development",
@@ -568,7 +593,7 @@
         ]
     },
     {
-        "seq" : 19,
+        "seq" : 20,
         "title" : "SKINDOC",
         "subject" : "브랜드 페이지", 
         "role" : "Web Publish, UI Development",
@@ -603,7 +628,7 @@
         ]
     },
     {
-        "seq" : 20,
+        "seq" : 21,
         "title" : "HOODDA",
         "subject" : "브랜드 페이지(PC/MOBILE)", 
         "role" : "Web Publish, UI Development",
@@ -640,7 +665,7 @@
         ]
     },
     {
-        "seq" : 21,
+        "seq" : 22,
         "title" : "CABAL",
         "subject" : "전쟁 주간지(Canvas 이용)", 
         "role" : "Web Publish, UI Development",
@@ -670,7 +695,7 @@
         ]
     },
     {
-        "seq" : 22,
+        "seq" : 23,
         "title" : "NOVA WARS",
         "subject" : "유닛 인게임 웹뷰 페이지(MOBILE)", 
         "role" : "Web Publish, UI Development",
@@ -700,7 +725,7 @@
         ]
     },
     {
-        "seq" : 23,
+        "seq" : 24,
         "title" : "NOVA WARS",
         "subject" : "설날 맞이 福주머니 이벤트 페이지(MOBILE)", 
         "role" : "Web Publish, UI Development",
