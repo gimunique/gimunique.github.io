@@ -14,12 +14,6 @@ hr{display:none}
 legend,.blind{overflow:hidden;visibility:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
 label{cursor:pointer}
 
-/*gnb*/
-#gnb{min-width:1041px !important}
-#gnb .gnb_container{width:1041px !important}
-.layer.leftLayer li a, .layer.leftLayer li img{vertical-align:baseline}
-.gnb_container .right_menu li.last{padding-right:0}
-
 /*layout*/
 .event_wrap{position:relative;width:100%;height:3000px;min-width:1041px;overflow-x:hidden}
 .event_wrap .event_area{width:100%;height:100%;background:url("../images/bg_event.jpg") 50% 0 no-repeat}

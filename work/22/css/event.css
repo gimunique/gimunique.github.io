@@ -16,12 +16,6 @@ button{background-color:transparent;border:0;outline:none}
 legend, caption, .blind{position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden}
 hr{display:none}
 
-/* gnb */
-#gnb{min-width:1200px !important}
-#gnb .gnb_container{width:1200px !important}
-.layer.leftLayer li a, .layer.leftLayer li img{vertical-align:baseline}
-.gnb_container .right_menu li.last{padding-right:0}
-
 /* event common */
 .wrap, .section{position:relative;width:100%;overflow:hidden}
 .wrap{min-width:1200px;letter-spacing:-1px;background:url("../images/bg.jpg") 50% 0 no-repeat}
