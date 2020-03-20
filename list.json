@@ -62,7 +62,7 @@
     {
         "seq" : 3,
         "title" : "ESTGAMES",
-        "subject" : "홈페이지 & 채용 사이트", 
+        "subject" : "홈페이지 & 채용 사이트(PC/MOBILE)", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
@@ -163,7 +163,7 @@
     {
         "seq" : 6,
         "title" : "NOVA WARS",
-        "subject" : "브랜드 페이지", 
+        "subject" : "브랜드 페이지(반응형)", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
@@ -253,7 +253,7 @@
     {
         "seq" : 9,
         "title" : "CABAL MOBILE",
-        "subject" : "Close Beta 사전예약 페이지", 
+        "subject" : "Close Beta 사전예약 페이지(PC/MOBILE)", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
@@ -320,7 +320,7 @@
     {
         "seq" : 11,
         "title" : "CABAL",
-        "subject" : "아이템샵", 
+        "subject" : "인게임 아이템샵", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
@@ -605,7 +605,7 @@
     {
         "seq" : 20,
         "title" : "HOODDA",
-        "subject" : "브랜드 페이지", 
+        "subject" : "브랜드 페이지(PC/MOBILE)", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
@@ -642,7 +642,7 @@
     {
         "seq" : 21,
         "title" : "CABAL",
-        "subject" : "전쟁 주간지", 
+        "subject" : "전쟁 주간지(Canvas 이용)", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
@@ -672,7 +672,7 @@
     {
         "seq" : 22,
         "title" : "NOVA WARS",
-        "subject" : "유닛 웹뷰 페이지", 
+        "subject" : "유닛 인게임 웹뷰 페이지(MOBILE)", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
@@ -702,7 +702,7 @@
     {
         "seq" : 23,
         "title" : "NOVA WARS",
-        "subject" : "설날 맞이 福주머니 이벤트 페이지", 
+        "subject" : "설날 맞이 福주머니 이벤트 페이지(MOBILE)", 
         "role" : "Web Publish, UI Development",
         "partcipation" : "100%",
         "note" : "",
