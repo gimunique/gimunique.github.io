@@ -170,8 +170,10 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .pg_nav li.active button span, .pg_nav li.active button:hover span{display:block \9;opacity:1;transform:translateX(0)}
 
 /* load img */
-.load_img{/* display:none; */position:fixed;left:0;top:0;width:100%;height:100%;background-color:#0a111f;z-index:500}
-.load_img img{display:none;position:absolute;left:50%;top:50%;width:auto;margin:-160px 0 0 -160px}
+/* .load_img{position:fixed;left:0;top:0;width:100%;height:100%;background-color:#0a111f;z-index:500}
+.load_img img{display:none;position:absolute;left:50%;top:50%;width:auto;margin:-160px 0 0 -160px} */
+.load_wrap{position:fixed;left:0;top:0;width:100%;height:100%;background-color:#0a111f;z-index:500}
+.load_wrap .load_img{position:absolute;left:50%;top:50%;display:block;width:320px;height:320px;margin:-160px 0 0 -160px;background:url("https://gimunique.github.io/images/img_load.png") no-repeat;overflow:hidden}
 
 /* sub: work */
 .work .section{text-align:left}

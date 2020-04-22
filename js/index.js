@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //화면 처음 이미지 load
-    var introImg = {
+    /* var introImg = {
         imgInterval : 0,
         initIdx : -1,
         init : function(element){
@@ -25,7 +25,27 @@ $(document).ready(function(){
     introImg.init(".load_img img");
     setTimeout(function(){
         introImg.stopInterval();
-    }, 2400);
+    }, 2400); */
+    loadImgInterval();
+    function loadImgInterval(){
+        var speed = 80;
+        var num = 0;
+        var maxNum = 9;
+        var positionY = 320;
+        var intervalId = setInterval(function(){
+            $(".load_img").css({
+                "background-position": "50% -" + (num * positionY) + "px"
+            });
+            num >= maxNum ? num = 0 : num++;
+        }, speed);
+        setTimeout(function(){
+            clearInterval(intervalId);
+            $("html, body").scrollTop(0);
+            $(".load_wrap").stop().animate({opacity:0}, speed*9, function(){
+                $(this).remove();
+            });
+        }, speed*20);
+    }
 
     //하위버전(ie8이하) 화면 높이값 가져오기
     if(Browser.indexOf("MSIE 7") !== -1 || Browser.indexOf("MSIE 8") !== -1){
