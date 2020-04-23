@@ -45,7 +45,7 @@ $(window).on({
         showHideBanner(".banner_wrap");
         setTimeout(function(){
             loadImgInterval();
-        }, 150);
+        }, 500);
         
         //화면 처음 이미지 load
         function loadImgInterval(){
