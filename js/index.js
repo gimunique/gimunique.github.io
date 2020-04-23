@@ -43,7 +43,9 @@ $(window).on({
         navEvent(".pg_nav li");
         navEvent(".gnb li");
         showHideBanner(".banner_wrap");
-        loadImgInterval();
+        setTimeout(function(){
+            loadImgInterval();
+        }, 500);
         
         //화면 처음 이미지 load
         function loadImgInterval(){
@@ -53,16 +55,17 @@ $(window).on({
             var repeatNum = 1;          
             var intervalId = setInterval(function(){
                 if(repeatNum > maxNum*3){
-                    clearInterval(intervalId);
+                    // clearInterval(intervalId);
                     $("html, body").scrollTop(0);
                     $(".load_wrap").stop().animate({opacity:0}, speed*9, function(){
                         $(this).remove();
                     });
                 }else{
-                    var loadImgSrc = "./images/load" + num +".png"
+                    var loadImgSrc = "https://gimunique.github.io/images/load" + num +".png"
                     $(".load_img").attr("src", loadImgSrc);
                     num >= maxNum ? num = 1 : num++;
                     repeatNum++;
+                    console.log(loadImgSrc)
                 }
             }, speed);
         }
