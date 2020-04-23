@@ -170,10 +170,8 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .pg_nav li.active button span, .pg_nav li.active button:hover span{display:block \9;opacity:1;transform:translateX(0)}
 
 /* load img */
-/* .load_img{position:fixed;left:0;top:0;width:100%;height:100%;background-color:#0a111f;z-index:500}
-.load_img img{display:none;position:absolute;left:50%;top:50%;width:auto;margin:-160px 0 0 -160px} */
 .load_wrap{position:fixed;left:0;top:0;width:100%;height:100%;background-color:#0a111f;z-index:500}
-.load_wrap .load_img{position:absolute;left:50%;top:50%;display:block;width:320px;height:320px;margin:-160px 0 0 -160px;background:url("https://gimunique.github.io/images/img_load.png") no-repeat;overflow:hidden}
+.load_wrap .load_img{position:absolute;left:50%;top:50%;display:block;width:320px;height:320px;margin:-160px 0 0 -160px}
 
 /* sub: work */
 .work .section{text-align:left}
@@ -299,7 +297,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
     .contact .banner_wrap .nav_wrap{width:404px;height:80px;margin-left:-202px}
     .contact .address{margin-top:150px}
     .pg_nav{right:30px}
-    .load_img img{width:240px;margin:-120px 0 0 -120px}
+    .load_wrap .load_img{width:240px;height:240px;margin:-120px 0 0 -120px}
     .work .title h2{font-size:54px}
     .work .title p{font-size:23px}
     .work .title .url_wrap{position:static;height:125px;margin-top:66px}
@@ -337,7 +335,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
     .contact .banner_wrap .nav_wrap{width:321px;height:65px;margin-left:-160px}
     .contact .address{margin-top:140px}
     .pg_nav{right:24px}
-    .load_img img{width:200px;margin:-100px 0 0 -100px}
+    .load_wrap .load_img{width:200px;height:200px;margin:-100px 0 0 -100px}
     .work .title .content{padding-top:142px}
     .work .title h2{font-size:42px}
     .work .title p{margin:11px 0 72px;font-size:21px}
@@ -386,7 +384,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
     .contact .banner_wrap .nav_wrap{width:238px;height:50px;margin-left:-119px}
     .contact .address{margin-top:100px;font-size:12px}
     .pg_nav{right:12px}
-    .load_img img{width:180px;margin:-90px 0 0 -90px}
+    .load_wrap .load_img{width:180px;height:180px;margin:-90px 0 0 -90px}
     .work .title .content{padding-top:142px}
     .work .title h2{font-size:36px}
     .work .title p{margin:11px 0 72px;font-size:17px}
@@ -412,7 +410,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 
 @media (min-width:360px) and (max-width:399px){
     .main .gnb li button{font-size:34px;text-shadow:3px 2px #f04c4d}
-    .load_img img{width:160px;margin:-80px 0 0 -80px}
+    .load_wrap .load_img{width:160px;height:160px;margin:-80px 0 0 -80px}
     .work .title h2{font-size:30px}
     .work .title p{margin:11px 0 72px;font-size:15px}
     .work .title .url_wrap{position:static;height:95px;margin-top:66px}
@@ -422,7 +420,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 
 @media (max-width:359px){
     .main .gnb li button{font-size:28px;text-shadow:3px 2px #f04c4d}
-    .load_img img{width:140px;margin:-70px 0 0 -70px}
+    .load_wrap .load_img{width:140px;height:140px;margin:-70px 0 0 -70px}
     .work .title .content{padding-top:112px}
     .work .title h2{font-size:27px}
     .work .title p{margin:11px 0 72px;font-size:15px}

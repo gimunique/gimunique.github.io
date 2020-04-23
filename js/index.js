@@ -48,14 +48,12 @@ $(window).on({
         //화면 처음 이미지 load
         function loadImgInterval(){
             var speed = 80;
-            var num = 0;
-            var maxNum = 9;
-            var positionY = 320;
+            var num = 1;
+            var maxNum = 10;
             var intervalId = setInterval(function(){
-                $(".load_img").css({
-                    "background-position": "50% -" + (num * positionY) + "px"
-                });
-                num >= maxNum ? num = 0 : num++;
+                var loadImgSrc = "https://gimunique.github.io/images/load" + num +".png"
+                $(".load_img").attr("src", loadImgSrc);
+                num >= maxNum ? num = 1 : num++;
             }, speed);
             setTimeout(function(){
                 clearInterval(intervalId);
