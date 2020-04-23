@@ -63,7 +63,6 @@ $(window).on({
                     $(".load_img").attr("src", loadImgSrc);
                     num >= maxNum ? num = 1 : num++;
                     repeatNum++;
-                    console.log(repeatNum)
                 }
             }, speed);
         }
@@ -224,7 +223,7 @@ function resize(){
     $(".ab_list .skill").each(function(i){
         arrSkillHeight.push($(".ab_list .skill").eq(i).height());
     });
-    var getMaxHeight = Math.max.apply(null, arrSkillHeight)
+    var getMaxHeight = Math.max.apply(null, arrSkillHeight);
     if(winWidth < 480){
         $(".ab_list > li").css("min-height", getMaxHeight+20);
     }else if(winWidth >= 480 && winWidth < 1200){
