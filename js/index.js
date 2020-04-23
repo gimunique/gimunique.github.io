@@ -56,6 +56,7 @@ $(window).on({
             var intervalId = setInterval(function(){
                 if(repeatNum > maxNum*4){
                     clearInterval(intervalId);
+                    $("body").addClass("load");
                     $("html, body").scrollTop(0);
                     $(".load_wrap").clearQueue().animate({opacity:0}, speed*8, "easeOutCubic", function(){
                         $(this).remove();
