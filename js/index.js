@@ -55,7 +55,7 @@ $(window).on({
             var repeatNum = 1;          
             var intervalId = setInterval(function(){
                 if(repeatNum > maxNum*3){
-                    // clearInterval(intervalId);
+                    clearInterval(intervalId);
                     $("html, body").scrollTop(0);
                     $(".load_wrap").clearQueue().animate({opacity:0}, speed*10, "easeOutCubic", function(){
                         $(this).remove();
@@ -65,7 +65,7 @@ $(window).on({
                     $(".load_img").attr("src", loadImgSrc);
                     num >= maxNum ? num = 1 : num++;
                     repeatNum++;
-                    console.log(loadImgSrc)
+                    // console.log(loadImgSrc)
                 }
             }, speed);
         }
