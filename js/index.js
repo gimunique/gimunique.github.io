@@ -59,7 +59,7 @@ $(window).on({
                         $(this).remove();
                     });
                 }else{
-                    var loadImgSrc = "https://gimunique.github.io/images/load" + num +".png"
+                    var loadImgSrc = "./images/load" + num +".png"
                     $(".load_img").attr("src", loadImgSrc);
                     num >= maxNum ? num = 1 : num++;
                     repeatNum++;
