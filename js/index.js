@@ -50,18 +50,22 @@ $(window).on({
             var speed = 80;
             var num = 1;
             var maxNum = 10;
+            var repeatNum = 1;          
             var intervalId = setInterval(function(){
-                var loadImgSrc = "./images/load" + num +".png"
-                $(".load_img").attr("src", loadImgSrc);
-                num >= maxNum ? num = 1 : num++;
+                if(repeatNum > maxNum*3){
+                    clearInterval(intervalId);
+                    $("html, body").scrollTop(0);
+                    $(".load_wrap").stop().animate({opacity:0}, speed*9, function(){
+                        $(this).remove();
+                    });
+                }else{
+                    var loadImgSrc = "https://gimunique.github.io/images/load" + num +".png"
+                    $(".load_img").attr("src", loadImgSrc);
+                    num >= maxNum ? num = 1 : num++;
+                    repeatNum++;
+                    console.log(repeatNum)
+                }
             }, speed);
-            setTimeout(function(){
-                clearInterval(intervalId);
-                $("html, body").scrollTop(0);
-                $(".load_wrap").stop().animate({opacity:0}, speed*9, function(){
-                    $(this).remove();
-                });
-            }, speed*30);
         }
 
         //gnb 버튼 클릭시 이벤트
