@@ -51,7 +51,7 @@ $(window).on({
             var num = 1;
             var maxNum = 10;
             var intervalId = setInterval(function(){
-                var loadImgSrc = "https://gimunique.github.io/images/load" + num +".png"
+                var loadImgSrc = "./images/load" + num +".png"
                 $(".load_img").attr("src", loadImgSrc);
                 num >= maxNum ? num = 1 : num++;
             }, speed);
