@@ -49,19 +49,19 @@ $(window).on({
         
         //화면 처음 이미지 load
         function loadImgInterval(){
-            var speed = 80;
+            var speed = 90;
             var num = 1;
             var maxNum = 10;
             var repeatNum = 1;          
             var intervalId = setInterval(function(){
-                if(repeatNum > maxNum*3){
+                if(repeatNum > maxNum*4){
                     clearInterval(intervalId);
                     $("html, body").scrollTop(0);
-                    $(".load_wrap").clearQueue().animate({opacity:0}, speed*10, "easeOutCubic", function(){
+                    $(".load_wrap").clearQueue().animate({opacity:0}, speed*8, "easeOutCubic", function(){
                         $(this).remove();
                     });
                 }else{
-                    var loadImgSrc = "https://gimunique.github.io/images/load" + num +".png"
+                    var loadImgSrc = "./images/load" + num +".png"
                     $(".load_img").attr("src", loadImgSrc);
                     num >= maxNum ? num = 1 : num++;
                     repeatNum++;
