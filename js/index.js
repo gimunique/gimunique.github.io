@@ -45,7 +45,7 @@ $(window).on({
         showHideBanner(".banner_wrap");
         setTimeout(function(){
             loadImgInterval();
-        }, 500);
+        }, 150);
         
         //화면 처음 이미지 load
         function loadImgInterval(){
@@ -57,7 +57,7 @@ $(window).on({
                 if(repeatNum > maxNum*3){
                     // clearInterval(intervalId);
                     $("html, body").scrollTop(0);
-                    $(".load_wrap").stop().animate({opacity:0}, speed*9, function(){
+                    $(".load_wrap").clearQueue().animate({opacity:0}, speed*10, "easeOutCubic", function(){
                         $(this).remove();
                     });
                 }else{
