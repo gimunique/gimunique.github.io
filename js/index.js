@@ -38,7 +38,6 @@ $(window).on({
     load : function(){
         TweenMax.to($(".scroll .img"), 0.4, {y : -10, ease : Circ.easeOut, repeat : -1, yoyo : true});
         setInterval(setTime, 1000);
-        resize();
         scrollEvent();
         navEvent(".pg_nav li");
         navEvent(".gnb li");
@@ -46,7 +45,8 @@ $(window).on({
         setTimeout(function(){
             loadImgInterval();
         }, 500);
-        
+        resize();
+
         //화면 처음 이미지 load
         function loadImgInterval(){
             var speed = 90;
@@ -66,7 +66,6 @@ $(window).on({
                     $(".load_img").attr("src", loadImgSrc);
                     num >= maxNum ? num = 1 : num++;
                     repeatNum++;
-                    // console.log(loadImgSrc)
                 }
             }, speed);
         }
