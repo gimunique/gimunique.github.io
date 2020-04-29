@@ -71,11 +71,14 @@ $(window).on({
         }
 
         //gnb 버튼 클릭시 이벤트
-        $(".btn_gnb").bind("click", function(){
+        $(".btn_gnb").on("click", function(){
             $(this).add(".gnb").toggleClass("active");
             if(Browser.indexOf("MSIE 7") !== -1){
                 $(".gnb.active").length == 1 ? $(".pg_nav").hide() : $(".pg_nav").show();
             }
+        });
+        $(".menu3 button").on("blur", function(){
+            $(".btn_gnb, .gnb").removeClass("active");
         });
             
         //오른쪽 상단 레이어팝업 클릭시 이벤트
