@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //화면 처음 이미지 load
+    // 화면 처음 이미지 load
     /* var introImg = {
         imgInterval : 0,
         initIdx : -1,
@@ -27,7 +27,7 @@ $(document).ready(function(){
         introImg.stopInterval();
     }, 2400); */
 
-    //하위버전(ie8이하) 화면 높이값 가져오기
+    // 하위버전(ie8이하) 화면 높이값 가져오기
     if(Browser.indexOf("MSIE 7") !== -1 || Browser.indexOf("MSIE 8") !== -1){
         var winHeight = window.innerHeight|| document.documentElement.clientHeight || document.body.clientHeight;
         $(".main").css("height", winHeight);
@@ -47,7 +47,7 @@ $(window).on({
         }, 500);
         resize();
 
-        //화면 처음 이미지 load
+        // 화면 처음 이미지 load
         function loadImgInterval(){
             var speed = 90;
             var num = 1;
@@ -70,7 +70,7 @@ $(window).on({
             }, speed);
         }
 
-        //gnb 버튼 클릭시 이벤트
+        // gnb 버튼 클릭시 이벤트
         $(".btn_gnb").on("click", function(){
             $(this).add(".gnb").toggleClass("active");
             if(Browser.indexOf("MSIE 7") !== -1){
@@ -81,18 +81,18 @@ $(window).on({
             $(".btn_gnb, .gnb").removeClass("active");
         });
             
-        //오른쪽 상단 레이어팝업 클릭시 이벤트
+        // 오른쪽 상단 레이어팝업 클릭시 이벤트
         $(".btn_lp li").each(function(i){
-            $(this).find(">button").bind("click", function(){
+            $(this).find(">button").on("click", function(){
                 $(".main .lp:eq("+i+")").show().siblings(".lp").hide();
             });
         });
-        $(".lp .btn_close").bind("click", function(){$(this).parent("div").hide()});
+        $(".lp .btn_close").on("click", function(){$(this).parent("div").hide()});
 
         var ajax = getAjaxPortfolioInfos();
         ajax.success(function(data){
             if(data != null && data.length > 0){
-                //PortfolioInfos = data;
+                // PortfolioInfos = data;
                 PortfolioInfos = data.sort(function(currObj, nextObj){
                     return currObj.seq < nextObj.seq ? -1 : currObj.seq > nextObj.seq ? 1 : 0;
                 });
@@ -109,8 +109,8 @@ $(window).on({
             initPortfolioInfos();
         });
 
-        //더보기 버튼 클릭
-        $(".btn_more").bind("click", function(){
+        // 더보기 버튼 클릭
+        $(".btn_more").on("click", function(){
             if(CurrentPageNumber === TotalPageCount){
                 alert("마지막 페이지 입니다.");
             }else{
@@ -118,19 +118,19 @@ $(window).on({
             }
         });
         
-        //포트폴리오 정보 조회 및 화면 그리기
+        // 포트폴리오 정보 조회 및 화면 그리기
         function initPortfolioInfos(){
-            //현재 페이지 번호 설정
+            // 현재 페이지 번호 설정
             CurrentPageNumber = (CurrentPageNumber + 1);
             
             var currentPortfolioInfos = getPortfolioInfos(CurrentPageNumber, PageSize, PortfolioInfos);
             paintPortfolioInfos(currentPortfolioInfos);
 
-            //더보기에 노출 될 현재 페이지 번호와 전체 페이지 갯수 처리
+            // 더보기에 노출 될 현재 페이지 번호와 전체 페이지 갯수 처리
             $(".btn_more .current").text(CurrentPageNumber);
         }
 
-        //포트폴리오 정보 가져오기
+        // 포트폴리오 정보 가져오기
         function getPortfolioInfos(currentPageNumber, pageSize, portfolioInfos){
             var currentPortfolioInfos = portfolioInfos.filter(function(element){
                 return element.seq > ((currentPageNumber - 1) * pageSize) &&  
@@ -139,20 +139,20 @@ $(window).on({
             return currentPortfolioInfos;
         }
 
-        //포트폴리오 정보 화면에 그리기
+        // 포트폴리오 정보 화면에 그리기
         function paintPortfolioInfos(portfolioInfos){
             $.each(portfolioInfos, function(index, portfolioInfo){
                 $(".pf_list").append(
                     (portfolioInfo.seq % 3 == 2 ? "<li class='mid'>" : "<li>") + 
                     "<a href='./work.html?seq=" + portfolioInfo.seq + "' target='_blank'>" +
-                    "<img src='" + portfolioInfo.imageUrl + "' alt='" + portfolioInfo.title + "'>" + 
+                    "<img src='" + portfolioInfo.imageUrl + "' alt='" + portfolioInfo.subject + "'>" + 
                     "<div class='hover'><span class='align title'><strong>" + portfolioInfo.title + "</strong><p>" + portfolioInfo.subject + "</p></span><span class='align ah'></span></div>" + 
                     "</a></li>"
                 );
             });
         }
 
-        //하단(Contact) 클릭 배너
+        // 하단(Contact) 클릭 배너
         function showHideBanner(element){
             var $element = $(element);
             var $nav = $element.find(".nav li");
@@ -160,12 +160,12 @@ $(window).on({
             var $btn = $element.find(".nav_wrap .btn");
             var bannerLength = $banner.length;
             var activeIdx = $(".banner li.active").index();
-            $nav.children("button").bind("click", function(){
+            $nav.children("button").on("click", function(){
                 var clickIdx = $(this).parent("li").index();
                 $(this).parent("li").addClass("active").siblings("li").removeClass("active");
                 $banner.eq(clickIdx).addClass("active").siblings("li").removeClass("active");
             });
-            $btn.bind("click", function(){
+            $btn.on("click", function(){
                 if($(this).hasClass("btn_prev")){
                     activeIdx = activeIdx == 0 ?  bannerLength-1 : activeIdx-1;
                     $(".banner li:eq("+activeIdx+"), .nav li:eq("+activeIdx+")").addClass("active").siblings("li").removeClass("active");
@@ -176,7 +176,7 @@ $(window).on({
             });
         }
 
-        //페이지 네비게이션 클릭 이벤트
+        // 페이지 네비게이션 클릭 이벤트
         function navEvent(element){
             $(element).find(">button").click(function(){
                 var speed = 500;
@@ -197,7 +197,7 @@ $(window).on({
             });
         }
 
-        //시계 팝업
+        // 시계 팝업
         function setTime(){
             var getDate = new Date();
             var getHour = getDate.getHours();
@@ -222,7 +222,7 @@ $(window).on({
     }
 });
 
-//화면크기에 따른 컨텐츠 사이즈 조정 함수
+// 화면크기에 따른 컨텐츠 사이즈 조정 함수
 function resize(){
     var winWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var arrSkillHeight = [];
@@ -239,7 +239,7 @@ function resize(){
     }
 }
 
-//스크롤 위치에 따른 발생 이벤트 함수
+// 스크롤 위치에 따른 발생 이벤트 함수
 function scrollEvent(){
     var sct = $(window).scrollTop();
     var $section = $(".wrap > .section");

@@ -5,7 +5,7 @@ var TotalPageCount = 0;
 var PageSize = 6;
 
 $(document).ready(function(){
-    //하위버전(ie9이하) svg 파일 check, png 파일로 대체
+    // 하위버전(ie9이하) svg 파일 check, png 파일로 대체
     if(!Modernizr.svg){
         $(".svg").each(function(){
             var src = $(this).attr("src");
@@ -32,7 +32,7 @@ function getParameterByName(name){
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-//ie9이하 .filter() 
+// ie9이하 .filter() 
 if(!Array.prototype.filter){
     Array.prototype.filter = function(func, thisArg){
         'use strict';
