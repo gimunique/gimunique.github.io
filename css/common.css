@@ -137,7 +137,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .portfolio .btn_more:after{position:absolute;left:50%;top:50%;content:'';width:100%;height:0;background-color:#fff;border:2px solid #fff;border:0 none\9;border-radius:39px;opacity:0;transition:all 200ms ease-in-out;z-index:-1}
 .portfolio .btn_more:after{transform:translateX(-50%) translateY(-50%)}
 .portfolio .btn_more:hover{color:#b12828;background-color:#fff\9}
-.portfolio .btn_more:hover:after{height:100%;/* height:0\9; */opacity:1}
+.portfolio .btn_more:hover:after{height:100%;height:0\9;opacity:1}
 .portfolio .btn_more .page{margin-left:5px;font-size:18px;vertical-align:middle}
 .portfolio .btn_more .page .current{margin-right:2px}
 .portfolio .btn_more .page .total{margin-left:2px}
