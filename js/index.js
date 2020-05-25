@@ -1,3 +1,4 @@
+$(".wrap").remove();
 $(document).ready(function(){
     // 화면 처음 이미지 load
     /* var introImg = {
