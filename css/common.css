@@ -12,7 +12,7 @@ a,a:link,a:visited{color:#fff;text-decoration:none;-webkit-tap-highlight-color:r
 a:hover{text-decoration:none}
 a,img{vertical-align:top}
 label{cursor:pointer}
-button{cursor:pointer;background-color:transparent;border:0 none}
+button{cursor:pointer;background-color:transparent;border:0 none;outline:none}
 hr{display:none}
 
 body.load{font-family:'Nanum Barun Gothic','맑은 고딕','malgun gothic','돋움','dotum','sans-serif'}
