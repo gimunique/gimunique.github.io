@@ -46,15 +46,15 @@ label{cursor:pointer}
 
 /* 휴대폰 번호 입력 */
 .form_num{width:431px}
-.form_num dd{position:relative;text-align:left;width:100%;height:73px;background:url("/images/skindoc/desktop/bg_input.png") no-repeat;overflow:hidden}
+.form_num dd{position:relative;text-align:left;width:100%;height:73px;background:url("../images/bg_input.png") no-repeat;overflow:hidden}
 .form_num dd .ipt_num{*float:left;width:292px;color:#000;font-size:20px;line-height:70px;height:70px;border:0 none;background:0 none;margin:0 0 3px 28px}
 .form_num dd label{position:absolute;left:28px;top:23px;font-size:18px;color:#8c8b8b;cursor:text;line-height:23px}
 .form_num dd .btn_send{position:absolute;width:111px;height:73px;right:0;top:0;background:0;border:0;letter-spacing:-1px;color:#fff;cursor:pointer;padding-bottom:5px}
 
 /* title */
-.appinfo .btitle{height:963px;background:url("/images/skindoc/desktop/bg_title.jpg") 0 50% no-repeat}
+.appinfo .btitle{height:963px;background:url("../images/bg_title.jpg") 0 50% no-repeat}
 .appinfo .btitle .content{padding-top:179px}
-.appinfo .btitle .title_txt{width:700px;height:130px;background:url("/images/skindoc/desktop/h2.png") no-repeat;margin:0 auto;padding-top:384px}
+.appinfo .btitle .title_txt{width:700px;height:130px;background:url("../images/h2.png") no-repeat;margin:0 auto;padding-top:384px}
 .appinfo .btitle .title_txt dl{text-align:center;font-size:0}
 .appinfo .btitle .title_txt dt, .appinfo .btitle .title_txt dd{display:inline-block;*display:inline;*zoom:1;vertical-align:top;line-height:21px}
 .appinfo .btitle .title_txt dt{color:#fff;font-size:17px;padding-right:13px;margin-top:-4px}
@@ -74,17 +74,17 @@ label{cursor:pointer}
 .appinfo .info .content p.mgt_p{margin-bottom:29px}
 .appinfo .info .content p strong{color:#fe8898}
 
-.appinfo .info_1 .info_txt{height:581px;background:url("/images/skindoc/desktop/bg_info_1.jpg") 100% 0 no-repeat;padding-top:113px;margin:0 61px 0 23px}
-.appinfo .info_2 .info_txt{height:577px;background:url("/images/skindoc/desktop/bg_info_2.gif") 0 0 no-repeat;padding:116px 0 0 516px}
+.appinfo .info_1 .info_txt{height:581px;background:url("../images/bg_info_1.jpg") 100% 0 no-repeat;padding-top:113px;margin:0 61px 0 23px}
+.appinfo .info_2 .info_txt{height:577px;background:url("../images/bg_info_2.gif") 0 0 no-repeat;padding:116px 0 0 516px}
 .appinfo .info_3{height:713px}
-.appinfo .info_3 .info_txt{position:absolute;top:0;left:26px;height:581px;width:1040px;background:url("/images/skindoc/desktop/bg_info_3.jpg") 100% 0 no-repeat;padding-top:132px}
+.appinfo .info_3 .info_txt{position:absolute;top:0;left:26px;height:581px;width:1040px;background:url("../images/bg_info_3.jpg") 100% 0 no-repeat;padding-top:132px}
 .appinfo .info_4 .info_txt{height:657px;margin-left:79px;padding:65px 0 0 447px}
 .appinfo .info_4 .rolling_area{position:absolute;top:0;left:81px;padding:57px 22px 0}
 .appinfo .info_4 .rolling_img{position:relative;width:282px;height:486px;overflow:hidden}
 .appinfo .info_4 .rolling_img li{display:none;position:absolute;top:0;left:0}
 .appinfo .info_4 .rolling_img li.on{display:block}
-.appinfo .info_4 .rolling_bg{position:absolute;left:0;top:0;display:block;width:326px;height:610px;background:url("/images/skindoc/desktop/bg_info_4.png") no-repeat}
-.appinfo .info_4 .rolling_area .move{position:absolute;top:272px;width:50px;height:50px;background:url("/images/skindoc/desktop/spr_btn_move.gif") no-repeat;cursor:pointer}
+.appinfo .info_4 .rolling_bg{position:absolute;left:0;top:0;display:block;width:326px;height:610px;background:url("../images/bg_info_4.png") no-repeat}
+.appinfo .info_4 .rolling_area .move{position:absolute;top:272px;width:50px;height:50px;background:url("../images/spr_btn_move.gif") no-repeat;cursor:pointer}
 .appinfo .info_4 .rolling_area .move.prev{left:-79px}
 .appinfo .info_4 .rolling_area .move.prev:hover{background-position:0 -50px}
 .appinfo .info_4 .rolling_area .move.next{background-position:100% 0;right:-79px}
@@ -92,7 +92,7 @@ label{cursor:pointer}
 .appinfo .info_4 .rolling_area .rolling_nav{position:absolute;top:473px;right:-211px}
 .appinfo .info_4 .rolling_area .rolling_nav ul{overflow:hidden}
 .appinfo .info_4 .rolling_area .rolling_nav li{float:left;margin-right:9px}
-.appinfo .info_4 .rolling_area .rolling_nav li a{display:block;width:14px;height:14px;background:url("/images/skindoc/desktop/spr_btn_pager.gif") no-repeat}
+.appinfo .info_4 .rolling_area .rolling_nav li a{display:block;width:14px;height:14px;background:url("../images/spr_btn_pager.gif") no-repeat}
 .appinfo .info_4 .rolling_area .rolling_nav li.on a{background-position:100% 100%}
 
 /* 리뷰 */
@@ -108,7 +108,7 @@ label{cursor:pointer}
 .appinfo .review .review_roll dd{position:relative;font-size:17px;color:#454c54;line-height:23px;padding-left:19px;margin-top:5px}
 .appinfo .review .review_roll dd span{display:block}
 .appinfo .review .review_roll dd  .bb_txt{padding:18px 26px 23px 20px}
-.appinfo .review .review_roll dd .bubble{position:absolute;background:url("/images/skindoc/desktop/spr_bg_bubble.gif") no-repeat;height:26px}
+.appinfo .review .review_roll dd .bubble{position:absolute;background:url("../images/spr_bg_bubble.gif") no-repeat;height:26px}
 .appinfo .review .review_roll dd .bubble.bt{top:0}
 .appinfo .review .review_roll dd .bubble.bb{bottom:0}
 .appinfo .review .review_roll dd .bubble.tl,.appinfo .review .review_roll dd .bubble.bl{left:0;width:26px}
@@ -141,7 +141,7 @@ label{cursor:pointer}
 .footer .footer_info li a, .footer .footer_info li span.bar{display:inline-block;*display:inline;*zoom:1;vertical-align:top}
 .footer .footer_info li span.bar{width:1px;height:11px;background-color:#676767;overflow:hidden;margin:4px 17px 0}
 .footer .footer_info li.mail a{color:#387DBF;text-decoration:underline}
-.footer .footer_info li.sns a{background:url("/images/skindoc/desktop/spr_btn_share.gif") no-repeat}
+.footer .footer_info li.sns a{background:url("../images/spr_btn_share.gif") no-repeat}
 .footer .footer_info li.sns .twitter{padding-left:25px}
 .footer .footer_info li.sns .facebook{background-position:0 -20px;padding-left:18px}
 
@@ -149,7 +149,7 @@ label{cursor:pointer}
 .floating{position:absolute;top:210px;right:50%;margin-right:-614px;z-index:1000}
 .floating ul{overflow:hidden;font-size:0}
 .floating li{margin-bottom:6px}
-.floating li a{display:block;width:96px;height:96px;background:url("/images/skindoc/desktop/spr_btn_floating.png") no-repeat}
+.floating li a{display:block;width:96px;height:96px;background:url("../images/spr_btn_floating.png") no-repeat}
 .floating li.float_2 a{background-position:0 -101px}
 .floating li.float_3 a{background-position:0 -203px}
 .floating li.float_1 a:hover{background-position:-107px 0}
@@ -160,7 +160,7 @@ label{cursor:pointer}
 
 /* title */
 .event{min-height:100%;_height:100%;background-color:#ebedee}
-.event .etitle{height:246px;background:url("/images/skindoc/desktop/bg_event_title.jpg") 50% 0 no-repeat}
+.event .etitle{height:246px;background:url("../images/bg_event_title.jpg") 50% 0 no-repeat}
 .event .etitle .content{padding-top:104px}
 .event .etitle h2, .event .etitle p{color:#fff;text-align:center;line-height:1.3}
 .event .etitle h2{font-size:32px;font-weight:normal;letter-spacing:-2px;margin-bottom:10px}
@@ -171,7 +171,7 @@ label{cursor:pointer}
 .event .etab ul{height:92px;*zoom:1}
 .event .etab ul:after{content:"";display:block;clear:both}
 .event .etab li{position:relative;float:left;width:333px;height:92px;text-align:center}
-.event .etab li a{display:inline-block;*display:inline;*zoom:1;height:100%;line-height:89px;text-align:center;color:#7f848a;font-size:19px;background:url("/images/skindoc/desktop/spr_tab_event.gif") no-repeat;padding-left:30px;margin-left:-30px}
+.event .etab li a{display:inline-block;*display:inline;*zoom:1;height:100%;line-height:89px;text-align:center;color:#7f848a;font-size:19px;background:url("../images/spr_tab_event.gif") no-repeat;padding-left:30px;margin-left:-30px}
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.event .etab li a{line-height:87px}}
 :root .event .etab li a{line-height:87px \0/IE9}
 .event .etab li a:hover{text-decoration:none}
@@ -182,7 +182,7 @@ label{cursor:pointer}
 .event .etab li.on .tab_1, .event .etab li .tab_1:hover{background-position:0 -310px}
 .event .etab li.on .tab_2, .event .etab li .tab_2:hover{background-position:0 -426px}
 .event .etab li.on .tab_3, .event .etab li .tab_3:hover{background-position:0 -544px}
-.event .etab li.on .blt{position:absolute;left:50%;overflow:hidden;bottom:-12px;width:23px;height:12px;background:url("/images/skindoc/desktop/blt_event_tab_on.png") no-repeat;margin-left:-12px}
+.event .etab li.on .blt{position:absolute;left:50%;overflow:hidden;bottom:-12px;width:23px;height:12px;background:url("../images/blt_event_tab_on.png") no-repeat;margin-left:-12px}
 
 /* 공통 */
 .event .elist, .event .eview{background-color:#ebedee;padding-top:42px}
@@ -202,10 +202,10 @@ label{cursor:pointer}
 .event .elist li .etxt .ename{display:block;font-size:17px}
 .event .elist li .edate{position:absolute;bottom:0;left:0;width:100%;font-size:0;height:34px}
 .event .elist li .edate  span{display:inline-block;*display:inline;*zoom:1;vertical-align:top}
-.event .elist li .edate .dtxt{height:14px;color:#9ca8b5;font-family:'tahoma';background:url("/images/skindoc/desktop/icon_event_date.gif") no-repeat;letter-spacing:0;font-size:13px;line-height:15px;padding-left:21px;overflow:hidden;margin:0 5px 0 20px}
+.event .elist li .edate .dtxt{height:14px;color:#9ca8b5;font-family:'tahoma';background:url("../images/icon_event_date.gif") no-repeat;letter-spacing:0;font-size:13px;line-height:15px;padding-left:21px;overflow:hidden;margin:0 5px 0 20px}
 .event .elist li .edate .dday{height:17px}
 .event .elist li .edate .dday span{height:100%}
-.event .elist li .edate .dday .corner{width:7px;background:url("/images/skindoc/desktop/spr_bg_event_dday.png") no-repeat}
+.event .elist li .edate .dday .corner{width:7px;background:url("../images/spr_bg_event_dday.png") no-repeat}
 .event .elist li .edate .dday .cr{background-position:100% 0}
 .event .elist li .edate .dday .daybox{background-color:#fe8898;color:#fff;font-size:12px;line-height:17px;letter-spacing:0;padding:0 1px}
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.event .elist li .edate .dday .daybox{line-height:16px}}
@@ -218,7 +218,7 @@ label{cursor:pointer}
 .event .elist li.new .etxt p{font-size:14px;color:#878686;line-height:22px}
 .event .elist li.new .edate{background-color:#f9f9fa;height:17px;padding:21px 0}
 .event .elist li.new .edate .dtxt{font-size:14px;margin-left:27px}
-.event .elist li.new .badge{position:absolute;top:0;left:0;width:46px;height:46px;background:url("/images/skindoc/desktop/badge_new.gif") no-repeat;z-index:1}
+.event .elist li.new .badge{position:absolute;top:0;left:0;width:46px;height:46px;background:url("../images/badge_new.gif") no-repeat;z-index:1}
 .event .elist li.end .ename, .event .elist li.end a{color:#929497}
 .event .elist li.end a{cursor:default;pointer-events:none}
 .event .elist li.end a:hover{text-decoration:none}
@@ -235,32 +235,32 @@ label{cursor:pointer}
 
 /* 배경 */
 .wrap.information{background-color:#ebedee;background-repeat:no-repeat;background-position:50% 73px;padding-top:73px}
-.information.gangnam{background-image:url("/images/skindoc/desktop/gangnam/bg_hospital.jpg")}
-.information.apgujeong{background-image:url("/images/skindoc/desktop/apgujeong/bg_hospital.jpg")}
-.information.bupeoyng{background-image:url("/images/skindoc/desktop/bupeoyng/bg_hospital.jpg")}
-.information.cheongnyangni{background-image:url("/images/skindoc/desktop/cheongnyangni/bg_hospital.jpg")}
-.information.cheonho{background-image:url("/images/skindoc/desktop/cheonho/bg_hospital.jpg")}
-.information.guro{background-image:url("/images/skindoc/desktop/guro/bg_hospital.jpg")}
-.information.ilsan{background-image:url("/images/skindoc/desktop/ilsan/bg_hospital.jpg")}
-.information.incheon{background-image:url("/images/skindoc/desktop/incheon/bg_hospital.jpg")}
-.information.mokdong{background-image:url("/images/skindoc/desktop/mokdong/bg_hospital.jpg")}
-.information.myeongdong{background-image:url("/images/skindoc/desktop/myeongdong/bg_hospital.jpg")}
-.information.nowon{background-image:url("/images/skindoc/desktop/nowon/bg_hospital.jpg")}
-.information.sinchon{background-image:url("/images/skindoc/desktop/sinchon/bg_hospital.jpg")}
-.information.suwon{background-image:url("/images/skindoc/desktop/suwon/bg_hospital.jpg")}
-.information.yeouido{background-image:url("/images/skindoc/desktop/yeouido/bg_hospital.jpg")}
+.information.gangnam{background-image:url("../images/gangnam/bg_hospital.jpg")}
+.information.apgujeong{background-image:url("../images/apgujeong/bg_hospital.jpg")}
+.information.bupeoyng{background-image:url("../images/bupeoyng/bg_hospital.jpg")}
+.information.cheongnyangni{background-image:url("../images/cheongnyangni/bg_hospital.jpg")}
+.information.cheonho{background-image:url("../images/cheonho/bg_hospital.jpg")}
+.information.guro{background-image:url("../images/guro/bg_hospital.jpg")}
+.information.ilsan{background-image:url("../images/ilsan/bg_hospital.jpg")}
+.information.incheon{background-image:url("../images/incheon/bg_hospital.jpg")}
+.information.mokdong{background-image:url("../images/mokdong/bg_hospital.jpg")}
+.information.myeongdong{background-image:url("../images/myeongdong/bg_hospital.jpg")}
+.information.nowon{background-image:url("../images/nowon/bg_hospital.jpg")}
+.information.sinchon{background-image:url("../images/sinchon/bg_hospital.jpg")}
+.information.suwon{background-image:url("../images/suwon/bg_hospital.jpg")}
+.information.yeouido{background-image:url("../images/yeouido/bg_hospital.jpg")}
 
 /* gnb 색 */
 .information .header{background-color:#fa7d89}
 
 /* 지점선택 */
-.information .hlist{height:172px;background:url("/images/skindoc/desktop/bg_hinfo_top.png") repeat-x}
+.information .hlist{height:172px;background:url("../images/bg_hinfo_top.png") repeat-x}
 .information .hlist .content{padding-top:34px}
 .information .hlist ul{overflow:hidden}
 .information .hlist li{float:left;width:105px;height:41px;margin:0 15px 14px 0}
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.information .hlist li{line-height:39px}}
 :root .information .hlist li{line-height:39px \0/IE9}
-.information .hlist li a{color:#fff;display:block;width:100%;height:100%;font-size:15px;text-align:center;line-height:39px;background:url("/images/skindoc/desktop/spr_bg_hinfo_list.png") no-repeat}
+.information .hlist li a{color:#fff;display:block;width:100%;height:100%;font-size:15px;text-align:center;line-height:39px;background:url("../images/spr_bg_hinfo_list.png") no-repeat}
 .information .hlist li a:hover{text-decoration:none;color:#f0abb2;background-position:0 -41px}
 .information .hlist li .on{background-position:0 100% !important;color:#2b2b2b !important;font-weight:bold}
 
@@ -274,7 +274,7 @@ label{cursor:pointer}
 .information .branch .br_info .b_info{margin-bottom:34px}
 .information .branch .br_info .b_info dl{width:710px;overflow:hidden}
 .information .branch .br_info .b_info dt, .information .branch .br_info .b_info dd{float:left}
-.information .branch .br_info .b_info dt{width:42px;height:24px;padding-left:22px;font-size:14px;line-height:20px;color:#1f1f1f;background:url("/images/skindoc/desktop/spr_blt_hinfo_basic.gif") no-repeat}
+.information .branch .br_info .b_info dt{width:42px;height:24px;padding-left:22px;font-size:14px;line-height:20px;color:#1f1f1f;background:url("../images/spr_blt_hinfo_basic.gif") no-repeat}
 .information .branch .br_info .b_info dl.address dt{background-position:0 3px}
 .information .branch .br_info .b_info dl.phone dt{background-position:0 -21px}
 .information .branch .br_info .b_info dd{width:640px;color:#7b7b7b;font-size:13px;line-height:21px}
@@ -285,13 +285,13 @@ label{cursor:pointer}
 .information .branch .br_info .hos_img li{float:left}
 .information .branch .br_info .hos_img li a{position:relative;display:block;width:127px;height:104px}
 .information .branch .br_info .hos_img li a img{width:100%;height:100%}
-.information .branch .br_info .hos_img li a .view{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background:url("/images/skindoc/desktop/bg_hover_himg.png") no-repeat;cursor:pointer}
+.information .branch .br_info .hos_img li a .view{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background:url("../images/bg_hover_himg.png") no-repeat;cursor:pointer}
 .information .branch .br_info .hos_img li a.hover .view{display:block}
 .information .branch .br_info .map{width:887px;height:482px;border:1px solid #d8dbd5;overflow:hidden;margin-bottom:16px}
 .information .branch .br_info .pts, .information .branch .br_info .pts ul{width:100%;overflow:hidden}
 .information .branch .br_info .pts .pts_box{float:left;width:444px}
 .information .branch .br_info .pts ul{width:100%;overflow:hidden}
-.information .branch .br_info .pts h5{color:#1f1f1f;font-size:14px;height:19px;line-height:17px;background:url("/images/skindoc/desktop/spr_icon_hinfo_trans.gif") 0 1px no-repeat;font-weight:normal;padding-left:24px;margin-bottom:5px}
+.information .branch .br_info .pts h5{color:#1f1f1f;font-size:14px;height:19px;line-height:17px;background:url("../images/spr_icon_hinfo_trans.gif") 0 1px no-repeat;font-weight:normal;padding-left:24px;margin-bottom:5px}
 .information .branch .br_info .pts .subway h5{background-position:0 -22px}
 .information .branch .br_top .txt_partner{clear:both;padding:17px 0 0 0}
 
@@ -318,7 +318,7 @@ label{cursor:pointer}
 /* 사진보기 팝업 */
 .information .popup{display:none;position:fixed;_position:absolute;width:100%;height:100%;top:0;left:0;right:0;bottom:0;z-index:100;cursor:pointer}
 .information .popup .bg{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.80;filter:alpha(opacity=80)}
-.information .popup .pop_title{width:100%;height:48px;background:url("/images/skindoc/desktop/bg_viewpop_title.png") repeat-x;padding-top:21px}
+.information .popup .pop_title{width:100%;height:48px;background:url("../images/bg_viewpop_title.png") repeat-x;padding-top:21px}
 .information .popup .pop_title h4{color:#fff;font-size:15px;line-height:22px}
 .information .popup .pop_title h4 img, .information .popup .pop_title h4 .brname{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}
 .information .popup .pop_title h4 .brname{font-weight:normal;margin:-3px 0 0 7px}
@@ -328,7 +328,7 @@ label{cursor:pointer}
 .information .popup .img_area .img_box{display:table-cell;width:802px;height:534px;vertical-align:middle;cursor:default}
 .information .popup .img_area .middle{*display:inline;*zoom:1;height:100%}
 .information .popup .img_area .middle, .information .popup .img_area .img{vertical-align:middle}
-.information .popup .img_area .move{position:absolute;top:50%;width:45px;height:100px;background:url("/images/skindoc/desktop/spr_btn_popview.png") 0 50% no-repeat;margin-top:-50px}
+.information .popup .img_area .move{position:absolute;top:50%;width:45px;height:100px;background:url("../images/spr_btn_popview.png") 0 50% no-repeat;margin-top:-50px}
 .information .popup .img_area .move.prev{left:-82px}
 .information .popup .img_area .move.prev:hover{background-position:-90px 50%}
 .information .popup .img_area .move.next{background-position:-45px 50%;right:-82px}
@@ -338,14 +338,14 @@ label{cursor:pointer}
 .backplate{height:100%;min-height:100%}
 .nodata {text-align: center;line-height:357px}
 .terms{ height:100%}
-.terms .etitle{height:246px;background:url("/images/skindoc/desktop/bg_event_title.jpg") 50% 0 no-repeat}
+.terms .etitle{height:246px;background:url("../images/bg_event_title.jpg") 50% 0 no-repeat}
 .terms .etitle .content{padding-top:104px}
 .terms .etitle h2, .event .etitle p{color:#fff;text-align:center;line-height:1.3}
 .terms .etitle h2{font-size:32px;font-weight:normal;letter-spacing:-2px;margin-bottom:10px}
 .terms .etitle p{font-size:18px}
 
 .privacy{ height:100%}
-.privacy .etitle{height:246px;background:url("/images/skindoc/desktop/bg_event_title.jpg") 50% 0 no-repeat}
+.privacy .etitle{height:246px;background:url("../images/bg_event_title.jpg") 50% 0 no-repeat}
 .privacy .etitle .content{padding-top:104px}
 .privacy .etitle h2, .event .etitle p{color:#fff;text-align:center;line-height:1.3}
 .privacy .etitle h2{font-size:32px;font-weight:normal;letter-spacing:-2px;margin-bottom:10px}
@@ -361,9 +361,9 @@ label{cursor:pointer}
 .pop_area{position:fixed;_position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;z-index:1200}
 .bg_pop{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.5;filter:alpha(opacity=50)}
 .pop_area .pop{position:absolute;top:50%;left:50%;padding-left:57px}
-.pop_area .pop .close{position:absolute;top:22px;right:25px;width:70px;height:70px;background:url("/images/skindoc/desktop/btn_pop_close.gif")}
+.pop_area .pop .close{position:absolute;top:22px;right:25px;width:70px;height:70px;background:url("../images/btn_pop_close.gif")}
 .pop_area .pop p{color:#474747;letter-spacing:-1px;line-height:19px}
 .pop_area .pop p br{letter-spacing:0}
-.pop_area .pop_sch{width:741px;height:335px;background:url("/images/skindoc/desktop/bg_pop_end-sch.png") no-repeat;margin:-307px 0 0 -399px;padding-top:280px}
-.pop_area .pop_end{width:503px;height:192px;background:url("/images/skindoc/desktop/bg_pop_end.png") no-repeat;margin:-253px 0 0 -280px;padding-top:315px}
+.pop_area .pop_sch{width:741px;height:335px;background:url("../images/bg_pop_end-sch.png") no-repeat;margin:-307px 0 0 -399px;padding-top:280px}
+.pop_area .pop_end{width:503px;height:192px;background:url("../images/bg_pop_end.png") no-repeat;margin:-253px 0 0 -280px;padding-top:315px}
 .pop_area .pop_end p a{color:#4e83be;text-decoration:underline}
