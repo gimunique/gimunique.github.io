@@ -1,0 +1,111 @@
+<? 
+    $active = "contact";
+    include "./dist/include/header.php"; 
+?>
+    <div class="container">
+        <div class="contact sub_content"><!-- script 분기를 위해, contact 클래스가 맨 앞에 있어야 함. getPageName() 참고 -->
+            <section class="sub_title">
+                <span class="bg"></span>
+                <div class="content">
+                    <span>
+                        <h3>Contact</h3>
+                        <p class="additional_text">이스트게임즈에 많은 관심과 애정을 주셔서 감사합니다.<br>고객님의 어떤 목소리라도 귀를 기울이겠습니다.</p>
+                    </span>
+                </div>
+            </section>
+            <section class="section contact_customer">
+                <div class="content">
+                    <h4><span class="t0 tf_r">고</span><span class="t1 tf_r">객</span><span class="t2 tf_r">센</span><span class="t3 tf_r">터</span></h4>
+                    <p class="additional_text">고객의 신뢰와 존경으로 이스트게임즈는 언제나 고객의 편에 서겠습니다.</p>
+                    <ul>
+                        <!-- 유지보수 시, 마크업만 추가해 주면 됨 <li> 복붙 -->
+                        <li>
+                            <strong>카발 온라인</strong>
+                            <span>
+                                02 - 586 - 5522<br>
+                                평일   10:00 ~ 18:00<br>  
+                                주말, 공휴일 휴무<br>
+                                <a href="mailto:cabal@cabal.co.kr">cabal@cabal.co.kr</a>
+                            </span>
+                            <a href="//cs.cabal.co.kr/" target="_blank" class="btn_center" title="카발 고객센터 바로가기" rel="noopener"><span>고객센터 바로가기</span></a>
+                        </li>
+                        <li>
+                            <strong>카발2</strong>
+                            <span>
+                                02 - 586 - 6363<br>
+                                평일   10:00 ~ 18:00<br>
+                                주말, 공휴일 휴무<br>
+                                <a href="mailto:help@cabal2.co.kr">help@cabal2.co.kr</a>
+                            </span>
+                            <a href="//user.cabal2.co.kr/cscenter" target="_blank" class="btn_center" title="카발2 고객센터 바로가기" rel="noopener"><span>고객센터 바로가기</span></a>
+                        </li>
+                        <li>
+                            <strong>EST PC방 고객센터</strong>
+                            <span>
+                                02 - 586 - 4545<br>
+                                평일   10:00 ~ 18:00<br>
+                                주말, 공휴일 휴무
+                            </span>
+                            <a href="//www.estpcbang.co.kr/" target="_blank" class="btn_center" title="EST PC방 고객센터 바로가기" rel="noopener"><span>고객센터 바로가기</span></a>
+                        </li>
+                        <li>
+                            <strong>고양이 다방</strong>
+                            <span><a href="mailto:cat_help@estgames.com">cat_help@estgames.com</a></span>
+                            <a href="//catcafe.estgames.co.kr/" target="_blank" class="btn_center" title="고양이 다방 고객센터 바로가기" rel="noopener"><span>고객센터 바로가기</span></a>
+                        </li>
+                        <li>
+                            <strong>카발 모바일</strong>
+                            <span><a href="mailto:cabalm@estgames.com">cabalm@estgames.com</a></span>
+                            <a href="//cabalmobile.co.kr" target="_blank" class="btn_center" title="카발 모바일 고객센터 바로가기" rel="noopener"><span>고객센터 바로가기</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section contact_inquire" data-hash="Inquire">
+                <div class="content">
+                    <h4 class="right"><span class="t3 tf_l">문</span><span class="t2 tf_l">의</span><span class="t1 tf_l">하</span><span class="t0 tf_l">기</span></h4>
+                    <p class="additional_text right">서비스에 대한 문의, 불만, 제안, 칭찬 혹은 자료 요청<br>하실 내용이 있다면 글을 남겨주세요.</p>
+                    <form>
+                        <fieldset>
+                            <div class="inquire_wrap">
+                                <div class="check_wrap">
+                                    <div>
+                                        <div class="check"><label for="check_invest" class="active"><span>투자 / 제휴문의</span></label><input type="radio" id="check_invest" name="inquire_type" value="invest" checked="checked"></div>
+                                        <div class="check"><label for="check_recruit"><span>채용 문의</span></label><input type="radio" id="check_recruit" name="inquire_type" value="recruit"></div>
+                                        <div class="check"><label for="check_admin"><span>관리자에게</span></label><input type="radio" id="check_admin" name="inquire_type" value="admin"></div>
+                                    </div>
+                                    <strong><span>문의 유형을 선택해 주세요.</span></strong>
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="title"><label for="contact_title">제목</label><input id="contact_title" type="text" placeholder="제목을 입력해 주세요."></div>
+                                    <div class="email"><label for="contact_email">이메일 주소</label><input id="contact_email" type="text" placeholder="이메일 주소를 입력해 주세요."></div>
+                                    <div class="email_agree"><input type="checkbox" id="check_agree"><label for="check_agree">이메일 수집에 동의합니다. (해당 문의에 대한 회신 목적으로 이메일을 수집하며, 문의 민원 해결 후 파기합니다.)</label></div>
+                                </div>
+                                <div class="file">
+                                    <div>
+                                        <input type="text" placeholder="참고할 수 있는 파일을 첨부해 주세요." disabled="disabled" id="file_name">
+                                        <input type="file" onchange="document.getElementById('file_name').value = this.value">
+                                    </div>
+                                    <strong><span>첨부파일은 최대 4MBYTE입니다. (사용가능 파일 형식 - JPG / GIF / PNG / ZIP)</span></strong>
+                                </div>
+                                <div class="write_area"><label for="contact_inquire">문의 내용</label><textarea id="contact_inquire" placeholder="자세한 정보를 보내주시면 답변을 드리는데 많은 도움이 됩니다."></textarea></div>
+                            </div>
+                            <input type="submit" value="문의하기" class="btn_inquire">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <section class="section contact_location">
+                <div class="title_wrap">
+                    <div class="content">
+                        <h4 class="center"><span class="t2 tf_l">찾</span><span class="t1 tf_l">아</span> <span class="t0 tf_l">오</span><span class="t0 tf_r">시</span><span class="t1 tf_r">는</span> <span class="t2 tf_r">길</span></h4>
+                        <p class="additional_text center">서울시 서포구 반포대로 3 이스트빌딩<br>전화 : 02 585 4263<br><span class="ls0">http://www.estgames.co.kr</span></p>
+                    </div>
+                </div>
+                <div class="map_wrap"><!-- common.js contactEvent() 참고 --></div>
+            </section>
+        </div>
+        <? include "./dist/include/shortcut.php"; ?>
+    </div>
+    <!-- end container -->
+<? include "./dist/include/footer.php"; ?>

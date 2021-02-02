@@ -1,44 +1,43 @@
 @charset "utf-8";
-@font-face{
- font-family: "Spoqa Han Sans";
- font-weight: normal; 
- src: url("https://gimunique.github.io/webfont/SpoqaHanSans-Regular.eot");
- src: local(※), url("https://gimunique.github.io/webfont/SpoqaHanSans-Regular.woff") format("woff");
+@font-face {
+    font-family: "Spoqa Han Sans";
+    font-weight: normal;
+    src: url("https://gimunique.github.io/common/font/SpoqaHanSans-Regular.eot");
+    src: local(※), url("https://gimunique.github.io/common/font/SpoqaHanSans-Regular.woff") format("woff");
 }
-@font-face{
- font-family: "Spoqa Han Sans Thin";
- font-weight: normal;
- src: url("https://gimunique.github.io/webfont/SpoqaHanSans-Thin.eot");
- src: local(※), url("https://gimunique.github.io/webfont/SpoqaHanSans-Thin.woff") format("woff");
+@font-face {
+    font-family: "Spoqa Han Sans Thin";
+    font-weight: normal;
+    src: url("https://gimunique.github.io/common/font/SpoqaHanSans-Thin.eot");
+    src: local(※), url("https://gimunique.github.io/common/font/SpoqaHanSans-Thin.woff") format("woff");
 }
-
-@font-face{
- font-family: "Raleway";
- font-weight: normal; 
- src: url("https://gimunique.github.io/webfont/raleway-regular.eot");
- src: local(※), url("https://gimunique.github.io/webfont/raleway-regular.woff") format("woff");
+@font-face {
+    font-family: "Raleway";
+    font-weight: normal;
+    src: url("https://gimunique.github.io/common/font/raleway-regular.eot");
+    src: local(※), url("https://gimunique.github.io/common/font/raleway-regular.woff") format("woff");
 }
-@font-face{
- font-family: "Raleway Light";
- font-weight: normal; 
- src: url("https://gimunique.github.io/webfont/raleway-extralight.eot");
- src: local(※), url("https://gimunique.github.io/webfont/raleway-extralight.woff") format("woff");
+@font-face {
+    font-family: "Raleway Light";
+    font-weight: normal;
+    src: url("https://gimunique.github.io/common/font/raleway-extralight.eot");
+    src: local(※), url("https://gimunique.github.io/common/font/raleway-extralight.woff") format("woff");
 }
-@font-face{
- font-family: "Raleway Thin";
- font-weight: normal; 
- src: url("https://gimunique.github.io/webfont/raleway-thin.eot");
- src: local(※), url("https://gimunique.github.io/webfont/raleway-thin.woff") format("woff");
+@font-face {
+    font-family: "Raleway Thin";
+    font-weight: normal;
+    src: url("https://gimunique.github.io/common/font/raleway-thin.eot");
+    src: local(※), url("https://gimunique.github.io/common/font/raleway-thin.woff") format("woff");
 }
-@font-face{
- font-family: "Raleway Bold";
- font-weight: normal; 
- src: url("https://gimunique.github.io/webfont/raleway-bold.eot");
- src: local(※), url("https://gimunique.github.io/webfont/raleway-bold.woff") format("woff");
+@font-face {
+    font-family: "Raleway Bold";
+    font-weight: normal;
+    src: url("https://gimunique.github.io/common/font/raleway-bold.eot");
+    src: local(※), url("https://gimunique.github.io/common/font/raleway-bold.woff") format("woff");
 }
-@font-face{
- font-family: "NotoSansCJKkr";
- font-weight: normal; 
- src: url("https://gimunique.github.io/webfont/NotoSansCJKkr-Regular.otf");
- src: local(※), url("https://gimunique.github.io/webfont/NotoSansCJKkr-Regular.otf") format("otf");
+@font-face {
+    font-family: "NotoSansCJKkr";
+    font-weight: normal;
+    src: url("https://gimunique.github.io/common/font/NotoSansCJKkr-Regular.otf");
+    src: local(※), url("https://gimunique.github.io/common/font/NotoSansCJKkr-Regular.otf") format("otf");
 }

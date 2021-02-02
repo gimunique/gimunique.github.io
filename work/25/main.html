@@ -1,0 +1,59 @@
+<? include "./dist/include/header.php"; ?>
+    <div class="container">
+        <div class="main"><!-- script 분기를 위해, main 클래스가 맨 앞에 있어야 함. getPageName() 참고 -->
+            <section class="main_banner">
+                <div class="main_slide">
+                    <!-- 배너 추가 시 <div class="slide slide5"></div> 태그 추가 후, 추가 되는 해당 이미지만 background-image로 css 처리 -->
+                    <div class="slide slide1"></div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                    <div class="slide slide4"></div>
+                </div>
+                <!-- 처음 렌더링 되는 paging이 필요하니, 배너 추가 시 전체 페이지만 수정 (ex: 1 / 5) -->
+                <div class="paging">1 / 4</div>
+                <article>
+                    <h2>All For Fun<br>Fun For All</h2>
+                    <p>즐거운 게임을 즐겁게 만드는 것<br>이스트게임즈의 중심에는 게임에 대한 모든 &apos;즐거움&apos;이 있습니다.</p>
+                    <a href="./company.html" title="이스트게임즈 알아보기"><span>자세히 보기</span></a>
+                </article>
+            </section>
+            <section class="main_recruit">
+                <div class="content">
+                    <h3><span class="t3 tf_l">R</span><span class="t2 tf_l">e</span><span class="t1 tf_l">c</span><span class="t0">r</span><span class="t1 tf_r">u</span><span class="t2 tf_r">i</span><span class="t3 tf_r">t</span></h3>
+                    <p class="rc_text">이스트게임즈와 함께 즐거움을 만들어갈 인재를 찾습니다</p>
+                    <ul class="trans_y">
+                        <li class="list1">
+                            <h4>채용공고</h4>
+                            <p>게임의 본질인 &apos;재미&apos;를 향한 이스트게임즈의 도전에 함께 할 지원자를 찾습니다</p>
+                            <a href="//recruit.estgames.co.kr/" target="_blank" title="채용 페이지 바로가기" rel="noopener"><span></span><span></span></a>
+                        </li>
+                        <li class="list2">
+                            <h4>직무 미리보기</h4>
+                            <p>이스트게임즈의 다양한 직무를 미리 만나보세요</p>
+                            <a href="./recruit.html" title="직무 미리보기"><span></span><span></span></a>
+                        </li>
+                        <li class="list3">
+                            <h4>문화 / 복지</h4>
+                            <p>이스트게임즈는 게임의 즐거움과 더불어 게임을 만들고 전달하는 즐거움을 소중하게 생각합니다</p>
+                            <a href="./recruit.html" title="문화/복지"><span></span><span></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main_game">
+                <div class="game_slide trans_y">
+                    <!-- 
+                        * 배너 추가 시 <div class="slide game5"></div> 태그 추가 후, 추가 되는 해당 이미지만 background-image로 css 처리
+                        * sectionScrollEvent(), mainEvent() 내 script 수정 필요
+                    -->
+                    <div class="slide game1"><a href="http://cabalmobile.co.kr/" target="_blank" title="카발 모바일 바로가기" rel="noopener"><span>자세히 보기</span></a></div>
+                    <div class="slide game2"><a href="http://www.cabal.co.kr/" target="_blank" title="카발 바로가기" rel="noopener"><span>자세히 보기</span></a></div>
+                    <div class="slide game3"><a href="http://www.cabal2.co.kr/" target="_blank" title="카발2 바로가기" rel="noopener"><span>자세히 보기</span></a></div>
+                    <div class="slide game4"><a href="http://catcafe.estgames.co.kr/" target="_blank" title="고양이 다방 바로가기" rel="noopener"><span>자세히 보기</span></a></div>
+                    <div class="slide game5"><a href="" onclick="event.preventDefault();"></a></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- end container -->
+<? include "./dist/include/footer.php"; ?>

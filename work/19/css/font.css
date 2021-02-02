@@ -1,8 +1,8 @@
 @charset "utf-8";
-@font-face{
-  font-family:'NotoSansBold';
-  font-style:normal;
-  font-weight:700;
-  src:url('https://gimunique.github.io/webfont/NotoSansBold.eot');
-  src:local(※), url('https://gimunique.github.io/webfont/NotoSansBold.woff') format('woff');
+@font-face {
+  font-family: 'NotoSansBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://gimunique.github.io/common/font/NotoSansBold.eot');
+  src: local(※), url('https://gimunique.github.io/common/font/NotoSansBold.woff') format('woff');
 }

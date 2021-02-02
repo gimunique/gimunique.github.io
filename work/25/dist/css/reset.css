@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* 
+ * 파일명: reset.css
+ * 설명: 브라우저 공통 기본 CSS 셋팅
+ * 작성자: EUGENE KIM
+ * 최종수정일: 2020.10.26
+ * 참조: Eric Meyer Reset CSS 2.0
+ * 대응: IE9 이상
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{font-family:'NotoSansKR','맑은 고딕','malgun gothic','돋움','dotum','sans-serif';font-size:100%;line-height:1;color:#777}
+h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR','맑은 고딕','malgun gothic','돋움','dotum','sans-serif';font-size:100%;font-weight:bold;color:#222}
+ol,ul{list-style:none}
+a,img{vertical-align:top}
+a,a:link,a:visited{color:#777;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+a:hover{text-decoration:none}
+table{border-collapse:collapse;border-spacing:0}
+input,textarea,button,select{margin:0;padding:0;font-family:inherit;font-size:inherit}
+fieldset{min-width:0}
+button{cursor:pointer}
+button{display:block;position:relative;padding:0;border:0;background-color:transparent;outline:none;cursor:pointer}
+legend,caption,.blind{overflow:hidden;visibility:hidden;position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0}
+i{font-style:normal}
+hr{display:none}
+
+/*
+ * webfont
+ * IE9 이상 대응으로 eot 파일 형식 제외
+ * "local(※)"은 외부 파일을 참조하기 이전에 로컬 파일 참조 및 
+ * IE6~IE8이 local()값을 처리하지 못하므로 woff2, woff, ttf 파일을 추가로 요청을 막기 위해 사용
+ * fallback 폰트 opentype
+*/
+
+@font-face{
+    font-family: 'NotoSansKR';font-weight:normal;
+    src: local(※),
+         url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+         url('../font/NotoSansKR-Regular.woff') format('woff'),
+         url('../font/NotoSansKR-Regular.otf') format('opentype');
+}
+@font-face{
+    font-family: 'NotoSansKR';font-weight:bold;
+    src: local(※),
+         url('../font/NotoSansKR-Black.woff2') format('woff2'),
+         url('../font/NotoSansKR-Black.woff') format('woff'),
+         url('../font/NotoSansKR-Black.otf') format('opentype');
+}
+@font-face{
+    font-family:'SpoqaHanSansKR';font-weight:normal;
+    src:local(※),
+        url('../font/SpoqaHanSansRegular.woff2') format('woff2'),
+        url('../font/SpoqaHanSansRegular.woff') format('woff'),
+        url('../font/SpoqaHanSansRegular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'SpoqaHanSansKR';font-weight:bold;
+    src: local(※),
+         url('../font/SpoqaHanSansBold.woff2') format('woff2'),
+         url('../font/SpoqaHanSansBold.woff') format('woff'),
+         url('../font/SpoqaHanSansBold.ttf') format('truetype');
+}

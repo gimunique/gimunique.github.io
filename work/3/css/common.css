@@ -1,8 +1,9 @@
 @charset "utf-8";
-/* reset */
+/*reset*/
 html,body,div,p,img,span,a,em,strong,pre,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,tbody,thead,tfoot,tr,th,td,form,fieldset,legend,caption,input,textarea,button,select,object,video,iframe{padding:0;margin:0;vertical-align:baseline;border:0}
 html,body{width:100%;height:100%}
 html{overflow-y:scroll}
+/*html{overflow:hidden}*/
 body{position:relative;font-family:'맑은 고딕','malgun gothic','돋움','dotum','sans-serif';font-size:20px;line-height:1;color:#fff;background-color:#292d38;-webkit-text-size-adjust:none;-webkit-font-smoothing:subpixel-antialiased;text-rendering:optimizeLegibility;/*overflow:auto*/}
 table{border-spacing:0;border-collapse:collapse}
 img{border:0}
@@ -16,13 +17,14 @@ caption,legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibi
 .blind{position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;font-size:1px;height:1px;overflow:hidden}
 .ls0{letter-spacing:0}
 
-/* 공통 */
+/*공통*/
 .wrap{position:relative;width:100%;min-width:1200px;overflow:hidden}
 .wrap .exo_b{font-family:'Exo2 Bold','verdana','sans-serif';font-size:42px}
 .wrap .address{width:100%;font-family:'Tahoma','sans-serif';font-size:12px;line-height:14px}
 .wrap .cover{display:block;width:100%;height:100%;position:fixed;top:0;_top:10px;bottom:0;left:0;right:0;background-color:#000;z-index:10}
+.group h3, .group_4 .b_style{text-indent:-9999px}
 
-/* 인트로 */
+/*인트로*/
 .intro{min-height:100%;text-align:center;background:url("../images/bg_intro.jpg") 50% 0 no-repeat}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3){.intro{min-height:122%;background-image:none}}
 .intro .content{position:absolute;left:0;top:50%;width:100%;height:750px;margin-top:-375px}
@@ -36,12 +38,13 @@ caption,legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibi
 .intro .intro_txt .week{font-size:19px}
 .intro .intro_txt .txt{display:block;width:100%;height:85px;margin:17px 0 58px;background:url("../images/bg_intro-txt.png") 50% 0 no-repeat}
 .intro .btn_result{position:relative;display:inline-block;width:295px;height:79px;/*margin-top:-20px;opacity:0;filter:alpha(opacity=0);*/background:url("../images/btn_result.png") no-repeat}
+/*.intro .btn_result.ani{margin:0;opacity:1;filter:alpha(opacity=100);transition:all 0.3s ease-in}*/
 .intro .btn_result .arrow{position:absolute;left:216px;top:29px;display:block;width:29px;height:19px;background:url("../images/bg_arrow.png") 100% 0 no-repeat;transition:width 0.15s linear}
 .intro .btn_result .arrow .line{display:block;width:100%;height:1px;margin-top:9px;background-color:#fff}
 .intro .btn_result:hover .arrow{width:40px;transition:width 0.15s linear}
 .intro .address{position:absolute;left:0;bottom:50px;opacity:0.3;filter:alpha(opacity=30)}
 
-/* 결과 */
+/*결과*/
 .result h4{text-indent:-9999px}
 .result .address{color:#6b7385}
 .result_menu{position:fixed;left:0;top:0;bottom:0;height:100%;background-color:#2a6cda;overflow:hidden;background-attachment:fixed;z-index:1}
@@ -65,10 +68,11 @@ caption,legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibi
 .result_menu .week p{float:left;width:223px;padding:0 44px}
 .result_menu .week p span{display:block;margin-top:5px;font-size:14px;line-height:16px;color:#d7d7d7}
 .result .content{float:right;width:70%;max-width:1196px;min-width:1020px}
-.result .group{position:relative;padding:90px 0 32px;width:996px;margin:0 auto;border-bottom:1px solid #3a3d48}
+.result .group{position:relative;padding-top:90px;width:996px;margin:0 auto;border-bottom:1px solid #3a3d48}
 .result .group h3{height:57px;margin-bottom:90px;background:url("../images/spr_h3.png") no-repeat}
 .result .group h4{clear:both;height:23px;margin-bottom:29px;background:url("../images/spr_h4.gif") 50% 0 no-repeat}
 .result .group .tit_2{margin-top:50px;background-position:50% -23px}
+.result .group_1{padding-bottom:21px}
 .result .group_1 .total{position:absolute;left:226px;top:84px;height:45px;line-height:43px;color:#757f99}
 .result .group_1 .total .blt{display:inline-block;height:100%;padding-left:42px;background:url("../images/spr_blt-team.png") no-repeat}
 .result .group_1 .total .capella{color:#437ad5}
@@ -84,9 +88,10 @@ caption,legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibi
 .result .group_1 .banner dt a{font-size:36px;color:#2a6cd9}
 .result .group_1 .banner dt.red a{color:#f54448}
 .result .group_1 .banner dd{font-size:19px;color:#5f677b}
-.result .war_result{width:594px;padding-left:7px;*zoom:1}
+.result .war_result{width:100%;padding-left:7px;*zoom:1}
 .result .war_result:after{display:block;content:"";clear:both}
-.result .war_result > li{float:left;position:relative;width:242px;height:140px;margin:0 55px 60px 0}
+.result .war_result > li{float:left;position:relative;width:242px;height:140px;margin-bottom:70px}
+.result .war_result .mid{margin:0 135px 70px}
 .result .war_result li strong{position:absolute;left:0;top:0;display:block;width:142px;height:142px;font-size:16px;line-height:20px;text-align:center;letter-spacing:-1px}
 .result .war_result li strong span{display:inline-block;vertical-align:middle}
 .result .war_result li strong .align{height:100%}
@@ -95,7 +100,7 @@ caption,legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibi
 .result .war_result .per{position:relative;float:left;width:100px;padding:23px 0;z-index:1}
 .result .war_result .per li{padding:0 29px 7px 0;text-align:right;color:#2a6cda;border-bottom:1px solid #494c56;background:url("../images/spr_percent.gif") 100% 18px no-repeat}
 .result .war_result .per .last{padding:2px 29px 0 0;color:#f54448;border:0 none;background-position:100% -34px}
-.result .group_2{padding-bottom:69px}
+.result .group_2{padding-bottom:46px}
 .result .group_2 h3{background-position:0 -57px}
 .result .group_2 strong{position:absolute;left:275px;top:111px;font-size:14px;font-weight:normal;color:#8b8b8b}
 .result .group_2 .s_list{margin-bottom:88px}
@@ -134,7 +139,7 @@ caption,legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibi
 .result .group_2 .g_list li p a{font-size:12px;color:#fff}
 .result .group_2 .g_list li.red{background-position:-74px 0}
 .result .group_2 .g_list li.none{background-position:-148px 0}
-.result .group_3{padding-bottom:112px;border-bottom:0 none}
+.result .group_3{padding-bottom:115px}
 .result .group_3 h3{background-position:0 -114px}
 .result .group_3 li{position:relative;height:73px;margin-bottom:8px}
 .result .group_3 dt{position:absolute;left:445px;top:0;width:124px;height:73px;background:url("../images/spr_img-class.png") no-repeat}
@@ -151,10 +156,27 @@ caption,legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibi
 .result .group_3 dd span, .result .group_3 dd span a{color:#fff}
 .result .group_3 .red{float:right;text-align:right;color:#ff9c9e;background-position:0 -73px}
 .result .group_3 .blue{float:left;text-align:left;color:#79abff;background-position:0 0}
+.result .group_4{padding-bottom:90px;border-bottom:0}
+.result .group_4 h3{margin-bottom:60px;background-position:0 -171px}
+.result .group_4 ul{height:223px;overflow:hidden}
+.result .group_4 li{float:left;width:123px;height:100%;border-right:1px solid #292d38}
+.result .group_4 .force_g{border-right:0}
+.result .group_4 li .b_style{height:111px;background:url("../images/spr_class.jpg") no-repeat}
+.result .group_4 .blader .b_style{background-position:-123px 0}
+.result .group_4 .wizard .b_style{background-position:-246px 0}
+.result .group_4 .force_a .b_style{background-position:-369px 0}
+.result .group_4 .force_s .b_style{background-position:-492px 0}
+.result .group_4 .force_b .b_style{background-position:-615px 0}
+.result .group_4 .gladiator .b_style{background-position:-738px 0}
+.result .group_4 .force_g .b_style{background-position:-861px 0}
+.result .group_4 li .user{padding:22px 3px;font-size:14px;line-height:1.4;text-align:center;background-color:#7a7e88}
+.result .group_4 .user span, .result .group_4 .user a{display:block}
+.result .group_4 .user .user_char{margin-bottom:11px;font-weight:bold;color:#fff}
+.result .group_4 .user .user_level, .result .group_4 .user .user_guild{color:#dbdbdb}
 .result .note{padding:40px 8.3% 35px;background-color:#363b48}
 .result .content .note .txt{height:180px;margin-bottom:23px;background:url("../images/bg_note.gif") no-repeat}
 
-/* 결과-1400이하 */
+/*결과-1400이하*/
 .result.w_1400 .result_menu{position:relative;left:0;height:514px}
 .result.w_1400 .result_menu .m_wrap{left:50%;top:53px;width:886px;margin-left:-443px}
 .result.w_1400 .result_menu .tab_menu{/*margin-left:310px*/}

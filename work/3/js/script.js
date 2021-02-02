@@ -11,14 +11,26 @@
 				if(winWidth > 1400){
 					$(".result_menu").stop().animate({left:0,opacity:1},450,"easeInOutQuint");
 				}
-			}, 100);
+			},100);
 		}
 	});
-
 	$(window).resize(function(){
 		resize();
 	});
-
+	//결과페이지-탭
+	/*$(".tab_menu li").each(function(i){
+		$(this).find(">a").click(function(e){
+			e.preventDefault();
+			$(".tab_menu li a, .tab").removeClass("on");
+			$(this).addClass("on");
+			$(".tab").eq(i).addClass("on");
+			if($(".tab.on").hasClass("prokion")){
+				$(".result_menu").addClass("prokion");
+			}else{
+				$(".result_menu").removeClass("prokion");
+			}
+		});
+	});*/
 	//도넛그래프
 	circleGraph("graph_1",0,70,30);
 	circleGraph("graph_2",0,50,50);
@@ -27,11 +39,9 @@
 	circleGraph("graph_5",0,70,30);
 	circleGraph("graph_6",100,0,0);
 });
-
-var winWidth = $(window).width();
-var winHeight = $(window).height();
-var rcWidth = $(".result .content").width();
-
+var winWidth = $(window).width(),
+	winHeight = $(window).height(),
+	rcWidth = $(".result .content").width();
 function resize(){
 	winWidth = $(window).width();
 	winHeight = $(window).height();
@@ -45,9 +55,8 @@ function resize(){
 		$(".result_menu").css("width",winWidth-rcWidth);
 	}
 }
-
 //도넛그래프
-function circleGraph(id, firstNum, secNum, thirdNum){
+function circleGraph(id,firstNum,secNum,thirdNum){
 	var g_reco = document.getElementById(id);
 	if(g_reco){
 		g_reco.width = 142;
