@@ -116,7 +116,7 @@ $(window).on({
             var maxNum = 10;
             var repeatNum = 1;
             var intervalId = setInterval(function () {
-                if (repeatNum > maxNum * 2) {
+                if (repeatNum > maxNum * 3) {
                     clearInterval(intervalId);
 
                     $("body").addClass("load");
