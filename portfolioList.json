@@ -1,0 +1,836 @@
+[
+    {
+        "seq": 1,
+        "title": "ESTGAMES",
+        "subject": [
+            {
+                "index": "홈페이지 리뉴얼<br>(반응형 웹, SCSS 사용, CSS, JS 컨벤션 작업, GULP 사용)",
+                "work" : "홈페이지 리뉴얼<br>(반응형 웹, SCSS 사용, CSS, JS 컨벤션 작업, GULP 사용)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb25.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/25/main.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img25_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 2,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "다크메이지 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "다크메이지 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb24.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/24/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img24_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 3,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "미궁 업데이트 페이지<br>(PC 최적화 웹, 가로 패럴럭스 이벤트 스크립트 구현)",
+                "work" : "미궁 업데이트 페이지<br>(PC 최적화 웹, 가로 패럴럭스 이벤트 스크립트 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb23.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/23/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img23_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 4,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "카발 마블 이벤트 페이지<br>(PC 최적화 웹, 주사위 랜덤 이벤트 스크립트 목업 코딩)",
+                "work" : "카발 마블 이벤트 페이지<br>(PC 최적화 웹, 주사위 랜덤 이벤트 스크립트 목업 코딩)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "랜덤 주사위 숫자에 따라 주사위 애니메이션 지정 및 주사위 숫자에 따른 말 이동 및 보상처리",
+        "imageUrl": "./images/thumb22.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/22/event.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img22_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 5,
+        "title": "CABAL2",
+        "subject": [
+            {
+                "index": "미션 빙고 이벤트 페이지<br>(PC 최적화 웹)",
+                "work" : "미션 빙고 이벤트 페이지(PC 최적화 웹)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb21.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/21/event.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img21_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 6,
+        "title": "CABAL2",
+        "subject": [
+            {
+                "index": "달 그림자 고원 업데이트 페이지<br>(PC 최적화 웹, 화면 전환 이벤트 스크립트 구현)",
+                "work" : "카발 마블 이벤트 페이지<br>(PC 최적화 웹, 화면 전환 이벤트 스크립트 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb20.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/20/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img20_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 7,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "길드 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "카발 마블 이벤트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb19.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/19/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img19_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 8,
+        "title": "NOVA WARS",
+        "subject": [
+            {
+                "index": "브랜드 페이지<br>(반응형 웹, audio 스크립트 구현)",
+                "work" : "브랜드 페이지(반응형 웹, audio 스크립트 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb18.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/18/brand.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img18_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 9,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "악마의 탑 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "악마의 탑 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb17.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/17/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img17_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 10,
+        "title": "CABAL GLOBAL",
+        "subject": [
+            {
+                "index": "Forgotten Temple B3F 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "Forgotten Temple B3F 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb16.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/16/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img16_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 11,
+        "title": "CABAL MOBILE",
+        "subject": [
+            {
+                "index": "Close Beta(CBT) 사전예약 페이지<br>(PC, Mobile 적응형 웹)",
+                "work" : "Close Beta(CBT) 사전예약 페이지(PC, Mobile 적응형 웹)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb15.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/15/pc/cbt.html"
+            },
+            {
+                "seq": 2,
+                "className": "btn_mobile",
+                "title": "모바일 페이지 바로가기",
+                "imgUrl": "./images/blank_mobile.png",
+                "linkUrl": "./work/15/mobile/cbt.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img15_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 12,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "신대륙 세닐리니아 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "신대륙 세닐리니아 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb14.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/14/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img14_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 13,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "인게임 아이템샵",
+                "work" : "인게임 아이템샵"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb13.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/13/main.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img13_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img13_2.jpg",
+                "description": ""
+            },
+            {
+                "seq": 3,
+                "imageUrl": "./images/img13_3.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 14,
+        "title": "CABAL GLOBAL",
+        "subject": [
+            {
+                "index": "홈페이지, 관리자, 회원 페이지 신규 런칭",
+                "work" : "홈페이지, 관리자, 회원 페이지 신규 런칭"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb12.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "http://cabal.estgames.com/main"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img12_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img12_2.jpg",
+                "description": ""
+            },
+            {
+                "seq": 3,
+                "imageUrl": "./images/img12_3.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 15,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "악마의 비밀상점 이벤트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "악마의 비밀상점 이벤트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb11.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/11/event.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img11_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 16,
+        "title": "CABAL2",
+        "subject": [
+            {
+                "index": "무술년 행운의 룰렛 이벤트 페이지<br>(PC 최적화 웹, 룰렛 이벤트 구현)",
+                "work" : "무술년 행운의 룰렛 이벤트 페이지<br>(PC 최적화 웹, 룰렛 이벤트 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb10.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/10/event.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img10_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 17,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "슈핑의 플래티넘 이벤트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "슈핑의 플래티넘 이벤트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb9.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/9/event.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img9_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 18,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "데모나이트 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "데모나이트 업데이트 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb8.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/8/update.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img8_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img8_2.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 19,
+        "title": "ALARMIE",
+        "subject": [
+            {
+                "index": "브랜드 페이지<br>(PC 최적화 웹, 가로 및 세로 화면 전환 이벤트 구현)",
+                "work" : "브랜드 페이지<br>(PC 최적화 웹, 가로 및 세로 화면 전환 이벤트 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb7.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/7/brand.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img7_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img7_2.jpg",
+                "description": ""
+            },
+            {
+                "seq": 3,
+                "imageUrl": "./images/img7_3.jpg",
+                "description": ""
+            },
+            {
+                "seq": 4,
+                "imageUrl": "./images/img7_4.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 20,
+        "title": "TEAMUP",
+        "subject": [
+            {
+                "index": "브랜드 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)",
+                "work" : "브랜드 페이지<br>(PC 최적화 웹, 디자인에 적합한 모션 기획 및 구현)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb6.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/6/main.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img6_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img6_2.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 21,
+        "title": "SKINDOC",
+        "subject": [
+            {
+                "index": "브랜드 페이지<br>(PC 최적화 웹)",
+                "work" : "브랜드 페이지(PC 최적화 웹)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb5.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/5/brand.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img5_1.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 22,
+        "title": "HOODDA",
+        "subject": [
+            {
+                "index": "브랜드 페이지<br>(PC, Mobile 적응형 웹)",
+                "work" : "브랜드 페이지(PC, Mobile 적응형 웹)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb4.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/4/pc/brand.html"
+            },
+            {
+                "seq": 2,
+                "className": "btn_mobile",
+                "title": "모바일 페이지 바로가기",
+                "imgUrl": "./images/blank_mobile.png",
+                "linkUrl": "./work/4/mobile/brand.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img4_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img4_2.jpg",
+                "description": ""
+            },
+            {
+                "seq": 3,
+                "imageUrl": "./images/img4_3.jpg",
+                "description": ""
+            },
+            {
+                "seq": 4,
+                "imageUrl": "./images/img4_4.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 23,
+        "title": "CABAL",
+        "subject": [
+            {
+                "index": "전쟁 주간지<br>(PC 최적화 웹, Canvas 이용)",
+                "work" : "전쟁 주간지(PC 최적화 웹, Canvas 이용)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb3.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "PC 페이지 바로가기",
+                "imgUrl": "./images/blank_pc.png",
+                "linkUrl": "./work/3/warstatus.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img3_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img3_2.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 24,
+        "title": "NOVA WARS",
+        "subject": [
+            {
+                "index": "인게임 웹뷰 페이지<br>(Mobile 최적화 웹)",
+                "work" : "인게임 웹뷰 페이지(Mobile 최적화 웹)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb2.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_pc",
+                "title": "모바일 페이지 바로가기",
+                "imgUrl": "./images/blank_mobile.png",
+                "linkUrl": "./work/2/webview.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img2_1.jpg",
+                "description": ""
+            },
+            {
+                "seq": 2,
+                "imageUrl": "./images/img2_2.jpg",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "seq": 25,
+        "title": "NOVA WARS",
+        "subject": [
+            {
+                "index": "인게임 설날 맞이 福주머니 이벤트 페이지<br>(Mobile 최적화 웹)",
+                "work" : "인게임 설날 맞이 福주머니 이벤트 페이지<br>(Mobile 최적화 웹)"
+            }
+        ],
+        "role": "Web Publish, UI Development",
+        "partcipation": "100%",
+        "note": "",
+        "imageUrl": "./images/thumb1.jpg",
+        "link": [
+            {
+                "seq": 1,
+                "className": "btn_mobile",
+                "title": "모바일 페이지 바로가기",
+                "imgUrl": "./images/blank_mobile.png",
+                "linkUrl": "./work/1/event.html"
+            }
+        ],
+        "detail": [
+            {
+                "seq": 1,
+                "imageUrl": "./images/img1_1.jpg",
+                "description": ""
+            }
+        ]
+    }
+]
