@@ -151,7 +151,7 @@ $(function(){
 				};
 				if ($(".branch .br_box:eq(" + idx + ") .hos_img").length > 0) {
 					$(".branch .br_box:eq(" + idx + ") .hos_img li").each(function(i) {
-						$(this).find("a").prepend("<img src='/images/skindoc/desktop/" + infoPop.branches + "/img_small_" + (i + 1) + ".jpg'>");
+						$(this).find("a").prepend("<img src='./images/" + infoPop.branches + "/img_small_" + (i + 1) + ".jpg'>");
 					})
 				}
 			});
@@ -265,7 +265,7 @@ var infoPop = {
 	bname: "강남점",
 	index: 1,
 	u_idx: 0,
-	imgsrc: "/images/skindoc/desktop/",
+	imgsrc: "./images/",
 	imglength: 0,
 	speed: 400,
 	setting: function(){
