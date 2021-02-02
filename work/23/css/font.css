@@ -3,13 +3,13 @@
 	font-family:'NotoSansDemiLight';
 	font-style:normal;
 	font-weight:normal;
-	src:url('https://gimunique.github.io/webfont/NotoSans-DemiLight.eot');
-	src:local(※), url('https://gimunique.github.io/webfont/NotoSans-DemiLight.woff') format('woff');
+	src:url('https://gimunique.github.io/common/font/NotoSans-DemiLight.eot');
+	src:local(※), url('https://gimunique.github.io/common/font/NotoSans-DemiLight.woff') format('woff');
 }
 @font-face{
 	font-family:'NotoSansMedium';
 	font-style:normal;
 	font-weight:normal;
-	src:url('https://gimunique.github.io/webfont/NotoSans-Medium.eot');
-	src:local(※), url('https://gimunique.github.io/webfont/NotoSans-Medium.woff') format('woff');
+	src:url('https://gimunique.github.io/common/font/NotoSans-Medium.eot');
+	src:local(※), url('https://gimunique.github.io/common/font/NotoSans-Medium.woff') format('woff');
 }
