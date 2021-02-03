@@ -45,10 +45,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .title .star, .title .shadow{position:absolute;left:0}
 .title .star1{top:0}
 .title .star2, .title .star4, .title .star5{display:none}
-/* .title .star2{top:-12.5%;animation:star1 22s infinite linear} */
 .title .star3{top:-12.5%;animation:star2 38s infinite linear}
-/* .title .star4{top:-12.5%;animation:star1 40s infinite linear}
-.title .star5{top:-12.5%;animation:star2 52s infinite linear} */
 .title .shadow{bottom:0;z-index:11}
 
 .section.section1{height:569px;background:url("../images/bg2.jpg") 0 0 no-repeat}
@@ -178,37 +175,37 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .wrap .sht_star9{top:-15vw;right:35vw;animation:sht_star 9s 3s infinite ease-out}
 .wrap .sht_star10{top:-50vw;right:50vw;animation:sht_star 8s 4s infinite ease-out}
 
-@keyframes star1{
+@keyframes star1 {
     100%{transform:rotate(360deg)}
 }
-@keyframes star2{
+@keyframes star2 {
     100%{transform:rotate(-360deg)}
 }
-@keyframes light1{
+@keyframes light1 {
     0{opacity:1}
     25%{opacity:0.2}
     50%{opacity:1}
     75%{opacity:0.2}
     100%{opacity:1}
 }
-@keyframes light2{
+@keyframes light2 {
     0{opacity:1}
     50%{opacity:0.2}
     100%{opacity:1}
 }
-@keyframes updown{
+@keyframes updown {
     0{transform:translateY(0)}
     25%{transform:translateY(0.12rem)}
     50%{transform:translateY(0)}
     75%{transform:translateY(-0.12rem)}
     100%{transform:translateY(0)}
 }
-@keyframes sht_star{
+@keyframes sht_star {
     0%{opacity:0;transform:scale(0) rotate(0) translate3d(0, 0, 0)}
     50%{opacity:1;transform:scale(1) rotate(0) translate3d(-1100px, 1100px, 0)}
     100%{opacity:0;transform:scale(1) rotate(0) translate3d(-1100px, 1100px, 0)}
 }
-@keyframes sht_line{
+@keyframes sht_line {
     50%{transform:scale(1) rotate(-45deg) translate(0px, 0px)}
     100%{transform:scale(0.5) rotate(-45deg) translate(0px, -1px)}
-  }
+}

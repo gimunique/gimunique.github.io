@@ -19,7 +19,7 @@
             <h2 class="blind">User Link</h2>
             <div class="gnb_list">
             	<p class="pf">
-                	<!--daum 일때 <span class="pic">에 class="daum" 추가, ongate 일때 <span class="pic">에 class="ongate" 추가-->
+                	 <!-- daum 일때 <span class="pic">에 class="daum" 추가, ongate 일때 <span class="pic">에 class="ongate" 추가 -->
                     <span class="pic"></span>
                     <span class="id">eugene</span>
                 </p>
@@ -250,29 +250,29 @@
             <!-- //Right Con -->
         </div>
     </div>
-    <!--팝업 임시 확인, 지워 주세요.-->
+    <!-- 팝업 임시 확인, 지워 주세요. -->
     <ul class="tp" style="position:absolute;left:37px;top:218px;line-height:2">
         <li><a href="">쿠폰번호를 다시 확인해주세요.</a></li>
         <li><a href="">쿠폰을 등록하시겠습니까?</a></li>
     </ul>
     <script type="text/javascript">
-    $(function(){
-		$(".tp li").each(function(i){
-			$(this).find(">a").click(function(e){
-				e.preventDefault();
-				$(".l_pop:eq("+i+"), .bg_pop").show();
-			});	
-		});
-		$(".pop_btn a").click(function(e){
-			e.preventDefault();
-			$(".l_pop, .bg_pop").hide();
-		});
-		if($(".content_wrap").hasClass("resize")){
-			$(".tp").css("left","16px")
-		}
-	})
+        $(function () {
+            $(".tp li").each(function (i) {
+                $(this).find(">a").click(function (e) {
+                    e.preventDefault();
+                    $(".l_pop:eq(" + i + "), .bg_pop").show();
+                });
+            });
+            $(".pop_btn a").click(function (e) {
+                e.preventDefault();
+                $(".l_pop, .bg_pop").hide();
+            });
+            if ($(".content_wrap").hasClass("resize")) {
+                $(".tp").css("left", "16px")
+            }
+        })
     </script>
-    <!--//팝업 확인-->
+    <!-- //팝업 확인 -->
 </div>
 </body>
 </html>

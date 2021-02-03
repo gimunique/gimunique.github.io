@@ -36,8 +36,6 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 /* 카페바로가기-버튼 */
 .wrap .btn_float{position:absolute;right:0;width:264px;height:361px;background:url("../images/float.png") no-repeat;z-index:50}
 
-/* .wrap.load .btn_float{right:23px;opacity:1;transition:all 600ms 300ms cubic-bezier(0.73, 0.13, 0.56, 1)} */
-
 /* section1 */
 .wrap .section1{min-height:916px;background-image:url("../images/bg1.jpg")}
 .wrap .section1.end{min-height:auto}
@@ -62,7 +60,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .section1 .end_txt{font-size:32px;text-align:center;line-height:1.5}
 .section1 dl{width:655px;height:96px;margin:80px auto 0}
 .section1 dt, .section1 dd{float:left;font-size:32px;line-height:1.4}
-.section1 dt{/*clear:both;*/color:#cd8b63}
+.section1 dt{color:#cd8b63}
 .section1 dd{margin-left:12px;color:#fff;opacity:0.8}
 .section1 dt span{margin-right:9px}
 @keyframes scroll{
@@ -72,7 +70,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 }
 
 /* section2 */
-.section2{height:1179px;background-image:url("../images/bg2.jpg");/*background-attachment:fixed;*/z-index:2}
+.section2{height:1179px;background-image:url("../images/bg2.jpg");z-index:2}
 .section2 .align{width:1061px;height:932px;margin:-466px 0 0 -530px}
 .section2 .logo a{background-position:5px -28px}
 .section2 .title h3{background-position:50% -64px}
@@ -85,7 +83,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .section2.active .event_list .e1, .section2.active .event_list .e2{opacity:1;transform:translateX(0)}
 
 /* section3 */                                                                                                     
-.section3{height:1113px;background-image:url("../images/bg3.jpg");/*background-attachment:fixed*/}
+.section3{height:1113px;background-image:url("../images/bg3.jpg")}
 .section3 .align{width:1160px;height:895px;margin:-447px 0 0 -580px}
 .section3 .logo a{background-position:5px -61px}
 .section3 .title p{background-position:50% -813px}
@@ -138,7 +136,7 @@ caption, legend, .blind{position:absolute;top:-9999px;left:-9999px;overflow:hidd
 .pop_apply .pop_agree3 strong{font-weight:normal;line-height:35px;color:#ffbfac}
 .pop_apply .pop_agree3 .btn_confirm{margin-top:27px}
 
-@media only screen and (-webkit-min-device-pixel-ratio:1.3){
+@media only screen and (-webkit-min-device-pixel-ratio:1.3) {
 	.section2, .section3{background-attachment:local}
 	.section .title h3, .section .title p, .section2 .event_list .e1, .section2 .event_list .e2, .section3 .event_list .e1, .section3 .event_list .e2, .section3 .event_list .e3{opacity:1;transform:translateX(0)}
 }

@@ -10,22 +10,23 @@
 <script src="./js/script.js"></script>
 </head>
 <body>
-<!--임시 alert창 확인용-->
+<!-- 임시 alert창 확인용 -->
 <script type="text/javascript">
-$(function(){
-	$(".tp li a").click(function(e){
-		e.preventDefault();
-	});
-	$(".pop_btn a").click(function(e){
-		e.preventDefault();
-		$(".l_pop, .bg_cpop").hide();
-	});
-});
-function lPop(popName){
-	$('.'+popName).show();
-	$('.'+popName).siblings(".bg_cpop").show();
-	return false;
-}
+    $(function () {
+        $(".tp li a").click(function (e) {
+            e.preventDefault();
+        });
+        $(".pop_btn a").click(function (e) {
+            e.preventDefault();
+            $(".l_pop, .bg_cpop").hide();
+        });
+    });
+
+    function lPop(popName) {
+        $('.' + popName).show();
+        $('.' + popName).siblings(".bg_cpop").show();
+        return false;
+    }
 </script>
 <ul class="tp" style="position:absolute;left:1130px;top:10px;width:280px;line-height:2">
     <li><a href="" onClick="lPop('l_pop1')">결제를 취소하시겠습니까?</a></li>
@@ -37,8 +38,8 @@ function lPop(popName){
     <li><a href="" onClick="lPop('l_pop5')">현재 남아있는 편의점 캐시 잔액</a></li>
     <li><a href="" onClick="lPop('l_pop6')">결제가 완료되었습니다.</a></li>
 </ul>
-<!--//임시 alert창 확인용-->
-<!--pop1-->
+<!-- //임시 alert창 확인용 -->
+<!-- pop1 -->
 <div class="pop a_pop c_pop" style="left:10px;top:10px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -91,8 +92,8 @@ function lPop(popName){
         </form>
     </div>
 </div>
-<!--//pop1-->
-<!--pop2-->
+<!-- //pop1 -->
+<!-- pop2 -->
 <div class="pop a_pop c_pop" style="left:570px;top:10px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -252,8 +253,8 @@ function lPop(popName){
         <span class="al ah"></span>
     </div>
 </div>
-<!--//pop2-->
-<!--pop3-->
+<!-- //pop2 -->
+<!-- pop3 -->
 <div class="pop a_pop c_pop" style="left:10px;top:657px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -405,8 +406,8 @@ function lPop(popName){
         </div>
     </div>
 </div>
-<!--//pop3-->
-<!--pop4-->
+<!-- //pop3 -->
+<!-- pop4 -->
 <div class="pop a_pop c_pop" style="left:570px;top:657px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -463,8 +464,8 @@ function lPop(popName){
         </form>
     </div>
 </div>
-<!--//pop4-->
-<!--pop5-->
+<!-- //pop4 -->
+<!-- pop5 -->
 <div class="pop a_pop c_pop" style="left:1130px;top:657px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -523,8 +524,8 @@ function lPop(popName){
         </form>
     </div>
 </div>
-<!--//pop5-->
-<!--pop6-->
+<!-- //pop5 -->
+<!-- pop6 -->
 <div class="pop a_pop c_pop" style="left:10px;top:1304px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -581,8 +582,8 @@ function lPop(popName){
         </form>
     </div>
 </div>
-<!--//pop6-->
-<!--pop7-->
+<!-- //pop6 -->
+<!-- pop7 -->
 <div class="pop a_pop c_pop" style="left:570px;top:1304px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -639,8 +640,8 @@ function lPop(popName){
         </form>
     </div>
 </div>
-<!--//pop7-->
-<!--pop8-->
+<!-- //pop7 -->
+<!-- pop8 -->
 <div class="pop a_pop c_pop" style="left:10px;top:1951px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -697,8 +698,8 @@ function lPop(popName){
         </form>
     </div>
 </div>
-<!--//pop8-->
-<!--pop9-->
+<!-- //pop8 -->
+<!-- pop9 -->
 <div class="pop a_pop c_pop" style="left:570px;top:1951px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -878,8 +879,8 @@ function lPop(popName){
         <span class="al ah"></span>
     </div>
 </div>
-<!--//pop9-->
-<!--pop10-->
+<!-- //pop9 -->
+<!-- pop10 -->
 <div class="pop a_pop c_pop" style="left:10px;top:2598px;margin:0">
 	<a href="" class="close"><span class="blind">닫기</span></a>	
     <h5>캐시 충전하기</h5>
@@ -936,6 +937,6 @@ function lPop(popName){
         </form>
     </div>
 </div>
-<!--//pop10-->
+<!-- //pop10 -->
 </body>
 </html>

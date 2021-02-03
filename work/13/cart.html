@@ -19,7 +19,7 @@
             <h2 class="blind">User Link</h2>
             <div class="gnb_list">
             	<p class="pf">
-                	<!--daum 일때 <span class="pic">에 class="daum" 추가, ongate 일때 <span class="pic">에 class="ongate" 추가-->
+                	<!-- daum 일때 <span class="pic">에 class="daum" 추가, ongate 일때 <span class="pic">에 class="ongate" 추가 -->
                     <span class="pic"></span>
                     <span class="id">eugene</span>
                 </p>
@@ -354,7 +354,7 @@
                     </div>
                     <div class="btn_area btn_cart"><a href="#none" class="btn">구매하기</a></div>
                 </div>
-                <!--알림 팝업-->
+                <!-- 알림 팝업 -->
                 <span class="bg_pop"></span>
                 <div class="pop l_pop">
                 	<span class="al">
@@ -391,8 +391,8 @@
                     </span>
                     <span class="al ah"></span>
                 </div>
-                <!--//알림 팝업-->
-                <!--쿠폰함 팝업-->
+                <!-- //알림 팝업 -->
+                <!-- 쿠폰함 팝업 -->
                 <div class="pop a_pop cp_pop">
                 	<a href="" class="close"><span class="blind">닫기</span></a>
                     <h5>쿠폰함</h5>
@@ -402,9 +402,9 @@
                             <li class="tm2"><a href=""><span>전체 쿠폰 (3)</span></a></li>
                         </ul>
                         <div class="tab tab1">
-                        	<!--쿠폰 없을 경우 style="display:none" 삭제-->
+                        	<!-- 쿠폰 없을 경우 style="display:none" 삭제 -->
                         	<p class="list_none" style="display:none">적용 가능한 쿠폰이 없습니다.</p>
-                            <!--쿠폰 있을 경우-->
+                            <!-- 쿠폰 있을 경우 -->
                             <div class="tb_scroll">
                         	    <div>
                         	        <form>
@@ -464,12 +464,12 @@
                                 </dl>
                             </div>
                             <a href="" class="btn btn_coupon">쿠폰 적용</a>
-                            <!--//쿠폰 있을 경우-->
+                            <!-- //쿠폰 있을 경우 -->
                         </div>
                         <div class="tab tab2">
-                        	<!--쿠폰 없을 경우 style="display:none" 삭제-->
+                        	<!-- 쿠폰 없을 경우 style="display:none" 삭제 -->
                             <p class="list_none" style="display:none">적용 가능한 쿠폰이 없습니다.</p>
-                            <!--쿠폰 있을 경우-->
+                            <!-- 쿠폰 있을 경우 -->
                             <div class="tb_scroll">
                         	    <div>
                                 	<table>
@@ -499,16 +499,16 @@
                                 </div>
                             </div>
                             <a href="" class="btn btn_coupon">쿠폰 등록</a>
-                            <!--//쿠폰 있을 경우-->
+                            <!-- //쿠폰 있을 경우 -->
                         </div>
                     </div>
                 </div>
-                <!--//쿠폰함 팝업-->
+                <!-- //쿠폰함 팝업 -->
             </div>
             <!-- //Right Con -->
         </div>
     </div>
-    <!--팝업 임시 확인, 지워 주세요.-->
+    <!-- 팝업 임시 확인, 지워 주세요. -->
     <div style="position:absolute;left:37px;top:218px;line-height:2">
     <ul class="tp">
         <li><a href="">구매하시겠습니까?</a></li>
@@ -520,23 +520,23 @@
     <p style="margin-top:20px;color:#f00">※ 쿠폰함 팝업은<br>쿠폰함을 클릭해 주세요!!</p>
     </div>
     <script type="text/javascript">
-    $(function(){
-		$(".tp li").each(function(i){
-			$(this).find(">a").click(function(e){
-				e.preventDefault();
-				$(".l_pop:eq("+i+"), .bg_pop").show();
-			});	
-		});
-		$(".pop_btn a").click(function(e){
-			e.preventDefault();
-			$(".l_pop, .bg_pop").hide();
-		});
-		if($(".content_wrap").hasClass("resize")){
-			$(".tp").css("left","16px")
-		}
-	})
+        $(function () {
+            $(".tp li").each(function (i) {
+                $(this).find(">a").click(function (e) {
+                    e.preventDefault();
+                    $(".l_pop:eq(" + i + "), .bg_pop").show();
+                });
+            });
+            $(".pop_btn a").click(function (e) {
+                e.preventDefault();
+                $(".l_pop, .bg_pop").hide();
+            });
+            if ($(".content_wrap").hasClass("resize")) {
+                $(".tp").css("left", "16px")
+            }
+        })
     </script>
-    <!--//팝업 확인-->
+    <!-- //팝업 확인 -->
 </div>
 </body>
 </html>

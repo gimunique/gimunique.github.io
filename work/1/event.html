@@ -65,7 +65,7 @@
 				<li>행동력 60</li>
 			</ul>
 		</div>
-		<!--버튼 활성화 시 <span class="btn btn_lucky">에 on 추가-->
+		<!-- 버튼 활성화 시 <span class="btn btn_lucky">에 on 추가 -->
 		<span class="btn btn_lucky on"><button><span class="blind">복주머니 수령하기</span></button></span>
 	</section>
 	<section class="section section3">
@@ -74,14 +74,14 @@
 			<li>
 				<p class="blind">15 에너지</p>
 				<p class="blind">설 특급 패키지Ⅰ 구매시 활성화</p>
-				<!--버튼 활성화 시 <span class="btn btn_get">에 on 추가-->
+				<!-- 버튼 활성화 시 <span class="btn btn_get">에 on 추가 -->
 				<span class="btn btn_get on"><button><span class="blind">수령하기</span></button></span>
 				<span class="item"><img src="./images/item2_light1.png" alt=""></span>
 			</li>
 			<li>
 				<p class="blind">30 에너지</p>
 				<p class="blind">설 특급 패키지Ⅱ 구매시 활성화</p>
-				<!--버튼 활성화 시 <span class="btn btn_get">에 on 추가-->
+				<!-- 버튼 활성화 시 <span class="btn btn_get">에 on 추가 -->
 				<span class="btn btn_get on"><button><span class="blind">수령하기</span></button></span>
 				<span class="item"><img src="./images/item2_light2.png" alt=""></span>
 			</li>
@@ -97,7 +97,7 @@
 			</ul>
 		</div>
 	</section>
-	<!--modal pop-->
+	<!-- modal pop -->
 	<div class="pop_wrap">
 		<span class="bg_pop"></span>
 		<div id="pop1" class="pop pop1">
@@ -125,23 +125,24 @@
 			<button class="btn_confirm"><img src="./images/btn_confirm.png" alt="확인"></button>
 		</div>
 	</div>
-	<!--//modal pop-->
-	<!--임시 팝업 확인용-->
+	<!-- //modal pop -->
+	<!-- 임시 팝업 확인용 -->
 	<div style="position:fixed;right:10px;top:10px;z-index:20">
 		<a href="#" onclick="popOpen('pop1');" style="display:block;height:30px;padding:0 12px;background:red;color:#fff;font-weight:bold;font-size:15px;line-height:31px">출석체크확인</a>
 		<a href="#" onclick="popOpen('pop2');" style="display:block;height:30px;padding:0 12px;margin-top:5px;background:red;color:#fff;font-weight:bold;font-size:15px;line-height:31px">복주머니보상</a>
 	</div>
 	<script>
-	$(".pop .btn_confirm, .bg_pop").click(function(){
-		$(".pop_wrap, .pop").hide();
-	});
-	function popOpen(name){
-		$(".pop_wrap").show();
-		$("#"+name).show();
-		return false;
-	}
+		$(".pop .btn_confirm, .bg_pop").click(function () {
+			$(".pop_wrap, .pop").hide();
+		});
+
+		function popOpen(name) {
+			$(".pop_wrap").show();
+			$("#" + name).show();
+			return false;
+		}
 	</script>
-	<!--//임시 팝업 확인용-->
+	<!-- //임시 팝업 확인용 -->
 </div>
 </body>
 </html>

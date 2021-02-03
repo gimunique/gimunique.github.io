@@ -192,7 +192,7 @@ label{cursor:pointer}
 }
 
 /* section 2 */
-.section2{/* height:2502px; */background-image:url("../images/bg2.jpg")}
+.section2{background-image:url("../images/bg2.jpg")}
 .section2 .content{padding:289px 0 360px}
 .section2 .stxt dt{height:46px;background-position:0 -548px}
 .section2 .stxt dd{height:21px;background-position:0 -594px}

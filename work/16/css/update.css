@@ -37,7 +37,7 @@ label{cursor:pointer}
 .copyright address, .copyright address a{color:#2C2C2C}
 
 .bg_section{position:absolute;top:0;left:50%;width:1921px;height:100%;margin-left:-960px}
-@media screen and (-webkit-min-device-pixel-ratio:1.1){
+@media screen and (-webkit-min-device-pixel-ratio:1.1) {
     .bg_section{background-size:cover !important;background-position:50% 0 !important}    
 }
 
@@ -69,7 +69,6 @@ label{cursor:pointer}
 .on_s .header .menu_right .btn_ut3 a{background-position:-104px -128px}
 .header .menu{width:1054px;height:100px;transition:opacity,transform 300ms linear;visibility:hidden;opacity:0;transform:translateY(-100px);margin:0 auto}
 .on_s .header .menu{opacity:1;visibility:visible;transform:translateY(0px)}
-/* .header .menu ul{margin-left:-6px} */
 .header .menu li{width:252px;padding-left:7px;height:100px}
 .header .menu .mn_m{width:270px}
 .header .menu .txm{height:18px;margin:0 auto}
@@ -514,7 +513,7 @@ label{cursor:pointer}
 .npop h5{position:relative;height:60px;padding:0 22px;font-size:25px;font-weight:normal;line-height:60px;background-color:#cf0b75}
 .npop h5 span{position:absolute;right:-139px;top:-72px;width:477px;height:167px;background:url("../images/bgPop_content3-1.png") no-repeat}
 .npop .tb_wrap{padding:33px 28px 42px;background-color:#131b26}
-.npop table{/*table-layout:fixed;*/font-size:16px;vertical-align:middle}
+.npop table{font-size:16px;vertical-align:middle}
 .npop td{height:48px;border-bottom:1px solid #41345b}
 .npop th{font-weight:normal;color:#ff008a}
 .npop1{margin:-116px 0 0 -456px}
@@ -528,21 +527,21 @@ label{cursor:pointer}
 .npop2 td{width:97px;text-align:center}
 .npop2 .last{padding-right:44px}
 
-@keyframes h3Blink1{
+@keyframes h3Blink1 {
     0%{opacity:0.3}
     10%{opacity:0.9}
     90%{opacity:0.2}
     100%{opacity:0.3}
 }
 
-@keyframes h3Blink2{
+@keyframes h3Blink2 {
     0%{opacity:0.1}
     10%{opacity:0.2}
     30%{opacity:0.8}
     90%{opacity:1}
     100%{opacity:0.1}
 }
-@keyframes h3Blink3{
+@keyframes h3Blink3 {
     0%{opacity:0}
     10%{opacity:0.6}
     30%{opacity:0.8}
@@ -551,14 +550,14 @@ label{cursor:pointer}
     100%{opacity:0.1}
 }
 
-@keyframes h3Blink4{
+@keyframes h3Blink4 {
     0%{opacity:0.2}
     30%{opacity:0.3}
     80%{opacity:0.7}
     99%{opacity:0.4}
     100%{opacity:0.1}
 }
-@keyframes h3Blink5{
+@keyframes h3Blink5 {
     0%{opacity:0}
     10%{opacity:0.5}
     20%{opacity:0.9}
@@ -566,7 +565,7 @@ label{cursor:pointer}
     90%{opacity:0.3}
     100%{opacity:0.1}
 }
-@keyframes h3Blink6{
+@keyframes h3Blink6 {
     0%{opacity:0.1}
     20%{opacity:0.2}
     30%{opacity:0.6}
@@ -576,7 +575,7 @@ label{cursor:pointer}
     95%{opacity:0.9}
     100%{opacity:0.1}
 }
-@keyframes h3Blink7{
+@keyframes h3Blink7 {
     0%{opacity:0.2}
     30%{opacity:0.3}
     70%{opacity:0.6}
@@ -584,7 +583,7 @@ label{cursor:pointer}
     90%{opacity:0.8}
     100%{opacity:0.2}
 }
-@keyframes h3Blink8{
+@keyframes h3Blink8 {
     0%{opacity:0.4}
     40%{opacity:0.7}
     50%{opacity:0.2}
@@ -613,6 +612,5 @@ Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
 .mCSB_scrollTools .mCSB_draggerContainer{position: absolute;top:0;left:0;bottom:0;right:0;height:auto;background:#000}
 .mCSB_inside .mCSB_container{margin-right:3px}
 .mCSB_dragger{width:5px;left:-1px;max-height:200px !important}
-
 
 iframe[name=google_conversion_frame]{position:absolute;top:-9999px;left:-9999px}

@@ -1,5 +1,5 @@
 "use strict";
-$(document).ready(function(){
+$(document).ready(function () {
     ////////////////////***** MOCK UP *****////////////////////
     // 1, 3, 5주차 bingo_wrap에 odd_week 클래스 동적 추가
     $(".bingo_wrap").addClass("odd_week");
@@ -14,13 +14,14 @@ $(document).ready(function(){
     // 미션완료, 보상완료 태그 동적 추가    
     addBingoFinishTag($(".bingo_list li"));
     addBingoFinishTag($(".cum_list li"));
-    function addBingoFinishTag(list){
+
+    function addBingoFinishTag(list) {
         var $listClass = list;
-        for(var i=0; i<$listClass.length; i++){
-            if($listClass.eq(i).hasClass("get")){
+        for (var i = 0; i < $listClass.length; i++) {
+            if ($listClass.eq(i).hasClass("get")) {
                 $listClass.eq(i).find(".r_com").remove();
                 $listClass.eq(i).append("<div class='m_com'><p>미션완료</p><button type='button' class='btn_get'>상품수령</button></div>");
-            }else if($listClass.eq(i).hasClass("done")){
+            } else if ($listClass.eq(i).hasClass("done")) {
                 $listClass.eq(i).find(".m_com").remove();
                 $listClass.eq(i).append("<div class='r_com'><p>보상완료</p></div>");
             }
@@ -28,8 +29,7 @@ $(document).ready(function(){
     }
 
     // 빙고판 변경되는 부분 LIST
-    var setBingoContentsList = [
-        {
+    var setBingoContentsList = [{
             type: "odd",
             index: 2,
             name: "아레나 입장",
@@ -129,37 +129,37 @@ $(document).ready(function(){
 
     // 빙고판 변경되는 부분 화면 렌더링
     optimizationFilter();
-    if($(".bingo_wrap").hasClass("odd_week")){
-        var bingoContentsOddList = setBingoContentsList.filter(function(index){
-            return index.type == "odd";           
+    if ($(".bingo_wrap").hasClass("odd_week")) {
+        var bingoContentsOddList = setBingoContentsList.filter(function (index) {
+            return index.type == "odd";
         });
-        for(var i=0; i<bingoContentsOddList.length; i++){
-            $(".bingo_list li:nth-child("+bingoContentsOddList[i].index+") .name").append(bingoContentsOddList[i].name);
-            $(".bingo_list li:nth-child("+bingoContentsOddList[i].index+") .c_num").append(bingoContentsOddList[i].number);
+        for (var i = 0; i < bingoContentsOddList.length; i++) {
+            $(".bingo_list li:nth-child(" + bingoContentsOddList[i].index + ") .name").append(bingoContentsOddList[i].name);
+            $(".bingo_list li:nth-child(" + bingoContentsOddList[i].index + ") .c_num").append(bingoContentsOddList[i].number);
         }
-    }else if($(".bingo_wrap").hasClass("even_week")){
-        var bingoContentsEvenList = setBingoContentsList.filter(function(index){
-            return index.type == "even";           
+    } else if ($(".bingo_wrap").hasClass("even_week")) {
+        var bingoContentsEvenList = setBingoContentsList.filter(function (index) {
+            return index.type == "even";
         });
-        for(var i=0; i<bingoContentsEvenList.length; i++){
-            $(".bingo_list li:nth-child("+bingoContentsEvenList[i].index+") .name").append(bingoContentsEvenList[i].name);
-            $(".bingo_list li:nth-child("+bingoContentsEvenList[i].index+") .c_num").append(bingoContentsEvenList[i].number);
+        for (var i = 0; i < bingoContentsEvenList.length; i++) {
+            $(".bingo_list li:nth-child(" + bingoContentsEvenList[i].index + ") .name").append(bingoContentsEvenList[i].name);
+            $(".bingo_list li:nth-child(" + bingoContentsEvenList[i].index + ") .c_num").append(bingoContentsEvenList[i].number);
         }
     }
-    
+
     // ie9이하 filter() 최적화
-    function optimizationFilter(){
+    function optimizationFilter() {
         if (!Array.prototype.filter) {
             Array.prototype.filter = function (func, thisArg) {
                 'use strict';
-                if(!((typeof func === 'Function' || typeof func === 'function') && this))
+                if (!((typeof func === 'Function' || typeof func === 'function') && this))
                     throw new TypeError();
                 var len = this.length >>> 0,
                     res = new Array(len),
                     t = this,
                     c = 0,
                     i = -1;
-                if(thisArg === undefined){
+                if (thisArg === undefined) {
                     while (++i !== len) {
                         if (i in this) {
                             if (func(t[i], i, t)) {
@@ -167,10 +167,10 @@ $(document).ready(function(){
                             }
                         }
                     }
-                }else{
-                    while(++i !== len){
-                        if(i in this){
-                            if(func.call(thisArg, t[i], i, t)){
+                } else {
+                    while (++i !== len) {
+                        if (i in this) {
+                            if (func.call(thisArg, t[i], i, t)) {
                                 res[c++] = t[i];
                             }
                         }

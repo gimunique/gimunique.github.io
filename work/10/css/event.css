@@ -14,13 +14,13 @@ hr{display:none}
 legend,.blind{overflow:hidden;visibility:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
 label{cursor:pointer}
 
-/*layout*/
+/* layout */
 .event_wrap{position:relative;width:100%;height:3000px;min-width:1041px;overflow-x:hidden}
 .event_wrap .event_area{width:100%;height:100%;background:url("../images/bg_event.jpg") 50% 0 no-repeat}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (width:1920px){.event_wrap .event_area{background-position:52% 0}}
 .event_wrap .section{position:relative;width:1200px;margin:0 auto}
 
-/*title*/
+/* title */
 .title_wrap{height:813px}
 .title_wrap h1, .title_wrap .util{position:absolute;z-index:10}
 .title_wrap h1{left:79px;top:24px}
@@ -56,7 +56,7 @@ label{cursor:pointer}
 .title_wrap .cloud_2{top:191px;right:454px}
 .title_wrap .cloud_3{top:269px;right:-68px}
 
-/*이벤트 방법*/
+/* 이벤트 방법 */
 .event_1{height:673px;background:url("../images/content_event_1.jpg") no-repeat}
 .event_1 .roulette{position:absolute;right:40px;top:33px;width:592px;height:592px}
 .event_1 .roulette .cover{display:none;position:absolute;top:10px;left:13px;width:566px;height:566px;background:url("../images/cover_roulette.png") no-repeat}
@@ -70,7 +70,7 @@ label{cursor:pointer}
 .event_1 .btn_list{position:absolute;top:439px;left:47px}
 .event_1 .roulette .move{position:absolute;top:36px;left:40px;width:512px;height:512px;overflow:hidden;background:url("../images/img_roulette_3.png") no-repeat}
 
-/*상품 리스트*/
+/* 상품 리스트 */
 .event_2{height:1208px;background:url("../images/content_event_2.jpg") no-repeat}
 .event_2 ol{height:937px;padding:56px 50px 0}
 .event_2 ol > li{float:left;position:relative;width:352px;height:58px;padding:234px 0 0 0;margin:0 22px 20px 0;text-align:center;font-size:0;}
@@ -97,11 +97,12 @@ label{cursor:pointer}
 .event_2 ol .item_list .item7.checked{background-position:-160px -162px}
 .event_2 ol .item_list li input{display:block;width:100%;height:100%;filter:alpha(opacity=0);opacity:0;cursor:pointer}
 
-/*하단*/
+/* 하단 */
 .footer{height:306px;background:url("../images/content_footer.jpg") no-repeat}
 .footer address, .footer address a{font-size:15px;color:#714915}
 .footer address{padding-top:268px;text-align:center}
-/*퀵메뉴*/
+
+/* 퀵메뉴 */
 .quick{display:none;position:fixed;_position:absolute;width:133px;right:32px;top:90px;background:url("../images/bg_quick_top.png") no-repeat;z-index:10;padding-top:130px}
 .quick.q_1400{right:10px}
 .quick.q_1280{right:-18px}
@@ -116,7 +117,7 @@ label{cursor:pointer}
 .quick li.go_gift a.on, .quick li.go_gift a:hover{background-position:-80px -149px}
 .quick .quick_bar{display:block;width:114px;height:13px;background:url("../images/bg_quick_btm.png") no-repeat}
 
-/*레이어팝업*/
+/* 레이어 팝업 */
 .bg_pop{position:fixed;top:0;_top:10px;bottom:0;left:0;right:0;display:block;width:100%;height:100%;background-color:#000;opacity:0.2;filter:alpha(opacity=20);z-index:200}
 .bg_pop{_display:none !important}
 .layer_pop{display:none;position:fixed;_position:absolute;top:50%;left:50%;width:1200px;height:684px;padding:210px 0 0 0;margin:-342px 0 0 -600px;background:url("../images/bg_pop.png") no-repeat;z-index:300}

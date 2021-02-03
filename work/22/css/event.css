@@ -23,7 +23,7 @@ hr{display:none}
 .wrap .bold{font-weight:bold}
 .section .content{position:relative;width:1200px;margin:0 auto}
 .wrap h3, .wrap h4, .wrap button, .link li, .title_wrap h2 span, .title_wrap .date, .board_box > div span, .result_wrap strong, .gift_wrap li, .quick li, .board_box .tip, .pop_wrap .pop ol, .pop_wrap .pop ul{text-indent:-9999px}
-/* .event_wrap h2 span,  */.event_wrap h2 .h2_bg, .event_wrap h2 .h2_top span, .event_wrap h2 .h2_btm span, .event_wrap .date, .caution_wrap h4, .gift_wrap h4{background:url("../images/spr_title.png") no-repeat}
+.event_wrap h2 .h2_bg, .event_wrap h2 .h2_top span, .event_wrap h2 .h2_btm span, .event_wrap .date, .caution_wrap h4, .gift_wrap h4{background:url("../images/spr_title.png") no-repeat}
 .board_content .btn_how, .board_content .btn_list, .board_content button span, .board_box .current_position, .result_wrap strong, .board_content .finish_coin, .board_content .score, .board_box .tip{background:url("../images/spr_board.png") no-repeat}
 .wrap .shadow{position:fixed;top:0;bottom:0;left:0;right:0;display:block;width:100%;height:100%;background-color:#000;z-index:1000}
 
@@ -184,7 +184,7 @@ hr{display:none}
 .quick li a:hover .q_bg{transform:rotateY(360deg);transition:all 350ms ease-in-out}
 
 /* animation */
-@keyframes diceShake{
+@keyframes diceShake {
     from, to{transform:translate(0, 0)}
     10%, 30%, 50%, 70%, 90%{transform:translate(-5px, 0)}
     20%, 40%, 60%, 80%{transform:translate(5px, 0)}

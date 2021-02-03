@@ -90,12 +90,12 @@ hr{display:none}
 .load .title_wrap h2 span{animation-timing-function:ease;animation-delay:100ms}
 .load .title_wrap h2 .t1, .load .title_wrap h2 .t3, .load .title_wrap h2 .t5, .load .title_wrap h2 .t7, .load .title_wrap h2 .t9 , .load .title_wrap h2 .t11{opacity:1;transition:all 500ms 200ms ease;animation-name:titleRotate1;animation-duration:650ms}
 .load .title_wrap h2 .t2, .load .title_wrap h2 .t4, .load .title_wrap h2 .t6, .load .title_wrap h2 .t8, .load .title_wrap h2 .t10, .load .title_wrap h2 .t12{opacity:1;transition:all 500ms 200ms ease;animation-name:titleRotate2;animation-duration:650ms}
-@keyframes titleRotate1{
+@keyframes titleRotate1 {
     0%{transform:rotateY(-45deg)}
     50%{transform:rotateY(-360deg)}
     100%{transform:rotateY(0deg)}
 }
-@keyframes titleRotate2{
+@keyframes titleRotate2 {
     0%{transform:rotateY(45deg)}
     50%{transform:rotateY(180deg)}
     100%{transform:rotateY(0deg)}

@@ -19,7 +19,7 @@
             <h2 class="blind">User Link</h2>
             <div class="gnb_list">
             	<p class="pf">
-                	<!--daum 일때 <span class="pic">에 class="daum" 추가, ongate 일때 <span class="pic">에 class="ongate" 추가-->
+                	 <!-- daum 일때 <span class="pic">에 class="daum" 추가, ongate 일때 <span class="pic">에 class="ongate" 추가 -->
                     <span class="pic"></span>
                     <span class="id">eugene</span>
                 </p>
@@ -178,7 +178,7 @@
             </div>
             <!-- //Item Category(공통) -->
             <script>subNum = 4;</script>
-            <!--Left Con-->
+            <!-- Left Con -->
             <div class="left_con">
             	<div class="sub_menu">
                     <ul>
@@ -273,8 +273,8 @@
                     </ul>
                 </div>
             </div>
-            <!--//Left Con-->
-            <!--Right Con-->
+            <!-- //Left Con -->
+            <!-- Right Con -->
             <div class="right_con">
             	<div class="item_detail_wrap move_wrap">
                 	<h4>상품설명</h4>
@@ -420,7 +420,7 @@
                                         </p>
                                     </div>
                                     <span class="badge new">NEW</span>
-                                    <!--펫 체인지 시 class="icon"에 pet 추가-->
+                                    <!-- 펫 체인지 시 class="icon"에 pet 추가 -->
                                     <span class="icon pet"></span>
                                     <div class="over">
                                         <span class="bg"></span>
@@ -470,7 +470,7 @@
                                         </p>
                                     </div>
                                     <span class="badge new">NEW</span>
-                                    <!--펫 체인지 시 class="icon"에 pet 추가-->
+                                    <!-- 펫 체인지 시 class="icon"에 pet 추가 -->
                                     <span class="icon pet"></span>
                                     <div class="over">
                                         <span class="bg"></span>
@@ -498,14 +498,14 @@
                         </div>
                     </div>
                 </div>
-                <!--북마크 추가 팝업-->
+                <!-- 북마크 추가 팝업 -->
                 <div class="pop_bm">
                     <a href="" class="ic close"><span class="blind">닫기</span></a>
                     <p></p>
                 </div>
-                <!--//북마크 추가 팝업-->
+                <!-- //북마크 추가 팝업 -->
                 <span class="bg_pop"></span>
-                <!--알림 팝업-->
+                <!-- 알림 팝업 -->
                 <div class="pop l_pop">
                 	<span class="al">
                         <p>이동전 서버를 선택해주세요.</p>
@@ -521,10 +521,10 @@
                     <span class="al ah"></span>
                 </div>
             </div>
-            <!--//Right Con-->
+            <!-- //Right Con -->
         </div>
     </div>
-    <!--팝업 임시 확인, 지워 주세요.-->
+    <!-- 팝업 임시 확인, 지워 주세요. -->
     <div style="position:absolute;left:37px;top:582px;line-height:2">
     <ul class="tp">
         <li><a href="">이동전 서버</a></li>
@@ -532,18 +532,18 @@
     </ul>
     </div>
     <script type="text/javascript">
-    $(function(){
-		$(".tp li").each(function(i){
-			$(this).find(">a").click(function(e){
-				e.preventDefault();
-				$(".l_pop:eq("+i+"), .bg_pop").show();
-			});	
-		});
-		$(".pop_btn a").click(function(e){
-			e.preventDefault();
-			$(".l_pop, .bg_pop").hide();
-		});
-	});
+        $(function () {
+            $(".tp li").each(function (i) {
+                $(this).find(">a").click(function (e) {
+                    e.preventDefault();
+                    $(".l_pop:eq(" + i + "), .bg_pop").show();
+                });
+            });
+            $(".pop_btn a").click(function (e) {
+                e.preventDefault();
+                $(".l_pop, .bg_pop").hide();
+            });
+        });
     </script>
 </div>
 </body>
