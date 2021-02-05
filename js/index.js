@@ -46,7 +46,7 @@ $(window).on({
         // loading image animation
         setTimeout(function () {
             loadImgInterval();
-        }, 500);
+        }, 350);
 
         // basic screen construction
         resize();
