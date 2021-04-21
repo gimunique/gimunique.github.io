@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{font-family:'Segoe UI','맑은 고딕','malgun gothic','돋움','dotum','sans-serif';background-color:#000;font-size:100%;line-height:1;color:#fff}
+h1,h2,h3,h4,h5,h6{font-family:'Segoe UI','맑은 고딕','malgun gothic','돋움','dotum','sans-serif';font-size:100%}
+ol,ul{list-style:none}
+a,img{vertical-align:top}
+a,a:link,a:visited{color:#777;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+a:hover{text-decoration:none}
+table{border-collapse:collapse;border-spacing:0}
+input,textarea,button,select{margin:0;padding:0;font-family:inherit;font-size:inherit}
+fieldset{min-width:0}
+button{display:block;position:relative;padding:0;border:0;background-color:transparent;outline:none;cursor:pointer}
+button,button:focus,button:active{padding:0}
+legend,caption,.blind{overflow:hidden;visibility:hidden;position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0}
+address,i{font-style:normal}
+object{pointer-events: none}
+hr{display:none}
+
+/* ie9 이하 일때 텍스트 렌더링 */
+.lower_ie9{position:fixed;left:0;top:0;width:100%;height:100%;background-color:#000}
+.lower_ie9 p{position:absolute;left:0;top:50%;width:100%;height:55px;margin-top:-27.5px;color:#aaa;line-height:1.65;text-align:center;vertical-align:middle;letter-spacing:-1px}
+.lower_ie9 p span{letter-spacing:0}
+
+/* teaser common */
+.wrap{min-width:320px}
+.wrap, .section{overflow:hidden;position:relative;width:100%}
+.section .content{position:relative;width:80%;max-width:1200px;height:100%;margin:0 auto}
+.wrap .shadow{position:absolute;left:0;top:0;display:block;width:100%;height:100%;background-color:#000;z-index:1000}
+.teaser_wrap .btn_sound, .teaser_wrap .title_wrap p, .footer address{text-indent:-9999px}
+
+/* teaser */
+.teaser{min-height:800px}
+.teaser .video_wrap{position:absolute;left:50%;top:0;width:100%;height:100%;margin-left:-50%;background:url("../images/bg_teaser.jpg") 50% 50% no-repeat;background-size:cover}
+.video_wrap .bg_video{width:100%;height:100%;object-fit:cover}
+.video_wrap .bg_video.is_ie{position:absolute;top:50%;left:50%;width:auto;height:auto;min-width:100%;min-height:100%;transform:translate(-50%, -50%)}
+.video_wrap .cover{position:absolute;left:50%;top:50%;display:block;width:100%;height:100%;background:url("../images/bg_shadow.png") 50% 50% no-repeat;background-size:100% 100%;transform:translate(-50%, -50%)}
+.teaser_wrap{position:relative;width:100%;height:100%}
+.teaser_wrap h1, .teaser_wrap .btn_sound{z-index:10}
+.teaser_wrap h1{position:absolute;left:30px;top:30px}
+.teaser_wrap h1 a{display:block;width:174px;padding:10px;opacity:0.85}
+.teaser_wrap .btn_sound{position:absolute;right:40px;top:40px;width:105px;height:16px;background:url("../images/spr_sound.png") no-repeat;opacity:0.7;transition:opacity 500ms ease}
+.teaser_wrap .btn_sound:hover{opacity:1}
+.teaser_wrap .btn_sound.mute_on{background-position:0 -16px}
+.teaser_wrap .title_wrap{position:absolute;left:50%;top:50%;width:658px;height:389px;margin:-222px 0 0 -329px}
+.title_wrap h2{width:100%;height:330px}
+.title_wrap h2 div span{display:block;width:100%}
+.title_wrap h2 .text_red{position:relative;height:100%;opacity:0.8;transform:rotate(0.001deg)}
+.title_wrap h2 .text_red span{position:absolute;left:0;top:0;background-repeat:no-repeat;background-size:100% auto}
+.title_wrap h2 .text_red .r1{background-image:url("../images/bg_red1.png");opacity:0}
+.title_wrap h2 .text_red .r2{width:0;height:100%;background-image:url("../images/bg_red2.png");background-size:auto 100%;opacity:0}
+.title_wrap h2 .text_red .r3{background-image:url("../images/bg_red3.png")}
+.title_wrap h2 .text_red .r4{background-image:url("../images/bg_red4.png");opacity:0}
+.title_wrap h2 .text_bi{position:absolute;left:0;top:0;width:100%}
+.title_wrap h2 .text_bi .cabal{height:114px;margin-top:92px;background:url("../images/bg_cabal.png") 50% 50% no-repeat}
+.title_wrap h2 .text_bi .red{height:62px;background:url("../images/bg_red.png") 50% 50% no-repeat}
+.title_wrap p{width:100%;height:29px;margin-top:30px;background:url("../images/bg_text.png") no-repeat}
+.footer{position:absolute;left:0;bottom:0;width:100%}
+.footer address{width:392px;height:18px;margin:0 auto 35px;background:url("../images/bg_copy.png") no-repeat;background-size:100% auto}
+
+/* break 768px */ 
+@media (max-width: 767px) {
+    .teaser{min-height:100vh}
+    .teaser_wrap h1{left:20px}
+    .teaser_wrap h1 a{width:28vw;min-width:96px}
+    .teaser_wrap .btn_sound{right:30px}
+    .teaser_wrap .title_wrap{width:100%;height:47.294vw;min-height:151.33px;margin:-23.962vw 0 0 -50%}
+    .title_wrap h2{height:40.12vw;min-height:128.38px}
+    .title_wrap h2 .text_bi .cabal{height:13.859vw;min-height:44.34px;margin-top:11.2vw;background-size:100% auto}
+    .title_wrap h2 .text_bi .red{height:7.54vw;min-height:24.13px;background-size:100% auto}
+    .teaser_wrap .title_wrap p{height:3.525vw;min-height:11.27px;margin-top:3.65vw;background-size:100% auto}
+    .footer address{width:50%;height:2.42vw;min-width:160px;min-height:7.73px;margin-bottom:7.5vw}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3) and (max-width: 767px) {
+    .teaser_wrap .btn_sound{opacity:1;transition:none}
+}
+
+/* min size */ 
+@media (max-width: 319px) {
+    .teaser_wrap .title_wrap{margin-top:-75.665px}
+    .title_wrap h2 .text_bi .cabal{margin-top:36px}
+    .teaser_wrap .title_wrap p{margin-top:12px}
+    .footer address{margin-bottom:24px}
+}
+
+/* mobile landscape */
+@media only screen and (-webkit-min-device-pixel-ratio:1.3) and (orientation:landscape) {
+    .teaser{min-height:120vw}
+}
