@@ -15,6 +15,7 @@ label{cursor:pointer}
 button{cursor:pointer;background-color:transparent;border:0 none;outline:none}
 hr{display:none}
 
+/* 폰트 렌더링 */
 body{overflow:hidden}
 body.load{overflow:auto;font-family:'Nanum Barun Gothic','맑은 고딕','malgun gothic','돋움','dotum','sans-serif'}
 body.load h1, body.load h2, body.load h3, body.load h4, body.load h5, body.load h6{font-family:'NunitoBlack','arial','sans-serif'}
@@ -105,7 +106,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .about{background-color:#3e4f55}
 .about .wave{background-image:url("../images/bg_wave1.gif")}
 .about p{margin:109px 0 98px;font-size:18px;line-height:2.2;word-break:keep-all}
-.about .ab_list > li{float:left;position:relative;width:384px;min-height:401px;margin-top:24px;border-top:2px solid #2e1c44;border-bottom:2px solid #2e1c44;word-break:keep-all;overflow:hidden}
+.about .ab_list > li{float:left;position:relative;width:384px;min-height:477px;margin-top:24px;border-top:2px solid #2e1c44;border-bottom:2px solid #2e1c44;word-break:keep-all;overflow:hidden}
 .about .ab_list .bg_box{position:absolute;left:0;top:0;display:block;width:100%;height:100%;background-color:#2e1c44;opacity:0.2;filter:alpha(opacity=20)}
 .about .ab_list > li.even{border-top:2px solid #f04c4d;border-bottom:2px solid #f04c4d}
 .about .ab_list > li.even .bg_box{background-color:#f04c4d}
@@ -113,7 +114,7 @@ html>body .main .scroll .txt span{left:0;opacity:1}
 .about .ab_list .skill{position:relative;padding:32px 35px 17px;text-align:left}
 .about .ab_list .skill .num{font-family:'NunitoExtraLight';font-size:24px}
 .about .ab_list .skill h5{margin:5px 0 30px;font-size:36px;line-height:1.1}
-.about .ab_list .skill li{margin:0 0 10px 14px;list-style-image:url("../images/blt_skill.png");line-height:1.8}
+.about .ab_list .skill li{margin:0 0 10px 14px;list-style-image:url("../images/blt_skill.png");line-height:1.8;word-break:keep-all}
 
 /* portfolio */
 .portfolio{background-color:#b12828}

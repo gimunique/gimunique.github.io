@@ -44,9 +44,10 @@ $(window).on({
         // 시계 팝업 setting
         setInterval(setCurrentTime, 1000);
         // loading image animation
-        setTimeout(function () {
+        loadImgInterval();
+        /* setTimeout(function () {
             loadImgInterval();
-        }, 350);
+        }, 350); */
 
         // basic screen construction
         resize();
@@ -116,12 +117,12 @@ $(window).on({
             var maxNum = 10;
             var repeatNum = 1;
             var intervalId = setInterval(function () {
-                if (repeatNum > maxNum * 3) {
+                if (repeatNum > maxNum * 1.5) {
                     clearInterval(intervalId);
 
                     $("body").addClass("load");
                     $("html, body").scrollTop(0);
-                    $(".load_wrap").clearQueue().animate({opacity: 0}, speed * 8, "easeOutCubic", function () {
+                    $(".load_wrap").clearQueue().animate({opacity: 0}, speed * 5, "easeOutCubic", function () {
                         $(this).remove();
                     });
                 } else {

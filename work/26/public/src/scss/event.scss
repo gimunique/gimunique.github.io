@@ -1,0 +1,692 @@
+@charset "utf-8";
+/* 
+ * ==============================
+ * lower than IE9
+ * ==============================
+*/
+.lower_ie9 {
+    background-color: #000;
+    p {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 60px;
+        margin-top: -30px;
+        font-size: 18px;
+        color: #aaa;
+        line-height: 1.6;
+        text-align: center;
+        vertical-align: middle
+    }
+}
+
+/* 
+ * ==============================
+ * event
+ * ==============================
+*/
+@mixin setWrapStyle {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+@mixin setBlockStyle {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin setVirtualBox {
+    display: block;
+    content: "";
+}
+
+@mixin setSize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.wrap {
+    @include setWrapStyle;
+    min-width: 1200px;
+    font-size: 18px;
+    .section {
+        @include setWrapStyle;
+        .content {
+            position: relative;
+            width: 1200px;
+            padding-top: 74px;
+            margin: 0 auto;
+        }
+    }
+    h1, h2, h3, h4, .event_title p, .event_title dl, .event_1 li div, .btn_wrap button i, .event_2 th, .quick li a, .quick button, .pop_wrap h4, .pop_wrap .btn_close {
+        text-indent: -9999px;
+    }
+    h3, h4, .event_1 li, .event_1 .seq, .event_1 .seq:after, .event_2 th span, .pop_wrap h4, .pop_wrap .btn_close {
+        background-image: url("../images/spr_event.png");
+        background-repeat: no-repeat;
+    }
+    .event_1, .event_2, .event_note {
+        z-index: 10;
+    }
+    h3 {
+        @include setSize(100%, 82px); 
+    }
+}
+
+.main {
+    @include setWrapStyle;
+    background: url("../images/bg_event.jpg") 50% 0 no-repeat;
+    .bg_obj {
+        position: absolute;
+        left: 50%;
+        display: block;
+        background-repeat: no-repeat;
+        z-index: 5;
+        &.bg_char {
+            @include setSize(960px, 1600px);
+            top: 0;
+            margin-left: -960px;
+            background-image: url("../images/bg_char.png");
+            opacity: 0;
+        }
+        &.bg_blur {
+            @include setSize(1920px, 1800px);
+            top: 740px;
+            margin-left: -960px;
+            background-image: url("../images/bg_blur.png");
+        }
+        &.bg_cherry {
+            background-image: url("../images/spr_cherry.png");
+            z-index: 20;
+            &.cherry1 {
+                @include setSize(512px, 311px);
+                top: 1450px;
+                margin-left: 448px;
+                background-position: 0 0;
+            }
+            &.cherry2 {
+                @include setSize(423px, 292px);
+                top: 2163px;
+                margin-left: -960px;
+                background-position: 0 -311px;
+            }
+            &.cherry3 {
+                @include setSize(643px, 523px);
+                top: 200px;
+                margin-left: -960px;
+                background-position: 0 -602px;
+            }
+        }
+    }
+    // petal common stlye & image
+    .ps1 {
+        @include setSize(44px, 40px);
+    }
+    .ps2 {
+        @include setSize(61px, 36px);
+        background-position: 0 -40px;
+    }
+    .ps3 {
+        @include setSize(63px, 61px);
+        background-position: 0 -76px;
+    }
+    .ps4 {
+        @include setSize(42px, 65px);
+        background-position: 0 -137px;
+    }
+    .ps5 {
+        @include setSize(68px, 46px);
+        background-position: 0 -202px;
+    }
+    .ps6 {
+        @include setSize(205px, 170px);
+        background-position: 0 -364px;
+    }
+    .ps7 {
+        @include setSize(45px, 54px);
+        background-position: 0 -248px;
+    }
+    .ps8 {
+        @include setSize(205px, 170px);
+        background-position: 0 -534px;
+    }
+    .sticky_petal {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -600px;
+        width: 1200px;
+        z-index: 15;
+        span {
+            position: absolute;
+            display: block;
+            background-image: url("../images/spr_petal.png");
+            background-repeat: no-repeat;
+            &.p1 {
+                left: 365px;
+                top: 70px;
+            }
+            &.p2 {
+                right: -154px;
+                top: 128px;
+            }
+            &.p3 {
+                left: -134px;
+                top: 226px;
+            }
+            &.p4 {
+                right: -110px;
+                top: 410px;
+            }
+            &.p5 {
+                left: 552px;
+                top: 580px;
+            }
+            &.p6 {
+                left: -380px;
+                top: 738px;
+            }
+            &.p7 {
+                left: -12px;
+                top: 810px;
+            }
+            &.p8 { // p3
+                right: -160px;
+                top: 1110px;
+            }
+            &.p9 { // p5
+                left: -130px;
+                top: 1418px;
+            }
+            &.p10 { // p1
+                left: -188px;
+                top: 1592px;
+            }
+            &.p11 { // p2
+                right: -180px;
+                top: 1798px;
+            }
+            &.p12 { // p3
+                left: -40px;
+                top: 1874px;
+            }
+            &.p13 {
+                right: -275px;
+                top: 2316px;
+            }
+        }
+    }
+    .falling_petal {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        transform: translateX(-50%);
+        z-index: 15;
+        span {
+            position: absolute;
+            display: block;
+            background-image: url("../images/spr_petal.png");
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.event_title {
+    height: 1070px;
+    h1, .link {
+        z-index: 20;
+    }
+    h1 {
+        position: absolute;
+        left: 40px;
+        top: 30px;
+        a {
+            @include setSize(200px, 34px);
+            display: block;
+            background: url("../images/bg_cabal.png") no-repeat;
+        }
+    }
+    .link {
+        position: absolute;
+        right: 40px;
+        top: 31px;
+        li {
+            float: left;
+            &:after {
+                display: inline;
+                content: "|";
+                margin: 0 14px;
+                vertical-align: 2px;
+                font-size: 14px;
+                color: #fff;
+            }
+            &:last-child:after {
+                display: none;
+            }
+            a {
+                font-weight: bold;
+                color: #523626;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .title_wrap {
+        position: absolute;
+        left: 414px;
+        top: 120px;
+        width: 922px;
+        .spring, .red span, .diamond span, p, .date {
+            background: url("../images/spr_title.png") no-repeat;
+        }
+        h2 {
+            position: relative;
+            z-index: 1;
+            .spring {
+                @include setSize(800, 167px);
+            }
+            .red {
+                height: 205px;
+                margin-top: -19px;
+                span {
+                    float: left;
+                    display: block;
+                    height: 100%;
+                    &:nth-of-type(1) {
+                        position: relative;
+                        width: 167px;
+                        margin-left: 169px;
+                        background-position: -169px -172px;
+                        transform: rotate(-14deg);
+                    }
+                    &:nth-of-type(2) {
+                        width: 132px;
+                        margin-left: -12px;
+                        background-position: -336px -172px;
+                    }
+                    &:last-child {
+                        width: 149px;
+                        background-position: -468px -172px;
+                    }
+                }
+            }
+            .diamond {
+                height: 150px;
+                margin-top: 1px;
+                span {
+                    float: left;
+                    display: block;
+                    height: 100%;
+                    &:nth-of-type(1) {
+                        width: 134px;
+                        background-position: 0 -377px;
+                    }
+                    &:nth-of-type(2) {
+                        width: 46px;
+                        background-position: -134px -377px;
+                    }
+                    &:nth-of-type(3) {
+                        width: 110px;
+                        background-position: -180px -377px;
+                    }
+                    &:nth-of-type(4) {
+                        width: 139px;
+                        background-position: -290px -377px;
+                    }
+                    &:nth-of-type(5) {
+                        width: 123px;
+                        background-position: -429px -377px;
+                    }
+                    &:nth-of-type(6) {
+                        width: 106px;
+                        background-position: -552px -377px;
+                    }
+                    &:last-child {
+                        width: 129px;
+                        background-position: -658px -377px;
+                    }
+                }
+            }
+        }
+        p {
+            @include setSize(100%, 462px);
+            position: relative;
+            margin-top: -194px;
+            background-position: 0 -528px; 
+        }
+        .date {
+            @include setSize(796px, 113px);
+            margin-top: -24px;
+            background-position: 0 -990px;
+        } 
+    }
+}
+
+.event_1 {
+    height: 830px;
+    h3 {
+        margin-bottom: 55px;
+        background-position: 0 0;
+    }
+    ol {
+        height: 360px;
+        li {
+            @include setSize(360px, 360px);
+            float: left;
+            position: relative;
+            background-color: #fff;
+            border-radius: 100%;
+            &:nth-of-type(1) {
+                background-position: 0px -431px;
+                .seq:after {
+                    background-position: -490px -191px;
+                }
+            }
+            &:nth-of-type(2) {
+                margin: 0 60px;
+                background-position: -360px -431px;
+                .seq:after {
+                    background-position: -580px -191px;
+                }
+            }
+            &:last-child {
+                background-position: -720px -431px;
+                .seq:after {
+                    background-position: -670px -191px;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            &:after {
+                @include setVirtualBox;
+                @include setSize(34px, 12px);
+                position: absolute;
+                left: 373px;
+                top: 50%;
+                margin-top: -6px;
+                background: url("../images/bg_deco.png") no-repeat;
+            }
+            .seq {
+                @include setSize(90px, 90px);
+                position: absolute;
+                left: 50%;
+                top: -30px;
+                display: block;
+                background-position: -400px -191px;
+                transform: translateX(-50%);
+                &:after {
+                    @include setVirtualBox;
+                    @include setSize(100%, 100%);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .btn_wrap {
+        @include setSize(940px, 92px);
+        margin: 60px auto 0;
+        button {
+            @include setSize(300px, 92px);
+            float: left;
+            position: relative;
+            &:nth-of-type(2) {
+                margin: 0 20px;
+            }
+            i {
+                @include setBlockStyle;
+            }
+            span, &:after {
+                position: absolute;
+                left: 0;
+                background: url("../images/spr_btn.png") no-repeat;
+            }
+            span {
+                @include setSize(100%, 80px);
+                top: 0;
+                z-index: 1;
+            }
+            &:nth-of-type(1) span {
+                background-position: 0 -1px;
+            }
+            &:nth-of-type(2) span {
+                background-position: -300px -1px;
+            }
+            &:last-child span {
+                background-position: -600px -1px;
+            }
+            &:after {
+                @include setVirtualBox;
+                @include setSize(100%, 49px);
+                bottom: 0;
+            }
+            &:nth-of-type(1):after {
+                background-position: 0 -82px;
+            }
+            &:nth-of-type(2):after {
+                background-position: -300px -82px;
+            }
+            &:last-child:after {
+                background-position: -600px -82px;
+            }
+        }
+    }
+}
+
+.event_2 {
+    height: 497px;
+    h3 {
+        margin-bottom: 65px;
+        background-position: 50% -82px;
+    }
+    table {
+        width: 100%;
+        th {
+            @include setSize(33.333%, 80px);
+            background-color: #d64761;
+            span {
+                @include setBlockStyle;
+            }
+            &:nth-of-type(1) {
+                span {
+                    background-position: 0 -191px;
+                }
+            }
+            &:nth-of-type(2) {
+                span {
+                    background-position: 0 -271px;
+                }
+            }
+            &:last-child {
+                span {
+                    background-position: 0 -351px;
+                }
+            }
+        }
+        td {
+            height: 170px;
+            background-color: #fff;
+            font-size: 27px;
+            color: #2d2932;
+            text-align: center;
+            vertical-align: middle;
+            dt, dd {
+                display: inline;
+            }
+            dt {
+                font-weight: bold;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.event_note {
+    height: 587px;
+    h4 {
+        height: 27px;
+        background-position: 0 -164px;
+    }
+    ol {
+        margin: 42px 0 0 18px;
+        font-size: 20px;
+        list-style: decimal;
+        line-height: 1.5;
+        letter-spacing: -0.2px;
+        >li:nth-of-type(1) {
+            font-weight: bold;
+        }
+    }
+}
+
+.footer {
+    @include setWrapStyle;
+    height: 100px;
+    background-color: #95424a;
+    line-height: 100px;
+    text-align: center;
+}
+
+/* 
+ * ==============================
+ * quick
+ * ==============================
+*/
+.quick {
+    // display: none;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    margin-top: -158px;
+    // opacity: 0;
+    // transform: translateY(-158px);
+    z-index: 30;
+    li {
+        @include setSize(150px, 130px);
+        margin-bottom: 5px;
+        background: url("../images/spr_quick.png") no-repeat;
+        &:last-child {
+            background-position: 0 -130px;
+        }
+        a {
+            @include setBlockStyle;
+        }
+    }
+    .btn_top{
+        @include setSize(90px, 40px);
+        margin: 10px auto 0;
+        background: #f37da6 url("../images/spr_quick.png") 50% -260px no-repeat;
+        border-radius: 45px;
+    }
+}
+
+/* 
+ * ==============================
+ * pop
+ * ==============================
+*/
+.pop_wrap {
+    display: none;
+    @include setSize(100%, 100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    .dimmed {
+        @include setBlockStyle;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .pop {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        padding: 60px 40px 30px;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+        .btn_close {
+            @include setSize(38px, 38px);
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-position: -1162px -271px;
+        }
+        h4 {
+            @include setSize(661px, 59px);
+            margin: 0 auto 30px;
+            background-position: -400px -351px;
+        }
+        li {
+            font-size: 17px;
+            color: #7859d1;
+            line-height: 1.3;
+        }
+    }
+    .table_wrap {
+        @include setSize(910px, 400px);
+        margin-bottom: 30px;
+        border-top: 2px solid #555;
+        border-bottom: 2px solid #555;
+        table {
+            width: 900px;
+        }
+        td {
+            height: 45px;
+            padding: 0 20px;
+            border-right: 1px solid #c5c5c5;
+            border-bottom: 1px solid #c5c5c5;
+            font-size: 17px;
+            color: #666;
+            vertical-align: middle;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}
+
+/* 
+ * ==============================
+ * scroll customize
+ * ==============================
+*/
+.mCSB_inside > .mCSB_container {
+    margin-right: 10px;
+}
+
+.mCSB_scrollTools {
+    width: 10px;
+    opacity: 1;
+    transition: none;
+    .mCSB_dragger {
+        .mCSB_dragger_bar { 
+            width: 10px;
+            background-color: #fb386b;
+            border-radius: 0;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        &.mCSB_dragger_onDrag .mCSB_dragger_bar, &:hover .mCSB_dragger_bar {
+            background-color: #fb386b;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+    }
+    .mCSB_draggerRail {
+        background-color: #fff;
+        filter: alpha(opacity=100)
+    }
+}
