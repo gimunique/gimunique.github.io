@@ -39,15 +39,12 @@ $(document).ready(function () {
 // window event
 $(window).on({
     load: function () {
+        // loading image animation
+        loadImgInterval();
         // mouse icon animation
         TweenMax.to($(".scroll .img"), 0.4, {y: -10, ease: Circ.easeOut, repeat: -1, yoyo : true});
         // 시계 팝업 setting
         setInterval(setCurrentTime, 1000);
-        // loading image animation
-        loadImgInterval();
-        /* setTimeout(function () {
-            loadImgInterval();
-        }, 350); */
 
         // basic screen construction
         resize();
@@ -57,27 +54,6 @@ $(window).on({
         setNavEvent(".pg_nav li");
         setNavEvent(".gnb li");
         setContactBanner(".banner_wrap");
-
-        // gnb 버튼 클릭시 이벤트
-        $(".btn_gnb").on("click", function () {
-            $(this).add(".gnb").toggleClass("active");
-            if (Browser.indexOf("MSIE 7") !== -1) {
-                $(".gnb.active").length === 1 ? $(".pg_nav").hide() : $(".pg_nav").show();
-            }
-        });
-        $(".menu3 button").on("blur", function () {
-            $(".btn_gnb, .gnb").removeClass("active");
-        });
-            
-        // 오른쪽 상단 floating buttuon 클릭 시 레이어 팝업 이벤트
-        $(".btn_lp li").each(function (i) {
-            $(this).find(">button").on("click", function () {
-                $(".main .lp:eq(" + i + ")").show().siblings(".lp").hide();
-            });
-        });
-        $(".lp .btn_close").on("click", function () {
-            $(this).parent("div").hide();
-        });
 
         // 포트폴리오 썸네일 렌더링
         var ajax = getAjaxPortfolioInfos();
@@ -110,6 +86,27 @@ $(window).on({
             }
         });
 
+        // gnb 버튼 클릭시 이벤트
+        $(".btn_gnb").on("click", function () {
+            $(this).add(".gnb").toggleClass("active");
+            if (Browser.indexOf("MSIE 7") !== -1) {
+                $(".gnb.active").length === 1 ? $(".pg_nav").hide() : $(".pg_nav").show();
+            }
+        });
+        $(".menu3 button").on("blur", function () {
+            $(".btn_gnb, .gnb").removeClass("active");
+        });
+            
+        // 오른쪽 상단 floating buttuon 클릭 시 레이어 팝업 이벤트
+        $(".btn_lp li").each(function (i) {
+            $(this).find(">button").on("click", function () {
+                $(".main .lp:eq(" + i + ")").show().siblings(".lp").hide();
+            });
+        });
+        $(".lp .btn_close").on("click", function () {
+            $(this).parent("div").hide();
+        });
+
         // loading image animation(상단 소스 renewal)
         function loadImgInterval() {
             var speed = 90;
@@ -117,7 +114,13 @@ $(window).on({
             var maxNum = 10;
             var repeatNum = 1;
             var intervalId = setInterval(function () {
-                if (repeatNum > maxNum * 1.5) {
+                if (repeatNum < maxNum * 1.5) {
+                    var loadImgSrc = "./images/load" + num + ".png";
+                    num >= maxNum ? num = 1 : num++;
+                    $(".load_img").attr("src", loadImgSrc);
+                    
+                    repeatNum++;        
+                } else {
                     clearInterval(intervalId);
 
                     $("body").addClass("load");
@@ -125,12 +128,6 @@ $(window).on({
                     $(".load_wrap").clearQueue().animate({opacity: 0}, speed * 5, "easeOutCubic", function () {
                         $(this).remove();
                     });
-                } else {
-                    var loadImgSrc = "./images/load" + num + ".png";
-
-                    $(".load_img").attr("src", loadImgSrc);
-                    num >= maxNum ? num = 1 : num++;
-                    repeatNum++;
                 }
             }, speed);
         }
