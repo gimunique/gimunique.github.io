@@ -114,8 +114,8 @@ $(window).on({
             var maxNum = 10;
             var repeatNum = 1;
             var intervalId = setInterval(function () {
-                if (repeatNum < maxNum * 1.5) {
-                    var loadImgSrc = "./images/load" + num + ".png";
+                if (repeatNum < maxNum * 2) {
+                    var loadImgSrc = "https://gimunique.github.io/images/load" + num + ".png";
                     num >= maxNum ? num = 1 : num++;
                     $(".load_img").attr("src", loadImgSrc);
                     
@@ -125,9 +125,9 @@ $(window).on({
 
                     $("body").addClass("load");
                     $("html, body").scrollTop(0);
-                    $(".load_wrap").clearQueue().animate({opacity: 0}, speed * 5, "easeOutCubic", function () {
+                    $(".load_wrap").clearQueue().animate({opacity: 0}, {duration: speed * 5, complete: function () {
                         $(this).remove();
-                    });
+                    }});
                 }
             }, speed);
         }
