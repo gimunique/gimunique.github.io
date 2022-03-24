@@ -11,7 +11,7 @@ var PageSize = 6;
 
 $(document).ready(function () {
     // closed
-    $(".wrap").remove();
+    // $(".wrap").remove();
 
     // 하위버전(ie9이하) svg 파일 check, png 파일로 대체
     if (!Modernizr.svg) {
